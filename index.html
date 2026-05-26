@@ -1,2717 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
-<title>Neeza Shyaka — NS Creative · Brand, Web & AI Production · Kampala</title>
-<meta name="description" content="NS Creative is the studio of Neeza Shyaka. We build brand worlds, websites, campaigns and AI films for clients across East Africa — to a world-class standard. Even if you started on WhatsApp." />
-<meta name="author" content="Neeza Shyaka" />
-<meta name="theme-color" content="#0C0A08" />
-<meta name="color-scheme" content="light dark" />
+  <title>Neeza Shyaka — NS Creative · Brand, Web & AI Production</title>
+  <meta name="description" content="NS Creative is the studio of Neeza Shyaka. We build brand worlds, websites, campaigns and AI films for clients across East Africa — to a world-class standard." />
+  <meta name="author" content="Neeza Shyaka" />
+  <meta name="theme-color" content="#0C0A08" />
 
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Neeza Shyaka — NS Creative · Brand, Web & AI Production" />
-<meta property="og:description" content="A studio in Kampala building brand worlds for clients across East Africa — to a world-class standard." />
-<meta property="og:locale" content="en_UG" />
-<meta property="og:url" content="https://neezashyaka.com" />
-<meta property="og:site_name" content="NS Creative" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Neeza Shyaka — NS Creative" />
+  <meta property="og:description" content="A studio in Kampala building brand worlds for clients across East Africa." />
+  <meta property="og:url" content="https://neezashyaka.com" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Neeza Shyaka — NS Creative" />
-<meta name="twitter:description" content="A studio in Kampala building brand worlds for clients across East Africa — to a world-class standard." />
+  <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%230C0A08'/><circle cx='16' cy='16' r='6' fill='%23C6FF00'/></svg>" />
 
-<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%230C0A08'/><circle cx='16' cy='16' r='6' fill='%23C6FF00'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Hanken+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Hanken+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" as="style" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Hanken+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" />
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Neeza Shyaka",
-  "jobTitle": "Creative Director & Founder",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "NS Creative",
-    "url": "https://neezashyaka.com"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Kampala",
-    "addressCountry": "Uganda"
-  },
-  "knowsAbout": ["Brand Design", "Web Design", "Social Media Strategy", "AI Film Production", "Creative Direction"]
-}
-</script>
-
-<style>
-/* ════════════════════════════════════════════════════════════
-   01 · DESIGN TOKENS
-   ════════════════════════════════════════════════════════════ */
-:root {
-  /* Brand frame */
-  --paper:       #EFEADA;
-  --paper-deep:  #E5DECC;
-  --bone:        #DCD4BE;
-  --ink:         #0C0A08;
-  --ink-soft:    #1A1612;
-  --ink-deep:    #050403;
-  --stone:       #6B665C;
-  --stone-light: #A09A8B;
-  --lime:        #C6FF00;
-  --lime-dark:   #A8DB00;
-  --lime-glow:   #DCFF54;
-
-  /* Project palettes */
-  --mwt-navy:   #2D2B6B;
-  --mwt-green:  #4CAF50;
-  --mwt-amber:  #F5A623;
-  --watp-purple:#4B0082;
-  --watp-pink:  #FF1493;
-  --watp-rose:  #FFD6F0;
-  --a63-gold:   #C9A84C;
-  --a63-gold-d: #8B6914;
-  --a63-neon:   #39FF6A;
-  --soa-gold:   #C9972C;
-  --soa-amber:  #E5B445;
-  --ssuubi-green: #3DD10A;
-  --ssuubi-earth: #2A1F18;
-  --ssuubi-deep:  #150D08;
-  --retro-yellow: #FFD500;
-  --retro-cream:  #F4E8C1;
-  --honda-red:    #CC0000;
-  --honda-dark:   #6B0000;
-  --aksum-charcoal: #1C1C1C;
-  --aksum-gold:     #D4A943;
-  --spot-amber:     #D4920F;
-  --spot-cream:     #F1E2C8;
-  --acra-white:     #F7F5F0;
-
-  /* Type */
-  --display: 'Fraunces', 'Times New Roman', Georgia, serif;
-  --body:    'Hanken Grotesk', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  --mono:    'JetBrains Mono', ui-monospace, 'Courier New', monospace;
-
-  /* Easing */
-  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-in-out-cubic: cubic-bezier(0.65, 0, 0.35, 1);
-
-  /* Layout */
-  --gutter: 32px;
-  --max:    1480px;
-}
-@media (max-width: 768px) {
-  :root { --gutter: 20px; }
-}
-
-/* ════════════════════════════════════════════════════════════
-   02 · RESET & BASE
-   ════════════════════════════════════════════════════════════ */
-*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-body {
-  font-family: var(--body);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--ink);
-  background: var(--paper);
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  font-feature-settings: 'ss01', 'cv11';
-}
-img, picture, svg, video { display: block; max-width: 100%; height: auto; }
-a { color: inherit; text-decoration: none; }
-button { font: inherit; cursor: pointer; border: 0; background: transparent; color: inherit; }
-input, textarea { font: inherit; }
-::selection { background: var(--lime); color: var(--ink); }
-:focus-visible { outline: 2px solid var(--lime-dark); outline-offset: 4px; border-radius: 4px; }
-
-/* Scrollbar */
-html { scrollbar-color: var(--stone) var(--paper); scrollbar-width: thin; }
-::-webkit-scrollbar { width: 10px; height: 10px; }
-::-webkit-scrollbar-track { background: var(--paper); }
-::-webkit-scrollbar-thumb { background: var(--stone); border-radius: 0; }
-::-webkit-scrollbar-thumb:hover { background: var(--ink); }
-
-/* Grain — single layer, performant */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 9000;
-  opacity: 0.045;
-  mix-blend-mode: multiply;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0'/></filter><rect width='220' height='220' filter='url(%23n)'/></svg>");
-}
-
-/* ════════════════════════════════════════════════════════════
-   03 · LAYOUT PRIMITIVES
-   ════════════════════════════════════════════════════════════ */
-.wrap      { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
-.wrap-wide { max-width: 1680px;     margin: 0 auto; padding: 0 var(--gutter); }
-.wrap-full { width: 100%; padding: 0 var(--gutter); }
-
-.sr-only {
-  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0,0,0,0); border: 0; white-space: nowrap;
-}
-
-.skip-link {
-  position: absolute; top: -100px; left: var(--gutter);
-  background: var(--ink); color: var(--lime);
-  padding: 12px 18px; font-family: var(--mono); font-size: 12px;
-  text-transform: uppercase; letter-spacing: 0.1em; z-index: 10001;
-  border-radius: 4px;
-  transition: top 0.2s;
-}
-.skip-link:focus { top: 12px; }
-
-.section-label {
-  font-family: var(--mono);
-  font-size: 11px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--stone);
-  display: inline-flex;
-  align-items: baseline;
-  gap: 12px;
-}
-.section-label::before {
-  content: '';
-  width: 8px; height: 8px; border-radius: 999px;
-  background: var(--lime); display: inline-block;
-}
-.work .section-label,
-.about .section-label,
-.featured-soa .section-label {
-  color: var(--lime);
-}
-
-/* ════════════════════════════════════════════════════════════
-   04 · LOADER
-   ════════════════════════════════════════════════════════════ */
-.loader {
-  position: fixed; inset: 0;
-  background: var(--ink);
-  z-index: 10000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px var(--gutter);
-  flex-direction: column;
-  font-family: var(--mono);
-  color: var(--paper);
-  transition: opacity 0.6s var(--ease-out-expo), visibility 0.6s;
-}
-.loader.is-done {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-.loader__top, .loader__bottom {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  opacity: 0.6;
-}
-.loader__center {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  position: relative;
-}
-.loader__brand {
-  font-family: var(--display);
-  font-style: italic;
-  font-size: clamp(64px, 14vw, 200px);
-  font-weight: 400;
-  color: var(--paper);
-  letter-spacing: -0.04em;
-  line-height: 1;
-  overflow: hidden;
-  display: flex;
-}
-.loader__brand span {
-  display: inline-block;
-  transform: translateY(110%);
-  animation: loader-rise 0.9s var(--ease-out-expo) forwards;
-}
-.loader__brand span:nth-child(2) { animation-delay: 0.08s; }
-.loader__brand span:nth-child(3) { animation-delay: 0.16s; }
-.loader__count {
-  font-family: var(--mono);
-  font-size: 14px;
-  letter-spacing: 0.1em;
-}
-.loader__count span { color: var(--lime); }
-@keyframes loader-rise { to { transform: translateY(0); } }
-@media (max-width: 600px) {
-  .loader__top, .loader__bottom { font-size: 9px; }
-}
-
-/* ════════════════════════════════════════════════════════════
-   05 · CUSTOM CURSOR
-   ════════════════════════════════════════════════════════════ */
-.cursor {
-  position: fixed;
-  top: 0; left: 0;
-  width: 28px; height: 28px;
-  border-radius: 999px;
-  border: 1.5px solid var(--ink);
-  background: transparent;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: width 0.25s var(--ease-out-expo),
-              height 0.25s var(--ease-out-expo),
-              background 0.25s, border-color 0.25s, opacity 0.25s;
-  mix-blend-mode: difference;
-  display: none;
-}
-.cursor.is-hover { background: var(--lime); border-color: var(--lime); }
-@media (hover: hover) and (pointer: fine) {
-  .cursor { display: block; }
-  body { cursor: none; }
-  a, button, .card, .svc, .faq__item, .nav__cta { cursor: none; }
-}
-
-/* ════════════════════════════════════════════════════════════
-   06 · STATUS BAR + NAV
-   ════════════════════════════════════════════════════════════ */
-.statusbar {
-  position: fixed; top: 0; left: 0; right: 0;
-  background: var(--ink);
-  color: var(--paper);
-  font-family: var(--mono);
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  z-index: 100;
-  padding: 8px var(--gutter);
-}
-.statusbar__inner {
-  max-width: 1680px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 32px;
-}
-.statusbar__group {
-  display: flex; align-items: center; gap: 24px;
-  opacity: 0.75;
-}
-.statusbar__dot {
-  width: 6px; height: 6px; border-radius: 999px;
-  background: #20D87A;
-  display: inline-block;
-  box-shadow: 0 0 0 0 rgba(32, 216, 122, 0.6);
-  animation: status-pulse 2.4s infinite;
-}
-@keyframes status-pulse {
-  0% { box-shadow: 0 0 0 0 rgba(32, 216, 122, 0.6); }
-  70% { box-shadow: 0 0 0 8px rgba(32, 216, 122, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(32, 216, 122, 0); }
-}
-.statusbar__live { color: var(--lime); }
-@media (max-width: 900px) {
-  .statusbar__group--mid { display: none; }
-  .statusbar__inner { font-size: 9px; gap: 12px; }
-}
-@media (max-width: 500px) {
-  .statusbar__group--right .statusbar__sep { display: none; }
-  .statusbar__group--right span:not(.statusbar__live):not(.statusbar__dot) { display: none; }
-}
-
-.nav {
-  position: fixed; top: 32px; left: 0; right: 0;
-  z-index: 99;
-  padding: 18px 0;
-  background: rgba(239, 234, 218, 0.78);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  border-bottom: 1px solid rgba(12, 10, 8, 0.06);
-  transition: background 0.4s var(--ease-in-out-cubic),
-              border-color 0.4s var(--ease-in-out-cubic),
-              color 0.4s;
-}
-.nav.on-dark {
-  background: rgba(12, 10, 8, 0.78);
-  border-bottom-color: rgba(255,255,255,0.06);
-  color: var(--paper);
-}
-.nav.on-lime {
-  background: rgba(198, 255, 0, 0.78);
-  border-bottom-color: rgba(12, 10, 8, 0.12);
-  color: var(--ink);
-}
-.nav__inner {
-  max-width: 1680px;
-  margin: 0 auto;
-  padding: 0 var(--gutter);
-  display: flex; align-items: center; justify-content: space-between;
-  gap: 32px;
-}
-.nav__brand {
-  display: flex; align-items: center; gap: 10px;
-  font-family: var(--display);
-  font-size: 22px;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  font-feature-settings: 'ss01';
-}
-.nav__brand-mark {
-  width: 28px; height: 28px; border-radius: 999px;
-  background: var(--ink);
-  position: relative; flex-shrink: 0;
-  transition: background 0.4s;
-}
-.nav.on-dark .nav__brand-mark { background: var(--lime); }
-.nav__brand-mark::after {
-  content: '';
-  position: absolute; inset: 7px;
-  border-radius: 999px;
-  background: var(--lime);
-  transition: background 0.4s;
-}
-.nav.on-dark .nav__brand-mark::after { background: var(--ink); }
-.nav__brand i { font-style: italic; }
-.nav__menu {
-  display: flex; gap: 28px;
-  font-family: var(--mono); font-size: 11px;
-  text-transform: uppercase; letter-spacing: 0.12em;
-}
-.nav__menu a { padding: 6px 0; position: relative; }
-.nav__menu a::after {
-  content: ''; position: absolute; left: 0; bottom: 0;
-  width: 0; height: 1px; background: currentColor;
-  transition: width 0.3s var(--ease-out-expo);
-}
-.nav__menu a:hover::after { width: 100%; }
-.nav__cta {
-  font-family: var(--mono); font-size: 11px;
-  text-transform: uppercase; letter-spacing: 0.12em;
-  padding: 10px 18px;
-  border: 1px solid currentColor;
-  border-radius: 999px;
-  display: inline-flex; align-items: center; gap: 8px;
-  transition: background 0.25s, color 0.25s;
-}
-.nav__cta:hover { background: var(--ink); color: var(--lime); }
-.nav.on-dark .nav__cta:hover { background: var(--lime); color: var(--ink); }
-.nav__cta-dot {
-  width: 6px; height: 6px; border-radius: 999px;
-  background: #20D87A;
-}
-@media (max-width: 768px) {
-  .nav { top: 28px; padding: 14px 0; }
-  .nav__menu { display: none; }
-  .nav__cta { padding: 8px 14px; font-size: 10px; }
-}
-@media (max-width: 380px) {
-  .nav__brand i { display: none; }
-}
-
-/* ════════════════════════════════════════════════════════════
-   07 · HERO
-   ════════════════════════════════════════════════════════════ */
-.hero {
-  padding: 170px 0 100px;
-  position: relative;
-}
-.hero__meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 80px;
-  font-family: var(--mono);
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--stone);
-}
-.hero__meta-block {
-  display: flex; flex-direction: column; gap: 4px;
-}
-.hero__meta-block--right { align-items: flex-end; text-align: right; }
-.hero__meta-block strong { color: var(--ink); font-weight: 500; }
-.hero__index {
-  font-family: var(--display);
-  font-style: italic;
-  font-size: 18px;
-  letter-spacing: -0.01em;
-  color: var(--stone);
-}
-.hero__index strong { color: var(--ink); font-weight: 400; font-style: normal; }
-
-.hero h1 {
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 144, 'SOFT' 30;
-  font-weight: 400;
-  font-size: clamp(54px, 9.5vw, 154px);
-  line-height: 0.94;
-  letter-spacing: -0.035em;
-  color: var(--ink);
-  margin-bottom: 48px;
-}
-.hero h1 i { font-style: italic; }
-.hero h1 .em-em { color: var(--ink); }
-.hero h1 .lime-mark {
-  position: relative;
-  display: inline-block;
-  background: var(--lime);
-  padding: 2px 22px 6px;
-  margin: 0 6px;
-  border-radius: 999px;
-  font-style: italic;
-  font-size: 0.84em;
-  line-height: 1;
-  transform: rotate(-1.5deg);
-  vertical-align: middle;
-}
-.hero h1 .line-through {
-  position: relative;
-  display: inline-block;
-}
-.hero h1 .line-through::after {
-  content: '';
-  position: absolute;
-  left: -4px; right: -4px;
-  top: 56%;
-  height: 6px;
-  background: var(--ink);
-  transform: rotate(-2deg);
-}
-.hero__row {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 80px;
-  align-items: end;
-  margin-top: 40px;
-}
-.hero__lede {
-  font-family: var(--display);
-  font-size: clamp(20px, 2.3vw, 30px);
-  line-height: 1.35;
-  letter-spacing: -0.005em;
-  max-width: 640px;
-  color: var(--ink-soft);
-}
-.hero__lede em {
-  background: linear-gradient(transparent 62%, var(--lime) 62%, var(--lime) 96%, transparent 96%);
-  font-style: italic;
-}
-.hero__side {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: flex-end;
-  text-align: right;
-  border-top: 2px solid var(--ink);
-  padding-top: 24px;
-}
-.hero__stat {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--stone);
-}
-.hero__stat strong {
-  display: block;
-  font-family: var(--display);
-  font-style: italic;
-  font-size: clamp(40px, 4vw, 64px);
-  line-height: 1;
-  color: var(--ink);
-  font-weight: 400;
-  letter-spacing: -0.02em;
-  margin-bottom: 6px;
-}
-@media (max-width: 768px) {
-  .hero { padding: 140px 0 80px; }
-  .hero__meta { flex-direction: column; gap: 18px; }
-  .hero__meta-block--right { align-items: flex-start; text-align: left; }
-  .hero__row { grid-template-columns: 1fr; gap: 40px; }
-  .hero__side { align-items: flex-start; text-align: left; }
-}
-
-/* ════════════════════════════════════════════════════════════
-   08 · NOW IN PRODUCTION TICKER
-   ════════════════════════════════════════════════════════════ */
-.ticker {
-  background: var(--ink);
-  color: var(--paper);
-  padding: 18px 0;
-  overflow: hidden;
-  position: relative;
-  border-top: 1px solid var(--ink);
-  border-bottom: 1px solid var(--ink);
-}
-.ticker__label {
-  position: absolute;
-  top: 0; left: 0; bottom: 0;
-  width: 220px;
-  background: var(--lime);
-  color: var(--ink);
-  z-index: 2;
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--mono);
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-weight: 500;
-}
-.ticker__label::after {
-  content: '';
-  position: absolute;
-  top: 0; right: -30px; bottom: 0;
-  width: 30px;
-  background: linear-gradient(to right, var(--lime), transparent);
-}
-.ticker__track {
-  display: flex;
-  gap: 60px;
-  white-space: nowrap;
-  animation: tick 50s linear infinite;
-  width: max-content;
-  padding-left: 240px;
-}
-.ticker__item {
-  font-family: var(--display);
-  font-style: italic;
-  font-size: 22px;
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  font-feature-settings: 'ss01';
-}
-.ticker__item::after {
-  content: '✦';
-  color: var(--lime);
-  font-style: normal;
-  font-size: 14px;
-}
-.ticker__item small {
-  font-family: var(--mono);
-  font-size: 10px;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--stone-light);
-  margin-left: 14px;
-}
-@keyframes tick {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-@media (max-width: 600px) {
-  .ticker__label { width: 140px; font-size: 10px; }
-  .ticker__track { padding-left: 160px; }
-  .ticker__item { font-size: 18px; }
-}
-
-/* ════════════════════════════════════════════════════════════
-   09 · MANIFESTO
-   ════════════════════════════════════════════════════════════ */
-.manifesto {
-  padding: 140px 0;
-  position: relative;
-}
-.manifesto__head {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 80px;
-  margin-bottom: 60px;
-}
-.manifesto__head .section-label { padding-top: 12px; }
-.manifesto__head h2 {
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(36px, 4.5vw, 64px);
-  line-height: 1;
-  letter-spacing: -0.025em;
-  font-weight: 400;
-}
-.manifesto__head h2 i { font-style: italic; }
-.manifesto__body {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 80px;
-  align-items: start;
-}
-.manifesto__body > div:first-child { /* spacer */ }
-.manifesto__statement {
-  font-family: var(--display);
-  font-size: clamp(24px, 2.6vw, 36px);
-  line-height: 1.3;
-  letter-spacing: -0.015em;
-  color: var(--ink-soft);
-  max-width: 780px;
-}
-.manifesto__statement em {
-  font-style: italic;
-  color: var(--ink);
-  background: linear-gradient(transparent 70%, var(--lime) 70%);
-}
-.manifesto__statement strong {
-  font-weight: 400;
-  font-style: italic;
-  display: block;
-  margin-top: 24px;
-  color: var(--ink);
-}
-@media (max-width: 768px) {
-  .manifesto { padding: 90px 0; }
-  .manifesto__head,
-  .manifesto__body { grid-template-columns: 1fr; gap: 24px; }
-}
-
-/* ════════════════════════════════════════════════════════════
-   10 · FEATURED · SUN OVER AFRICA (cinematic full bleed)
-   ════════════════════════════════════════════════════════════ */
-.featured-soa {
-  background: var(--ink-deep);
-  color: var(--paper);
-  padding: 100px 0 110px;
-  position: relative;
-  overflow: hidden;
-}
-.featured-soa::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse at 70% 30%, rgba(229, 180, 69, 0.16) 0%, transparent 50%),
-    radial-gradient(ellipse at 20% 80%, rgba(201, 151, 44, 0.08) 0%, transparent 40%);
-  pointer-events: none;
-}
-.featured-soa::after {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 18px;
-  background: var(--ink-deep);
-  border-bottom: 1px solid rgba(201, 151, 44, 0.2);
-}
-.featured-soa__bottom-bar {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 18px;
-  background: var(--ink-deep);
-  border-top: 1px solid rgba(201, 151, 44, 0.2);
-}
-.featured-soa__inner { position: relative; z-index: 1; }
-.featured-soa__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 60px;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.featured-soa__crumbs {
-  font-family: var(--mono);
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--soa-amber);
-  opacity: 0.7;
-}
-.featured-soa__grid {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 80px;
-  align-items: center;
-}
-.featured-soa__logo-wrap {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-}
-.featured-soa__logo-wrap::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at center, rgba(201, 151, 44, 0.18) 0%, transparent 65%);
-  filter: blur(20px);
-}
-.featured-soa__logo {
-  max-width: 100%;
-  position: relative;
-  filter: drop-shadow(0 30px 60px rgba(201, 151, 44, 0.2));
-}
-.featured-soa__copy h2 {
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(40px, 5vw, 80px);
-  line-height: 0.95;
-  letter-spacing: -0.03em;
-  font-weight: 400;
-  color: var(--soa-amber);
-  margin-bottom: 24px;
-}
-.featured-soa__copy h2 i { font-style: italic; }
-.featured-soa__copy p {
-  font-family: var(--display);
-  font-size: clamp(18px, 1.8vw, 22px);
-  line-height: 1.45;
-  color: #C8C0B0;
-  margin-bottom: 28px;
-  max-width: 540px;
-}
-.featured-soa__specs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  margin: 36px 0;
-  padding: 28px 0;
-  border-top: 1px solid rgba(229, 180, 69, 0.2);
-  border-bottom: 1px solid rgba(229, 180, 69, 0.2);
-}
-.featured-soa__spec {
-  font-family: var(--mono);
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: #8E8675;
-}
-.featured-soa__spec strong {
-  display: block;
-  font-family: var(--display);
-  font-style: italic;
-  font-size: 20px;
-  color: var(--soa-amber);
-  font-weight: 400;
-  margin-bottom: 4px;
-}
-.featured-soa__cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  padding: 16px 26px;
-  border: 1px solid var(--soa-amber);
-  border-radius: 999px;
-  color: var(--soa-amber);
-  font-family: var(--mono);
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  transition: background 0.3s, color 0.3s, gap 0.3s;
-}
-.featured-soa__cta:hover {
-  background: var(--soa-amber);
-  color: var(--ink-deep);
-  gap: 22px;
-}
-@media (max-width: 900px) {
-  .featured-soa__grid { grid-template-columns: 1fr; gap: 40px; }
-  .featured-soa { padding: 80px 0 90px; }
-}
-
-/* ════════════════════════════════════════════════════════════
-   11 · WORK GRID
-   ════════════════════════════════════════════════════════════ */
-.work {
-  background: var(--ink);
-  color: var(--paper);
-  padding: 130px 0;
-  position: relative;
-}
-.work__header {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 60px;
-  align-items: end;
-  margin-bottom: 80px;
-}
-.work__title {
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(44px, 6.5vw, 100px);
-  line-height: 0.94;
-  letter-spacing: -0.03em;
-  font-weight: 400;
-  margin-top: 18px;
-}
-.work__title i { font-style: italic; color: var(--lime); }
-.work__intro {
-  font-family: var(--display);
-  font-size: clamp(17px, 1.7vw, 22px);
-  line-height: 1.45;
-  color: #BFB9AB;
-  max-width: 480px;
-  justify-self: end;
-}
-.work__intro em { color: var(--lime); font-style: italic; }
-@media (max-width: 900px) {
-  .work__header { grid-template-columns: 1fr; gap: 24px; }
-  .work__intro { justify-self: start; }
-  .work { padding: 90px 0; }
-}
-
-.work__grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 24px;
-}
-@media (max-width: 1024px) { .work__grid { grid-template-columns: repeat(6, 1fr); } }
-@media (max-width: 640px)  { .work__grid { grid-template-columns: 1fr; } }
-
-/* Card base */
-.card {
-  position: relative;
-  border-radius: 18px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  padding: 32px;
-  transition: transform 0.5s var(--ease-out-expo);
-  isolation: isolate;
-  text-decoration: none;
-  color: inherit;
-}
-.card:hover { transform: translateY(-8px); }
-.card__num {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  opacity: 0.65;
-}
-.card__index {
-  font-family: var(--display);
-  font-style: italic;
-  font-size: 14px;
-  font-weight: 400;
-  margin-left: 4px;
-}
-.card__meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-top: auto;
-  padding-top: 24px;
-}
-.card__tag {
-  padding: 5px 11px;
-  border: 1px solid currentColor;
-  border-radius: 999px;
-  opacity: 0.7;
-}
-.card__link {
-  display: inline-flex; align-items: center; gap: 6px;
-  transition: gap 0.25s var(--ease-out-expo);
-  font-weight: 500;
-}
-.card:hover .card__link { gap: 14px; }
-
-@media (max-width: 1024px) { .card { padding: 24px; } }
-
-/* Grid placements (desktop) */
-@media (min-width: 1025px) {
-  .c-mwt    { grid-column: span 7; aspect-ratio: 1.5 / 1; }
-  .c-watp   { grid-column: span 5; aspect-ratio: 1 / 1; }
-  .c-a63    { grid-column: span 4; aspect-ratio: 0.85 / 1; }
-  .c-ssuubi { grid-column: span 4; aspect-ratio: 0.85 / 1; }
-  .c-retro  { grid-column: span 4; aspect-ratio: 0.85 / 1; }
-  .c-acra   { grid-column: span 12; aspect-ratio: 2.6 / 1; }
-  .c-honda  { grid-column: span 4; aspect-ratio: 1 / 1; }
-  .c-aksum  { grid-column: span 4; aspect-ratio: 1 / 1; }
-  .c-spot   { grid-column: span 4; aspect-ratio: 1 / 1; }
-}
-@media (min-width: 641px) and (max-width: 1024px) {
-  .c-mwt, .c-watp, .c-acra { grid-column: span 6; aspect-ratio: 1.4 / 1; }
-  .c-a63, .c-ssuubi, .c-retro, .c-honda, .c-aksum, .c-spot { grid-column: span 3; aspect-ratio: 1 / 1; }
-}
-@media (max-width: 640px) {
-  .card { aspect-ratio: 1.05 / 1; min-height: 380px; }
-}
-
-/* ─── MY WEEKLY TRACK ─── */
-.c-mwt {
-  background: linear-gradient(135deg, var(--mwt-navy) 0%, #1F1D52 100%);
-  color: #fff;
-}
-.c-mwt__inner {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 24px;
-  align-items: center;
-  flex: 1;
-  margin-top: 20px;
-}
-.c-mwt__title {
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(34px, 4.2vw, 58px);
-  line-height: 0.95;
-  letter-spacing: -0.02em;
-  font-weight: 400;
-}
-.c-mwt__title em { font-style: italic; color: var(--mwt-amber); }
-.c-mwt__lede {
-  font-family: var(--display);
-  font-size: 15px;
-  line-height: 1.45;
-  opacity: 0.78;
-  margin-top: 14px;
-  max-width: 320px;
-}
-.c-mwt__pills {
-  display: flex; gap: 8px; margin-top: 18px; flex-wrap: wrap;
-}
-.c-mwt__pill {
-  font-family: var(--mono);
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  padding: 5px 11px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.1);
-}
-.c-mwt__pill--green { background: var(--mwt-green); color: #fff; }
-.c-mwt__pill--amber { background: var(--mwt-amber); color: #1A1A1A; }
-.c-mwt__logo {
-  width: 100%;
-  max-width: 200px;
-  justify-self: end;
-  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
-}
-@media (max-width: 1024px) {
-  .c-mwt__inner { grid-template-columns: 1fr; }
-  .c-mwt__logo { max-width: 130px; justify-self: start; }
-}
-
-/* ─── WATP UGANDA ─── */
-.c-watp {
-  background:
-    radial-gradient(circle at 30% 110%, var(--watp-pink) 0%, transparent 60%),
-    linear-gradient(170deg, var(--watp-purple) 0%, #6A0DAD 70%, #8B1A8B 100%);
-  color: #fff;
-  overflow: hidden;
-}
-.c-watp__inner { display: flex; flex-direction: column; flex: 1; margin-top: 12px; }
-.c-watp__title {
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(34px, 4vw, 52px);
-  line-height: 0.95;
-  letter-spacing: -0.02em;
-  margin: 8px 0 12px;
-}
-.c-watp__title i { font-style: italic; color: var(--watp-rose); }
-.c-watp__sub {
-  font-family: var(--display);
-  font-size: 16px;
-  line-height: 1.4;
-  opacity: 0.85;
-  max-width: 280px;
-  font-style: italic;
-}
-.c-watp__heart {
-  position: absolute;
-  right: -20px; bottom: 80px;
-  width: 140px; height: 140px;
-  border: 1.5px solid var(--watp-pink);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--mono);
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  opacity: 0.5;
-}
-.c-watp__heart::before {
-  content: '';
-  position: absolute;
-  inset: 22px;
-  border: 1px dashed var(--watp-pink);
-  border-radius: 50%;
-  opacity: 0.5;
-  animation: spin-slow 30s linear infinite;
-}
-@keyframes spin-slow { to { transform: rotate(360deg); } }
-
-/* ─── AFRICA 63 ─── */
-.c-a63 {
-  background: #000;
-  color: var(--a63-gold);
-  position: relative;
-}
-.c-a63::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 70% 25%, rgba(201, 168, 76, 0.18) 0%, transparent 55%),
-    radial-gradient(circle at 25% 80%, rgba(57, 255, 106, 0.06) 0%, transparent 45%);
-  z-index: 0;
-}
-.c-a63 > * { position: relative; z-index: 1; }
-.c-a63__neon {
-  position: absolute;
-  top: 32px; right: 32px;
-  width: 8px; height: 8px;
-  background: var(--a63-neon);
-  border-radius: 999px;
-  box-shadow: 0 0 14px var(--a63-neon);
-  z-index: 2;
-}
-.c-a63__monogram {
-  font-family: var(--display);
-  font-style: italic;
-  font-variation-settings: 'opsz' 144, 'SOFT' 0;
-  font-size: clamp(110px, 14vw, 180px);
-  line-height: 0.85;
-  letter-spacing: -0.05em;
-  margin: 18px 0 14px;
-  background: linear-gradient(180deg, var(--a63-gold) 0%, var(--a63-gold-d) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-.c-a63__monogram span { font-style: normal; }
-.c-a63__sub {
-  font-family: var(--display);
-  font-size: 16px;
-  font-style: italic;
-  color: var(--paper);
-  opacity: 0.85;
-  line-height: 1.4;
-}
-.c-a63__hairline {
-  width: 40px; height: 1px;
-  background: var(--a63-gold);
-  margin-top: 14px;
-  opacity: 0.6;
-}
-
-/* ─── SSUUBI FELLOWSHIP ─── */
-.c-ssuubi {
-  background:
-    radial-gradient(circle at 75% 20%, rgba(61, 209, 10, 0.1) 0%, transparent 55%),
-    linear-gradient(165deg, var(--ssuubi-earth) 0%, var(--ssuubi-deep) 100%);
-  color: #fff;
-  overflow: hidden;
-}
-.c-ssuubi__inner {
-  display: flex; flex-direction: column; flex: 1; gap: 16px; margin-top: 16px;
-}
-.c-ssuubi__title {
-  font-family: var(--display);
-  font-style: italic;
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(32px, 4vw, 50px);
-  line-height: 0.95;
-  letter-spacing: -0.02em;
-}
-.c-ssuubi__title span { color: var(--ssuubi-green); font-style: normal; }
-.c-ssuubi__verse {
-  font-family: var(--display);
-  font-size: 14px;
-  line-height: 1.55;
-  opacity: 0.75;
-  font-style: italic;
-  max-width: 240px;
-}
-.c-ssuubi__ref {
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--ssuubi-green);
-  margin-top: 6px;
-  font-style: normal;
-}
-.c-ssuubi__logo {
-  width: 110px;
-  height: auto;
-  margin-top: auto;
-  align-self: flex-end;
-  margin-bottom: 12px;
-  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.5));
-}
-
-/* ─── RETRO WAVE ─── */
-.c-retro {
-  background: #0A0905;
-  color: var(--retro-yellow);
-  position: relative;
-  overflow: hidden;
-}
-.c-retro::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent 0,
-    transparent 3px,
-    rgba(255, 213, 0, 0.05) 3px,
-    rgba(255, 213, 0, 0.05) 4px
-  );
-  z-index: 0;
-}
-.c-retro > * { position: relative; z-index: 1; }
-.c-retro__type {
-  font-family: var(--display);
-  font-style: italic;
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(40px, 5vw, 64px);
-  line-height: 0.9;
-  letter-spacing: -0.03em;
-  margin: 18px 0 4px;
-}
-.c-retro__wave {
-  font-family: var(--mono);
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.45em;
-  color: var(--retro-cream);
-  margin-bottom: 16px;
-}
-.c-retro__edition {
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(80px, 11vw, 140px);
-  line-height: 0.85;
-  letter-spacing: -0.05em;
-  color: var(--retro-yellow);
-  position: absolute;
-  right: 24px; bottom: 16px;
-  opacity: 0.95;
-  text-shadow: 5px 5px 0 rgba(255, 213, 0, 0.12);
-  z-index: 1;
-}
-.c-retro__when {
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--retro-cream);
-  opacity: 0.7;
-}
-
-/* ─── ACRA26 (full bleed featured) ─── */
-.c-acra {
-  background: #000;
-  color: var(--acra-white);
-  position: relative;
-  overflow: hidden;
-  padding: 36px;
-}
-.c-acra__grid {
-  display: grid;
-  grid-template-columns: 1fr 1.4fr 1fr;
-  gap: 40px;
-  align-items: center;
-  flex: 1;
-  width: 100%;
-  margin-top: 20px;
-}
-.c-acra__left { display: flex; flex-direction: column; gap: 14px; }
-.c-acra__title {
-  font-family: var(--display);
-  font-style: italic;
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(48px, 6.5vw, 100px);
-  line-height: 0.88;
-  letter-spacing: -0.03em;
-}
-.c-acra__sub {
-  font-family: var(--display);
-  font-size: 17px;
-  font-style: italic;
-  opacity: 0.7;
-  max-width: 280px;
-  line-height: 1.4;
-}
-.c-acra__svg {
-  width: 100%; max-width: 420px;
-  height: auto;
-  stroke: var(--acra-white);
-  fill: none;
-  stroke-width: 1.2;
-  opacity: 0.9;
-}
-.c-acra__svg .runner { transform-origin: center; }
-.c-acra__right {
-  text-align: right;
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  opacity: 0.75;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-.c-acra__right strong { color: var(--lime); font-weight: 500; margin-top: 12px; }
-@media (max-width: 1024px) {
-  .c-acra__grid { grid-template-columns: 1fr; gap: 24px; }
-  .c-acra__right { text-align: left; }
-}
-
-/* ─── HONDA BY MARKH ─── */
-.c-honda {
-  background: linear-gradient(135deg, var(--honda-red) 0%, var(--honda-dark) 100%);
-  color: #fff;
-  overflow: hidden;
-  position: relative;
-}
-.c-honda::before, .c-honda::after {
-  content: '';
-  position: absolute;
-  left: -10%; right: -10%;
-  height: 1px;
-  background: rgba(255,255,255,0.15);
-}
-.c-honda::before { top: 50%; transform: rotate(-12deg); }
-.c-honda::after { top: 60%; background: rgba(255,255,255,0.08); transform: rotate(-12deg); }
-.c-honda__title {
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(44px, 5.5vw, 70px);
-  line-height: 0.9;
-  letter-spacing: -0.03em;
-  margin-top: 12px;
-}
-.c-honda__by {
-  font-family: var(--display);
-  font-style: italic;
-  font-size: 20px;
-  opacity: 0.85;
-  margin-top: 4px;
-}
-.c-honda__handle {
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  opacity: 0.75;
-  margin-top: 14px;
-}
-
-/* ─── AKRIGHT SUMMIT ─── */
-.c-aksum {
-  background: var(--aksum-charcoal);
-  color: var(--paper);
-  position: relative;
-  overflow: hidden;
-}
-.c-aksum::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--aksum-gold), transparent);
-}
-.c-aksum__label {
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--aksum-gold);
-  opacity: 0.7;
-  margin-top: 14px;
-}
-.c-aksum__big {
-  font-family: var(--display);
-  font-style: italic;
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(48px, 5.5vw, 80px);
-  line-height: 0.9;
-  letter-spacing: -0.03em;
-  color: var(--aksum-gold);
-  margin: 6px 0 12px;
-}
-.c-aksum__title {
-  font-family: var(--display);
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-}
-.c-aksum__sub {
-  font-family: var(--display);
-  font-style: italic;
-  font-size: 14px;
-  opacity: 0.65;
-  margin-top: 4px;
-}
-
-/* ─── SOCIAL SPOT ─── */
-.c-spot {
-  background:
-    radial-gradient(circle at 30% 30%, rgba(212, 146, 15, 0.4) 0%, transparent 50%),
-    radial-gradient(circle at 75% 80%, rgba(212, 146, 15, 0.15) 0%, transparent 40%),
-    #0A0805;
-  color: var(--spot-amber);
-  overflow: hidden;
-}
-.c-spot__title {
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(40px, 4.6vw, 66px);
-  line-height: 0.9;
-  letter-spacing: -0.025em;
-  margin-top: 12px;
-}
-.c-spot__title em {
-  font-style: italic;
-  color: var(--spot-cream);
-}
-.c-spot__sub {
-  font-family: var(--display);
-  font-style: italic;
-  font-size: 15px;
-  opacity: 0.75;
-  margin-top: 8px;
-}
-.c-spot__details {
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  margin-top: 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  opacity: 0.75;
-}
-
-/* ════════════════════════════════════════════════════════════
-   12 · TOOLS STRIP
-   ════════════════════════════════════════════════════════════ */
-.tools {
-  background: var(--paper);
-  padding: 70px 0;
-  border-top: 1px solid rgba(12, 10, 8, 0.08);
-  border-bottom: 1px solid rgba(12, 10, 8, 0.08);
-}
-.tools__inner {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 60px;
-  align-items: center;
-}
-.tools__label {
-  font-family: var(--mono);
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--stone);
-}
-.tools__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 28px 48px;
-  align-items: center;
-}
-.tools__item {
-  font-family: var(--display);
-  font-style: italic;
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(22px, 2.4vw, 32px);
-  letter-spacing: -0.01em;
-  color: var(--ink);
-  transition: color 0.3s;
-}
-.tools__item:hover { color: var(--lime-dark); }
-@media (max-width: 768px) {
-  .tools { padding: 50px 0; }
-  .tools__inner { grid-template-columns: 1fr; gap: 24px; }
-  .tools__list { gap: 14px 28px; }
-}
-
-/* ════════════════════════════════════════════════════════════
-   13 · SERVICES
-   ════════════════════════════════════════════════════════════ */
-.services {
-  padding: 130px 0;
-  background: var(--paper-deep);
-}
-.services__head {
-  display: grid;
-  grid-template-columns: 1fr 1.6fr;
-  gap: 80px;
-  margin-bottom: 70px;
-  align-items: end;
-}
-.services__title {
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(44px, 6vw, 88px);
-  line-height: 0.95;
-  letter-spacing: -0.03em;
-  font-weight: 400;
-}
-.services__title i { font-style: italic; }
-.services__intro {
-  font-family: var(--display);
-  font-size: clamp(18px, 1.9vw, 24px);
-  line-height: 1.45;
-  color: var(--ink-soft);
-  max-width: 560px;
-}
-.services__list {
-  border-top: 1px solid rgba(12, 10, 8, 0.18);
-}
-.svc {
-  display: grid;
-  grid-template-columns: 60px 1.2fr 2fr 80px;
-  gap: 40px;
-  padding: 32px 0;
-  border-bottom: 1px solid rgba(12, 10, 8, 0.18);
-  align-items: center;
-  position: relative;
-  text-decoration: none;
-  color: inherit;
-  transition: padding 0.35s var(--ease-out-expo), color 0.25s;
-}
-.svc::after {
-  content: '';
-  position: absolute;
-  inset-inline: 0; bottom: 0;
-  height: 2px;
-  background: var(--lime);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s var(--ease-out-expo);
-}
-.svc:hover { padding-left: 24px; }
-.svc:hover::after { transform: scaleX(1); }
-.svc__num {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  color: var(--stone);
-}
-.svc__name {
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(22px, 2.4vw, 32px);
-  line-height: 1.05;
-  letter-spacing: -0.01em;
-  font-weight: 400;
-}
-.svc__name i { font-style: italic; }
-.svc__desc {
-  font-size: 15px;
-  line-height: 1.55;
-  color: var(--ink-soft);
-  max-width: 520px;
-}
-.svc__arrow {
-  text-align: right;
-  font-family: var(--mono);
-  font-size: 22px;
-  color: var(--lime-dark);
-  transition: transform 0.35s var(--ease-out-expo);
-}
-.svc:hover .svc__arrow { transform: translateX(10px); }
-@media (max-width: 900px) {
-  .services { padding: 90px 0; }
-  .services__head { grid-template-columns: 1fr; gap: 24px; }
-  .svc { grid-template-columns: 36px 1fr 28px; gap: 16px; padding: 24px 0; }
-  .svc__desc { display: none; }
-}
-
-/* ════════════════════════════════════════════════════════════
-   14 · PROCESS
-   ════════════════════════════════════════════════════════════ */
-.process {
-  padding: 130px 0;
-  background: var(--paper);
-}
-.process__head { margin-bottom: 60px; }
-.process__title {
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(44px, 6vw, 88px);
-  line-height: 0.95;
-  letter-spacing: -0.03em;
-  font-weight: 400;
-  margin-top: 18px;
-}
-.process__title i { font-style: italic; }
-.process__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
-  margin-top: 60px;
-}
-.step {
-  padding: 28px 0;
-  border-top: 2px solid var(--ink);
-  position: relative;
-}
-.step__num {
-  font-family: var(--display);
-  font-style: italic;
-  font-size: 28px;
-  color: var(--lime-dark);
-  margin-bottom: 16px;
-  display: inline-block;
-}
-.step__name {
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 144;
-  font-size: 28px;
-  line-height: 1.1;
-  letter-spacing: -0.01em;
-  margin-bottom: 12px;
-  font-weight: 400;
-}
-.step__desc {
-  font-size: 14px;
-  line-height: 1.55;
-  color: var(--ink-soft);
-  margin-bottom: 18px;
-}
-.step__tags {
-  font-family: var(--mono);
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--stone);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.step__tag {
-  padding: 4px 10px;
-  border: 1px solid var(--stone);
-  border-radius: 999px;
-}
-@media (max-width: 900px) {
-  .process { padding: 90px 0; }
-  .process__grid { grid-template-columns: 1fr; gap: 0; }
-}
-
-/* ════════════════════════════════════════════════════════════
-   15 · STUDIO / ABOUT
-   ════════════════════════════════════════════════════════════ */
-.about {
-  padding: 130px 0;
-  background: var(--ink);
-  color: var(--paper);
-}
-.about__head { margin-bottom: 80px; }
-.about__title {
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(48px, 7vw, 116px);
-  line-height: 0.94;
-  letter-spacing: -0.035em;
-  font-weight: 400;
-  margin-top: 18px;
-}
-.about__title i { font-style: italic; color: var(--lime); }
-.about__grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 80px;
-  align-items: start;
-}
-.about__lede {
-  font-family: var(--display);
-  font-size: clamp(18px, 2vw, 24px);
-  line-height: 1.45;
-  max-width: 700px;
-  color: #BFB9AB;
-}
-.about__lede em {
-  color: var(--lime);
-  font-style: italic;
-}
-.about__lede strong {
-  font-weight: 400;
-  color: var(--paper);
-  display: block;
-  margin-top: 28px;
-}
-.about__stats {
-  display: grid;
-  gap: 28px;
-}
-.stat {
-  border-top: 1px solid rgba(255,255,255,0.18);
-  padding-top: 18px;
-}
-.stat__num {
-  font-family: var(--display);
-  font-style: italic;
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(48px, 4.8vw, 76px);
-  line-height: 0.9;
-  color: var(--lime);
-  font-weight: 400;
-}
-.stat__label {
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #BFB9AB;
-  margin-top: 8px;
-}
-.about__group {
-  margin-top: 100px;
-  padding-top: 48px;
-  border-top: 1px solid rgba(255,255,255,0.18);
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 60px;
-  align-items: center;
-}
-.about__group-label {
-  font-family: var(--mono);
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--lime);
-}
-.about__group-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px 60px;
-  font-family: var(--display);
-  font-style: italic;
-  font-size: clamp(22px, 2.4vw, 32px);
-  letter-spacing: -0.01em;
-  color: var(--paper);
-}
-.about__group-list span {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-}
-.about__group-list span::after {
-  content: '·';
-  color: var(--lime);
-  font-style: normal;
-}
-.about__group-list span:last-child::after { content: ''; }
-@media (max-width: 900px) {
-  .about { padding: 90px 0; }
-  .about__grid { grid-template-columns: 1fr; gap: 50px; }
-  .about__group { grid-template-columns: 1fr; gap: 18px; margin-top: 60px; padding-top: 30px; }
-}
-
-/* ════════════════════════════════════════════════════════════
-   16 · FAQ / WORKING WITH NS
-   ════════════════════════════════════════════════════════════ */
-.faq {
-  padding: 130px 0;
-  background: var(--paper);
-}
-.faq__head { margin-bottom: 60px; }
-.faq__title {
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(40px, 5vw, 72px);
-  line-height: 0.95;
-  letter-spacing: -0.03em;
-  font-weight: 400;
-  margin-top: 18px;
-}
-.faq__title i { font-style: italic; }
-.faq__list {
-  border-top: 1px solid rgba(12, 10, 8, 0.18);
-}
-.faq__item {
-  border-bottom: 1px solid rgba(12, 10, 8, 0.18);
-  padding: 24px 0;
-}
-.faq__q {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-  cursor: pointer;
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(20px, 2.3vw, 30px);
-  line-height: 1.2;
-  letter-spacing: -0.015em;
-  font-weight: 400;
-  list-style: none;
-}
-.faq__q::-webkit-details-marker { display: none; }
-.faq__q i { font-style: italic; }
-.faq__icon {
-  position: relative;
-  width: 28px; height: 28px;
-  border: 1px solid var(--ink);
-  border-radius: 999px;
-  flex-shrink: 0;
-  transition: transform 0.3s var(--ease-out-expo), background 0.3s;
-}
-.faq__icon::before, .faq__icon::after {
-  content: '';
-  position: absolute;
-  top: 50%; left: 50%;
-  background: var(--ink);
-  transform: translate(-50%, -50%);
-}
-.faq__icon::before { width: 10px; height: 1px; }
-.faq__icon::after { width: 1px; height: 10px; transition: opacity 0.3s; }
-.faq__item[open] .faq__icon { background: var(--lime); transform: rotate(90deg); }
-.faq__item[open] .faq__icon::after { opacity: 0; }
-.faq__a {
-  font-family: var(--display);
-  font-size: 17px;
-  line-height: 1.5;
-  color: var(--ink-soft);
-  padding-top: 18px;
-  max-width: 760px;
-}
-@media (max-width: 768px) {
-  .faq { padding: 90px 0; }
-}
-
-/* ════════════════════════════════════════════════════════════
-   17 · CTA
-   ════════════════════════════════════════════════════════════ */
-.cta {
-  padding: 150px 0;
-  background: var(--lime);
-  color: var(--ink);
-  position: relative;
-  overflow: hidden;
-}
-.cta::before {
-  content: '';
-  position: absolute;
-  top: -40%; right: -10%;
-  width: 70vw; height: 70vw;
-  max-width: 1000px; max-height: 1000px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(12,10,8,0.05), transparent 65%);
-  pointer-events: none;
-}
-.cta__label {
-  font-family: var(--mono);
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  margin-bottom: 24px;
-  display: inline-flex;
-  align-items: baseline;
-  gap: 12px;
-}
-.cta__label::before {
-  content: '';
-  width: 8px; height: 8px; border-radius: 999px;
-  background: var(--ink);
-}
-.cta__title {
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(48px, 9vw, 150px);
-  line-height: 0.92;
-  letter-spacing: -0.04em;
-  max-width: 1300px;
-  font-weight: 400;
-}
-.cta__title i { font-style: italic; }
-.cta__row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  margin-top: 80px;
-  padding-top: 40px;
-  border-top: 2px solid var(--ink);
-}
-.cta__block { display: flex; flex-direction: column; gap: 8px; }
-.cta__block-label {
-  font-family: var(--mono);
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  opacity: 0.65;
-}
-.cta__block a, .cta__block p {
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(20px, 2.4vw, 30px);
-  line-height: 1.2;
-  letter-spacing: -0.015em;
-  font-weight: 400;
-}
-.cta__block a {
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.25s;
-}
-.cta__block a:hover { border-bottom-color: var(--ink); }
-.cta__big-button {
-  margin-top: 50px;
-  display: inline-flex;
-  align-items: center;
-  gap: 16px;
-  padding: 22px 36px;
-  border: 2px solid var(--ink);
-  border-radius: 999px;
-  font-family: var(--mono);
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-weight: 500;
-  background: var(--ink);
-  color: var(--lime);
-  transition: gap 0.3s var(--ease-out-expo), transform 0.3s;
-}
-.cta__big-button:hover { gap: 26px; transform: translateY(-2px); }
-@media (max-width: 768px) {
-  .cta { padding: 90px 0; }
-  .cta__row { grid-template-columns: 1fr; gap: 22px; margin-top: 50px; }
-  .cta__big-button { padding: 18px 26px; font-size: 12px; }
-}
-
-/* ════════════════════════════════════════════════════════════
-   18 · FOOTER
-   ════════════════════════════════════════════════════════════ */
-.footer {
-  background: var(--ink);
-  color: var(--paper);
-  position: relative;
-  overflow: hidden;
-}
-.footer__mega {
-  padding: 100px 0 60px;
-  text-align: center;
-  border-bottom: 1px solid rgba(255,255,255,0.15);
-}
-.footer__mega h2 {
-  font-family: var(--display);
-  font-style: italic;
-  font-variation-settings: 'opsz' 144;
-  font-size: clamp(54px, 13vw, 220px);
-  line-height: 0.85;
-  letter-spacing: -0.045em;
-  font-weight: 400;
-  color: var(--paper);
-}
-.footer__mega h2 span { color: var(--lime); font-style: normal; }
-.footer__bar {
-  padding: 30px 0;
-  font-family: var(--mono);
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-}
-.footer__inner {
-  max-width: 1680px;
-  margin: 0 auto;
-  padding: 0 var(--gutter);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-.footer__copy { opacity: 0.6; }
-.footer__links { display: flex; gap: 20px; flex-wrap: wrap; }
-.footer__links a {
-  opacity: 0.6;
-  transition: opacity 0.2s, color 0.2s;
-}
-.footer__links a:hover { opacity: 1; color: var(--lime); }
-
-/* ════════════════════════════════════════════════════════════
-   19 · REVEAL ON SCROLL
-   ════════════════════════════════════════════════════════════ */
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 1s var(--ease-out-expo), transform 1s var(--ease-out-expo);
-  will-change: opacity, transform;
-}
-.reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ════════════════════════════════════════════════════════════
-   20 · REDUCED MOTION & PRINT
-   ════════════════════════════════════════════════════════════ */
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.001ms !important;
-    animation-delay: 0ms !important;
-    transition-duration: 0.001ms !important;
-  }
-  .reveal { opacity: 1; transform: none; }
-  .ticker__track { animation: none; }
-  .cursor { display: none !important; }
-  body { cursor: auto; }
-}
-
-@media print {
-  .nav, .statusbar, .loader, .cursor, .ticker, .cta__big-button { display: none !important; }
-  body { background: #fff; color: #000; }
-  .work, .about, .footer { background: #fff; color: #000; }
-}
-
-</style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <a class="skip-link" href="#work">Skip to work</a>
 
-<a class="skip-link" href="#work">Skip to work</a>
-
-<div class="loader" id="loader" role="status" aria-label="Loading">
-  <div class="loader__top">
-    <span>NS · Creative Studio</span>
-    <span>Index · 10.0</span>
-  </div>
-  <div class="loader__center">
-    <div class="loader__brand" aria-hidden="true">
-      <span>N</span><span>S</span><span>.</span>
+  <div class="loader" id="loader" role="status" aria-label="Loading">
+    <div class="loader__top">
+      <span>NS · Creative Studio</span>
+      <span>Index · 10.0</span>
     </div>
-  </div>
-  <div class="loader__bottom">
-    <span class="loader__count">Loading <span id="loader-count">000</span></span>
-    <span>Kampala · UG</span>
-  </div>
-</div>
-
-<div class="cursor" id="cursor" aria-hidden="true"></div>
-
-<div class="statusbar" role="complementary" aria-label="Studio status">
-  <div class="statusbar__inner">
-    <div class="statusbar__group">
-      <span><span class="statusbar__dot"></span> <span class="statusbar__live">Live</span> · Kampala <span id="clock">— —:—</span></span>
-    </div>
-    <div class="statusbar__group statusbar__group--mid">
-      <span>Now in studio · <span id="now-status">Editing — Sun Over Africa</span></span>
-    </div>
-    <div class="statusbar__group statusbar__group--right">
-      <span>Available Q3 2026</span>
-      <span class="statusbar__sep">·</span>
-      <span>EN · UG · KE</span>
-    </div>
-  </div>
-</div>
-
-<nav class="nav" id="nav" aria-label="Primary">
-  <div class="nav__inner">
-    <a class="nav__brand" href="#top" aria-label="NS Creative — Home">
-      <span class="nav__brand-mark" aria-hidden="true"></span>
-      NS<i>Creative</i>
-    </a>
-    <div class="nav__menu">
-      <a href="#work">Work</a>
-      <a href="#services">Services</a>
-      <a href="#about">Studio</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <a class="nav__cta" href="#contact">
-      <span class="nav__cta-dot" aria-hidden="true"></span>
-      Start a project
-    </a>
-  </div>
-</nav>
-
-<main id="top">
-<section class="hero">
-  <div class="wrap-wide">
-
-    <div class="hero__meta">
-      <div class="hero__meta-block">
-        <span class="hero__index"><strong>Index</strong> 10.0</span>
-      </div>
-      <div class="hero__meta-block hero__meta-block--right">
-        <span>Updated · May 2026</span>
-        <strong>v10.0 · Production</strong>
+    <div class="loader__center">
+      <div class="loader__brand" aria-hidden="true">
+        <span>N</span><span>S</span><span>.</span>
       </div>
     </div>
+    <div class="loader__bottom">
+      <span class="loader__count">Loading <span id="loader-count">000</span></span>
+      <span>Kampala · UG</span>
+    </div>
+  </div>
 
-    <h1>
-      We make brands<br>
-      look like they <i>belong</i><br>
-      on the <span class="lime-mark">world stage</span> —<br>
-      <em>even if</em> they started<br>
-      <i>on WhatsApp.</i>
-    </h1>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
 
-    <div class="hero__row">
-      <p class="hero__lede">
-        NS Creative is the studio of <em>Neeza Shyaka</em> — building brand worlds, websites, campaigns, and AI productions for clients across Uganda and East Africa. International standard. African context. No discount aesthetics.
-      </p>
-      <div class="hero__side">
-        <div class="hero__stat">
-          <strong>10+</strong>
-          Active client engagements
-        </div>
-        <div class="hero__stat">
-          <strong>06</strong>
-          Disciplines under one roof
-        </div>
-        <div class="hero__stat">
-          <strong>2018</strong>
-          First brand shipped
-        </div>
+  <div class="statusbar" role="complementary">
+    <div class="statusbar__inner">
+      <div class="statusbar__group">
+        <span><span class="statusbar__dot"></span> <span class="statusbar__live">Live</span> · Kampala <span id="clock">— —:—</span></span>
       </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="ticker" aria-label="Now in production">
-  <span class="ticker__label">Now in production</span>
-  <div class="ticker__track">
-    <span class="ticker__item">Sun Over Africa — Scene 03 <small>AI Film</small></span>
-    <span class="ticker__item">My Weekly Track — Q2 rollout <small>SaaS · Live</small></span>
-    <span class="ticker__item">ACRA26 — Campaign archive <small>Event</small></span>
-    <span class="ticker__item">WATP Uganda — Shop launch <small>Nonprofit</small></span>
-    <span class="ticker__item">Akright Summit — Strategy phase <small>Corporate</small></span>
-    <span class="ticker__item">Ssubi Fellowship — 16 posters / month <small>Ministry</small></span>
-    <span class="ticker__item">Honda by Markh — Ongoing <small>Social</small></span>
-    <span class="ticker__item">Africa 63 — In design <small>Brand</small></span>
-    <span class="ticker__item">Sun Over Africa — Scene 03 <small>AI Film</small></span>
-    <span class="ticker__item">My Weekly Track — Q2 rollout <small>SaaS · Live</small></span>
-    <span class="ticker__item">ACRA26 — Campaign archive <small>Event</small></span>
-    <span class="ticker__item">WATP Uganda — Shop launch <small>Nonprofit</small></span>
-    <span class="ticker__item">Akright Summit — Strategy phase <small>Corporate</small></span>
-    <span class="ticker__item">Ssubi Fellowship — 16 posters / month <small>Ministry</small></span>
-    <span class="ticker__item">Honda by Markh — Ongoing <small>Social</small></span>
-    <span class="ticker__item">Africa 63 — In design <small>Brand</small></span>
-  </div>
-</section>
-
-<section class="manifesto">
-  <div class="wrap-wide">
-    <div class="manifesto__head">
-      <span class="section-label">Manifesto · 02.0</span>
-      <h2 class="reveal">A studio built<br>for the <i>standard</i><br>we deserve.</h2>
-    </div>
-    <div class="manifesto__body">
-      <div></div>
-      <p class="manifesto__statement reveal">
-        The world has stopped giving Africa <em>second-tier design.</em>
-        So have we. Every brand we touch is built to compete internationally —
-        visually, structurally, commercially. Whether the client is a SaaS founder,
-        a nonprofit director, a film producer, or a venue owner, the standard is the same.
-        <strong>Premium. Global. African. No discount aesthetics.</strong>
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="featured-soa">
-  <div class="wrap-wide featured-soa__inner">
-    <div class="featured-soa__header">
-      <span class="section-label">Featured Case · 03.0</span>
-      <span class="featured-soa__crumbs">Selected Work / 01 of 10 · AI Film Production</span>
-    </div>
-
-    <div class="featured-soa__grid">
-      <div class="featured-soa__logo-wrap reveal">
-        <img class="featured-soa__logo"
-             src="assets/sun-over-africa.png"
-             alt="Sun Over Africa — A Ugandan Made Film"
-             loading="lazy" />
+      <div class="statusbar__group statusbar__group--mid">
+        <span>Now in studio · <span id="now-status">Editing — Sun Over Africa</span></span>
       </div>
-
-      <div class="featured-soa__copy reveal">
-        <h2>A film made <i>in Uganda,</i><br>for the world.</h2>
-        <p>
-          A twelve-scene, AI-produced feature directed by Apolo Senkeeto and produced
-          through NS Creative — proof that cinema-grade storytelling can be built in
-          Kampala without a Hollywood crew. Currently in scene-by-scene production.
-        </p>
-
-        <div class="featured-soa__specs">
-          <div class="featured-soa__spec">
-            <strong>12 / 5</strong>
-            Scenes · Minutes each
-          </div>
-          <div class="featured-soa__spec">
-            <strong>6M UGX</strong>
-            Production budget
-          </div>
-          <div class="featured-soa__spec">
-            <strong>3 months</strong>
-            Production window
-          </div>
-          <div class="featured-soa__spec">
-            <strong>2026</strong>
-            Target release
-          </div>
-        </div>
-
-        <a href="#contact" class="featured-soa__cta">
-          <span>Read the case study</span>
-          <span aria-hidden="true">→</span>
-        </a>
+      <div class="statusbar__group statusbar__group--right">
+        <span>Available Q3 2026</span>
+        <span class="statusbar__sep">·</span>
+        <span>EN · UG · KE</span>
       </div>
     </div>
   </div>
-  <div class="featured-soa__bottom-bar"></div>
-</section>
 
-<section class="work" id="work">
-  <div class="wrap-wide">
-
-    <div class="work__header">
-      <div>
-        <span class="section-label">Selected Work · 04.0</span>
-        <h2 class="work__title">Nine more projects<br><i>currently in motion.</i></h2>
-      </div>
-      <p class="work__intro">
-        From SaaS to nonprofit, nightlife to ministry — every project is a <em>different problem,</em> shipped to a world-class standard.
-      </p>
-    </div>
-
-    <div class="work__grid">
-
-      <a class="card c-mwt reveal" href="https://myweeklytrack.com" target="_blank" rel="noopener" aria-label="My Weekly Track case study">
-        <span class="card__num">02 / My Weekly Track <span class="card__index">— SaaS Brand</span></span>
-        <div class="c-mwt__inner">
-          <div>
-            <h3 class="c-mwt__title">Weekly,<br><em>tracked.</em></h3>
-            <p class="c-mwt__lede">A performance tracking SaaS for East African organisations — branded, designed, and marketed end-to-end.</p>
-            <div class="c-mwt__pills">
-              <span class="c-mwt__pill c-mwt__pill--green">SaaS</span>
-              <span class="c-mwt__pill c-mwt__pill--amber">Brand</span>
-              <span class="c-mwt__pill">Web</span>
-              <span class="c-mwt__pill">SMM</span>
-            </div>
-          </div>
-          <img class="c-mwt__logo" src="assets/my-weekly-track.png" alt="My Weekly Track logo" loading="lazy" />
-        </div>
-        <div class="card__meta">
-          <span class="card__tag">Active · 2026</span>
-          <span class="card__link">myweeklytrack.com <span aria-hidden="true">→</span></span>
-        </div>
+  <nav class="nav" id="nav" aria-label="Primary">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top" aria-label="NS Creative">
+        <span class="nav__brand-mark" aria-hidden="true"></span>
+        NS<i>Creative</i>
       </a>
-
-      <a class="card c-watp reveal" href="https://watp-uganda.org" target="_blank" rel="noopener" aria-label="WATP Uganda case study">
-        <span class="card__num">03 / WATP Uganda <span class="card__index">— Nonprofit Web</span></span>
-        <div class="c-watp__inner">
-          <h3 class="c-watp__title">Women,<br>against teenage<br><i>pregnancy.</i></h3>
-          <p class="c-watp__sub">Nonprofit website, brand system and shop for the women-led mission ending teen pregnancy in Uganda.</p>
-        </div>
-        <div class="c-watp__heart">Mission</div>
-        <div class="card__meta">
-          <span class="card__tag">Live · 2026</span>
-          <span class="card__link">watp-uganda.org <span aria-hidden="true">→</span></span>
-        </div>
-      </a>
-
-      <a class="card c-a63 reveal" href="#contact" aria-label="Africa 63 case study">
-        <span class="card__num" style="opacity:.7;">04 / Africa 63 <span class="card__index">— Web + Brand</span></span>
-        <span class="c-a63__neon" aria-hidden="true"></span>
-        <div class="c-a63__monogram">A<span>63</span></div>
-        <p class="c-a63__sub">Pan-African vision.<br>Premium build.</p>
-        <div class="c-a63__hairline"></div>
-        <div class="card__meta">
-          <span class="card__tag">In progress</span>
-          <span class="card__link">Case study <span aria-hidden="true">→</span></span>
-        </div>
-      </a>
-
-      <a class="card c-ssuubi reveal" href="#contact" aria-label="Ssubi Fellowship case study">
-        <span class="card__num">05 / Ssubi Fellowship <span class="card__index">— Ministry · Social</span></span>
-        <div class="c-ssuubi__inner">
-          <h3 class="c-ssuubi__title">Faith.<br>Hope.<br><span>Growth.</span></h3>
-          <p class="c-ssuubi__verse">
-            "You will keep in perfect peace those whose minds are steadfast."
-            <span class="c-ssuubi__ref">Isaiah 26:3</span>
-          </p>
-          <img class="c-ssuubi__logo" src="assets/ssuubi-fellowship.png" alt="Ssubi Fellowship logo" loading="lazy" />
-        </div>
-        <div class="card__meta">
-          <span class="card__tag">16 / month · ongoing</span>
-          <span class="card__link">Visual archive <span aria-hidden="true">→</span></span>
-        </div>
-      </a>
-
-      <a class="card c-retro reveal" href="#contact" aria-label="Retro Wave Edition 3 case study">
-        <span class="card__num">06 / Retro Wave <span class="card__index">— Event Campaign</span></span>
-        <h3 class="c-retro__type">RetroWave</h3>
-        <p class="c-retro__wave">Edition · Three</p>
-        <p class="c-retro__when">13 June 2026 · Ark Gardens<br>Akright City · Kampala</p>
-        <div class="c-retro__edition" aria-hidden="true">03</div>
-        <div class="card__meta" style="position: relative; z-index: 2;">
-          <span class="card__tag">Campaign · Live</span>
-          <span class="card__link">Posters <span aria-hidden="true">→</span></span>
-        </div>
-      </a>
-
-      <a class="card c-acra reveal" href="#contact" aria-label="ACRA26 Akright City Run campaign">
-        <span class="card__num">07 / ACRA26 · Akright City Run 2026 <span class="card__index">— Featured Campaign</span></span>
-        <div class="c-acra__grid">
-          <div class="c-acra__left">
-            <h3 class="c-acra__title">One<br>thread.</h3>
-            <p class="c-acra__sub">Unganisha — unity in motion. The full identity and campaign system for Akright City Run 2026.</p>
-          </div>
-          <div style="display: flex; justify-content: center; align-items: center;">
-            <img src="assets/akright1.png" alt="Akright City Run" style="width: 100%; max-width: 420px; height: auto;" />
-          </div>
-          <div class="c-acra__right">
-            <span>09 May 2026</span>
-            <span>Da 2 Gardens</span>
-            <span>Akright City · Kampala</span>
-            <strong>View campaign →</strong>
-          </div>
-        </div>
-      </a>
-
-      <a class="card c-honda reveal" href="#contact" aria-label="Honda by Markh case study">
-        <span class="card__num">08 / Honda by Markh <span class="card__index">— SMM</span></span>
-        <h3 class="c-honda__title">Honda.</h3>
-        <p class="c-honda__by"><em>by Markh.</em></p>
-        <p class="c-honda__handle">@hondabymarkh<br>Since Dec 2025</p>
-        <img src="assets/honda1.png" alt="Honda by Markh" style="width: 100%; height: auto; margin-top: 16px; border-radius: 8px;" />
-        <div class="card__meta">
-          <span class="card__tag">Social · Ongoing</span>
-          <span class="card__link">Reel <span aria-hidden="true">→</span></span>
-        </div>
-      </a>
-
-      <a class="card c-aksum reveal" href="#contact" aria-label="Akright Summit case study">
-        <span class="card__num">09 / Akright Summit <span class="card__index">— Strategy + Systems</span></span>
-        <span class="c-aksum__label">Strategic Goal · 6 Months</span>
-        <h3 class="c-aksum__big">5,000<br>books.</h3>
-        <p class="c-aksum__title">A national entrepreneurship summit, system-built from scratch.</p>
-        <p class="c-aksum__sub">Hard launch · 14 July 2026</p>
-        <div class="card__meta">
-          <span class="card__tag">Corporate · Strategy</span>
-          <span class="card__link">The plan <span aria-hidden="true">→</span></span>
-        </div>
-      </a>
-
-      <a class="card c-spot reveal" href="#contact" aria-label="Social Spot case study">
-        <span class="card__num">10 / Social Spot <span class="card__index">— Event Campaign</span></span>
-        <h3 class="c-spot__title">Social<br><em>Spot.</em></h3>
-        <p class="c-spot__sub">Retro Rhymes · Grand Opening Campaign</p>
-        <div class="c-spot__details">
-          <span>Bwebajja · Akright City</span>
-          <span>April 2026</span>
-          <span style="color: var(--lime);">Poster series →</span>
-        </div>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<section class="tools" aria-label="Studio toolkit">
-  <div class="wrap-wide">
-    <div class="tools__inner">
-      <span class="tools__label">Studio toolkit · 05.0</span>
-      <div class="tools__list">
-        <span class="tools__item">Notion</span>
-        <span class="tools__item">Figma</span>
-        <span class="tools__item">Gemini</span>
-        <span class="tools__item">Claude</span>
-        <span class="tools__item">Canva</span>
-        <span class="tools__item">CapCut</span>
-        <span class="tools__item">GoDaddy</span>
-        <span class="tools__item">WhatsApp</span>
-        <span class="tools__item">Instagram</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="services" id="services">
-  <div class="wrap-wide">
-
-    <div class="services__head">
-      <h2 class="services__title">Six <i>disciplines.</i><br>One studio.</h2>
-      <p class="services__intro">
-        Each service stands alone. Together they let NS Creative run a brand end-to-end — from logo and naming to website, social, campaigns, and AI-produced film. Retainer or per-project.
-      </p>
-    </div>
-
-    <div class="services__list">
-      <a class="svc" href="#contact">
-        <span class="svc__num">01</span>
-        <h3 class="svc__name">Brand <i>Identity</i></h3>
-        <p class="svc__desc">Naming, logo direction, colour systems, type, and the visual rules a brand uses to introduce itself for the first time and the hundredth.</p>
-        <span class="svc__arrow" aria-hidden="true">↗</span>
-      </a>
-      <a class="svc" href="#contact">
-        <span class="svc__num">02</span>
-        <h3 class="svc__name">Web <i>Design + Build</i></h3>
-        <p class="svc__desc">Mobile-first, conversion-focused websites — landing pages to full corporate sites. Built for clients who need to feel premium online.</p>
-        <span class="svc__arrow" aria-hidden="true">↗</span>
-      </a>
-      <a class="svc" href="#contact">
-        <span class="svc__num">03</span>
-        <h3 class="svc__name">Social <i>Media Management</i></h3>
-        <p class="svc__desc">Instagram and TikTok end-to-end — content direction, posting cadence, engagement, brand consistency. Retainer or per-campaign.</p>
-        <span class="svc__arrow" aria-hidden="true">↗</span>
-      </a>
-      <a class="svc" href="#contact">
-        <span class="svc__num">04</span>
-        <h3 class="svc__name">Event <i>Campaign Design</i></h3>
-        <p class="svc__desc">Posters, countdown series, ticket art, sponsor decks — campaigns that turn a date on a calendar into a moment people show up for.</p>
-        <span class="svc__arrow" aria-hidden="true">↗</span>
-      </a>
-      <a class="svc" href="#contact">
-        <span class="svc__num">05</span>
-        <h3 class="svc__name">AI <i>Film Production</i></h3>
-        <p class="svc__desc">Gemini-led image direction, character consistency across scenes, scene planning, and final assembly in CapCut. Cinema without a film crew.</p>
-        <span class="svc__arrow" aria-hidden="true">↗</span>
-      </a>
-      <a class="svc" href="#contact">
-        <span class="svc__num">06</span>
-        <h3 class="svc__name">Creative <i>Direction</i></h3>
-        <p class="svc__desc">When the project needs a brain on top of it, not just hands. NS Creative leads, the team executes, the client gets a deliverable that holds together.</p>
-        <span class="svc__arrow" aria-hidden="true">↗</span>
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<section class="process">
-  <div class="wrap-wide">
-    <div class="process__head">
-      <span class="section-label">Process · 06.0</span>
-      <h2 class="process__title">How a project<br><i>actually moves.</i></h2>
-    </div>
-
-    <div class="process__grid">
-      <div class="step">
-        <div class="step__num">01</div>
-        <h3 class="step__name">Brief</h3>
-        <p class="step__desc">A call, a few documents, and a clear picture of what the client is actually trying to win. No vague mood boards.</p>
-        <div class="step__tags">
-          <span class="step__tag">Discovery</span>
-          <span class="step__tag">Scope</span>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step__num">02</div>
-        <h3 class="step__name">Direction</h3>
-        <p class="step__desc">Strategy, references, colour and type direction, structural decisions. Locked before any pixel is pushed.</p>
-        <div class="step__tags">
-          <span class="step__tag">Strategy</span>
-          <span class="step__tag">System</span>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step__num">03</div>
-        <h3 class="step__name">Production</h3>
-        <p class="step__desc">The actual work — design, build, write, generate. Iteratively, with check-ins, never inside a black box.</p>
-        <div class="step__tags">
-          <span class="step__tag">Design</span>
-          <span class="step__tag">Build</span>
-          <span class="step__tag">Iterate</span>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step__num">04</div>
-        <h3 class="step__name">Launch</h3>
-        <p class="step__desc">Files, source assets, training, and where relevant, ongoing management. The project lives after delivery.</p>
-        <div class="step__tags">
-          <span class="step__tag">Handover</span>
-          <span class="step__tag">Support</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="about" id="about">
-  <div class="wrap-wide">
-
-    <div class="about__head">
-      <span class="section-label">Studio · 07.0</span>
-      <h2 class="about__title">Built in <i>Uganda.</i><br>Aimed at the <i>world.</i></h2>
-    </div>
-
-    <div class="about__grid">
-      <div>
-        <p class="about__lede">
-          NS Creative is a Kampala-based studio led by <em>Neeza Shyaka,</em> working with a tight network of designers, developers, and AI producers across East Africa.
-          The standard is <em>international.</em> The context is <em>African.</em> The output is built to compete with anything you've seen out of London, Lagos, or Lisbon.
-          <strong>If the brand is serious, we are too.</strong>
-        </p>
-      </div>
-
-      <div class="about__stats">
-        <div class="stat">
-          <div class="stat__num">10+</div>
-          <div class="stat__label">Active engagements</div>
-        </div>
-        <div class="stat">
-          <div class="stat__num">06</div>
-          <div class="stat__label">Disciplines</div>
-        </div>
-        <div class="stat">
-          <div class="stat__num">04</div>
-          <div class="stat__label">Industries · SaaS · Nonprofit · Events · Film</div>
-        </div>
-        <div class="stat">
-          <div class="stat__num">∞</div>
-          <div class="stat__label">Standard · World-class, always</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="about__group">
-      <span class="about__group-label">Part of NS Group</span>
-      <div class="about__group-list">
-        <span>NS Creative</span>
-        <span>NS Digital</span>
-        <span>NS Music</span>
-        <span>NS Imports</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="faq" id="faq">
-  <div class="wrap-wide">
-    <div class="faq__head">
-      <span class="section-label">Working with NS · 08.0</span>
-      <h2 class="faq__title">Before you<br><i>write the email.</i></h2>
-    </div>
-
-    <div class="faq__list">
-      <details class="faq__item">
-        <summary class="faq__q">What does a typical project cost? <span class="faq__icon" aria-hidden="true"></span></summary>
-        <p class="faq__a">
-          Brand identity from 800k UGX. Full websites from 1.5M–3M UGX. Event campaigns scoped per deliverable. Social media management from 400k UGX / month. AI film and creative direction quoted per project. We can talk numbers in the first call — no surprises after.
-        </p>
-      </details>
-      <details class="faq__item">
-        <summary class="faq__q">How fast can NS Creative ship? <span class="faq__icon" aria-hidden="true"></span></summary>
-        <p class="faq__a">
-          A poster set in 48 hours. A full website in 2–4 weeks. A brand identity system in 3–5 weeks. A film like Sun Over Africa in 3 months. Speed depends on feedback speed — we work fast when the client does too.
-        </p>
-      </details>
-      <details class="faq__item">
-        <summary class="faq__q">Do you only work with Ugandan clients? <span class="faq__icon" aria-hidden="true"></span></summary>
-        <p class="faq__a">
-          No. We're based in Kampala but ship for clients across East Africa and beyond. The work travels — we've shipped for SaaS founders, nonprofits, venue owners, film producers, and corporate strategists. If the brief is serious, the country doesn't matter.
-        </p>
-      </details>
-      <details class="faq__item">
-        <summary class="faq__q">Can NS Creative manage my brand long-term? <span class="faq__icon" aria-hidden="true"></span></summary>
-        <p class="faq__a">
-          Yes — most of our work is retainer-based. We currently manage social, content, and ongoing design for SaaS, automotive, and ministry clients monthly. If you want a partner rather than a vendor, that's how we work best.
-        </p>
-      </details>
-      <details class="faq__item">
-        <summary class="faq__q">How do we start? <span class="faq__icon" aria-hidden="true"></span></summary>
-        <p class="faq__a">
-          Email or WhatsApp. We jump on a 30-minute call, scope the brief, send a written proposal within 48 hours. If it's a fit, we sign and start. If not, we'll happily refer you to someone better suited.
-        </p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<section class="cta" id="contact">
-  <div class="wrap-wide">
-    <span class="cta__label">Start a project · 09.0</span>
-    <h2 class="cta__title">Have a brand to <i>build,</i><br>a campaign to <i>run,</i><br>or a film to <i>finish?</i></h2>
-
-    <a href="mailto:shyakaneeza@gmail.com?subject=New%20project%20%E2%80%94%20NS%20Creative" class="cta__big-button">
-      <span>Start the conversation</span>
-      <span aria-hidden="true">→</span>
-    </a>
-
-    <div class="cta__row">
-      <div class="cta__block">
-        <span class="cta__block-label">Email</span>
-        <a href="mailto:shyakaneeza@gmail.com">shyakaneeza@gmail.com</a>
-      </div>
-      <div class="cta__block">
-        <span class="cta__block-label">WhatsApp / Phone</span>
-        <a href="https://wa.me/256762193386">+256 762 193 386</a>
-      </div>
-      <div class="cta__block">
-        <span class="cta__block-label">Studio</span>
-        <p>Akright City · Kampala<br>Uganda · GMT+3</p>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
-
-<footer class="footer">
-  <div class="footer__mega">
-    <div class="wrap-wide">
-      <h2>Built in <span>Kampala.</span><br>Aimed at the <span>world.</span></h2>
-    </div>
-  </div>
-  <div class="footer__bar">
-    <div class="footer__inner">
-      <span class="footer__copy">© 2026 NS Creative · A division of NS Group</span>
-      <div class="footer__links">
+      <div class="nav__menu">
         <a href="#work">Work</a>
         <a href="#services">Services</a>
         <a href="#about">Studio</a>
         <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-        <a href="https://wa.me/256762193386">WhatsApp</a>
       </div>
-      <span class="footer__copy">Designed + built by <span style="color: var(--lime);">Neeza Shyaka</span></span>
+      <a class="nav__cta" href="#contact">
+        <span class="nav__cta-dot" aria-hidden="true"></span>
+        Start a project
+      </a>
     </div>
-  </div>
-</footer>
+  </nav>
 
-<script>
-(function() {
-  'use strict';
+  <main id="top">
+    <section class="hero">
+      <div class="hero__bg"></div>
+      <div class="wrap-wide" style="position: relative; z-index: 2;">
+        <div class="hero__meta">
+          <div class="hero__meta-block">
+            <span class="hero__index"><strong>Index</strong> 10.0</span>
+          </div>
+          <div class="hero__meta-block hero__meta-block--right">
+            <span>Updated · May 2026</span>
+            <strong>v10.0 · Production</strong>
+          </div>
+        </div>
+        <h1>
+          We make brands<br>
+          look like they <i>belong</i><br>
+          on the <span class="lime-mark">world stage</span> —<br>
+          <em>even if</em> they started<br>
+          <i>on WhatsApp.</i>
+        </h1>
+        <div class="hero__row">
+          <p class="hero__lede">
+            NS Creative is the studio of <em>Neeza Shyaka</em> — building brand worlds, websites, campaigns, and AI productions for clients across Uganda and East Africa. International standard. African context. No discount aesthetics.
+          </p>
+          <div class="hero__side">
+            <div class="hero__stat"><strong>10+</strong>Active engagements</div>
+            <div class="hero__stat"><strong>06</strong>Disciplines in-house</div>
+            <div class="hero__stat"><strong>2018</strong>First brand shipped</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    <section class="ticker" aria-label="Now in production">
+      <span class="ticker__label">Now in production</span>
+      <div class="ticker__track">
+        <span class="ticker__item">Sun Over Africa — Scene 03 <small>AI Film</small></span>
+        <span class="ticker__item">My Weekly Track — Q2 rollout <small>SaaS</small></span>
+        <span class="ticker__item">ACRA26 — Campaign archive <small>Event</small></span>
+        <span class="ticker__item">WATP Uganda — Shop launch <small>Nonprofit</small></span>
+        <span class="ticker__item">Akright Summit — Strategy <small>Corporate</small></span>
+        <span class="ticker__item">Sun Over Africa — Scene 03 <small>AI Film</small></span>
+        <span class="ticker__item">My Weekly Track — Q2 rollout <small>SaaS</small></span>
+        <span class="ticker__item">ACRA26 — Campaign archive <small>Event</small></span>
+        <span class="ticker__item">WATP Uganda — Shop launch <small>Nonprofit</small></span>
+        <span class="ticker__item">Akright Summit — Strategy <small>Corporate</small></span>
+      </div>
+    </section>
 
-  /* ── LOADER ── */
-  const loader = document.getElementById('loader');
-  const countEl = document.getElementById('loader-count');
-  let n = 0;
-  const dur = reduced ? 200 : 900;
-  const start = performance.now();
-  function step(now) {
-    const t = Math.min(1, (now - start) / dur);
-    const eased = 1 - Math.pow(1 - t, 3);
-    n = Math.floor(eased * 100);
-    if (countEl) countEl.textContent = String(n).padStart(3, '0');
-    if (t < 1) requestAnimationFrame(step);
-    else {
-      countEl && (countEl.textContent = '100');
-      setTimeout(() => loader && loader.classList.add('is-done'), 250);
-      setTimeout(() => loader && loader.parentNode && loader.parentNode.removeChild(loader), 1200);
-    }
-  }
-  requestAnimationFrame(step);
+    <section class="manifesto">
+      <div class="wrap-wide">
+        <div class="manifesto__head">
+          <span class="section-label">Manifesto · 02.0</span>
+          <h2 class="reveal">A studio built<br>for the <i>standard</i><br>we deserve.</h2>
+        </div>
+        <div class="manifesto__body">
+          <div></div>
+          <p class="manifesto__statement reveal">
+            The world has stopped giving Africa <em>second-tier design.</em>
+            So have we. Every brand we touch is built to compete internationally. 
+            Whether the client is a SaaS founder, a nonprofit director, or a film producer, the standard is the same.
+            <strong>Premium. Global. African. No discount aesthetics.</strong>
+          </p>
+        </div>
+      </div>
+    </section>
 
-  /* ── CUSTOM CURSOR ── */
-  const cursor = document.getElementById('cursor');
-  const hoverable = 'a, button, .card, .svc, .faq__q, .nav__cta, .tools__item, .cta__big-button';
-  if (cursor && window.matchMedia('(hover: hover) and (pointer: fine)').matches && !reduced) {
-    let cx = window.innerWidth / 2, cy = window.innerHeight / 2;
-    let tx = cx, ty = cy;
-    window.addEventListener('mousemove', e => { tx = e.clientX; ty = e.clientY; }, { passive: true });
-    function loop() {
-      cx += (tx - cx) * 0.22;
-      cy += (ty - cy) * 0.22;
-      cursor.style.transform = 'translate(' + (cx - 14) + 'px, ' + (cy - 14) + 'px)';
-      requestAnimationFrame(loop);
-    }
-    loop();
-    document.addEventListener('mouseover', e => {
-      if (e.target.closest(hoverable)) cursor.classList.add('is-hover');
-    });
-    document.addEventListener('mouseout', e => {
-      if (e.target.closest(hoverable)) cursor.classList.remove('is-hover');
-    });
-  }
+    <section class="featured-soa">
+      <div class="wrap-wide featured-soa__inner">
+        <div class="featured-soa__header">
+          <span class="section-label">Featured Case · 03.0</span>
+          <span class="featured-soa__crumbs">01 of 10 · AI Film Production</span>
+        </div>
+        <div class="featured-soa__grid">
+          <div class="featured-soa__logo-wrap reveal">
+            <img class="featured-soa__logo" src="assets/sun-over-africa.png" alt="Sun Over Africa Film" loading="lazy" />
+          </div>
+          <div class="featured-soa__copy reveal">
+            <h2>A film made <i>in Uganda,</i><br>for the world.</h2>
+            <p>A twelve-scene, AI-produced feature directed by Apolo Senkeeto and produced through NS Creative — proof that cinema-grade storytelling can be built in Kampala without a Hollywood crew.</p>
+            <div class="featured-soa__specs">
+              <div class="featured-soa__spec"><strong>12 / 5</strong>Scenes · Mins each</div>
+              <div class="featured-soa__spec"><strong>6M UGX</strong>Production budget</div>
+              <div class="featured-soa__spec"><strong>3 months</strong>Window</div>
+              <div class="featured-soa__spec"><strong>2026</strong>Target release</div>
+            </div>
+            <a href="#contact" class="featured-soa__cta">
+              <span>Read the case study</span><span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="featured-soa__bottom-bar"></div>
+    </section>
 
-  /* ── CLOCK + STATUS ── */
-  function updateClock() {
-    const now = new Date();
-    const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
-    const kampala = new Date(utc + (3 * 3600000));
-    const h = String(kampala.getHours()).padStart(2, '0');
-    const m = String(kampala.getMinutes()).padStart(2, '0');
-    const el = document.getElementById('clock');
-    if (el) el.textContent = h + ':' + m;
-  }
-  updateClock();
-  setInterval(updateClock, 30000);
+    <section class="work" id="work">
+      <div class="wrap-wide">
+        <div class="work__header">
+          <div>
+            <span class="section-label">Selected Work · 04.0</span>
+            <h2 class="work__title">Nine more projects<br><i>currently in motion.</i></h2>
+          </div>
+          <p class="work__intro">From SaaS to nonprofit, nightlife to ministry — every project is a <em>different problem,</em> shipped to a world-class standard.</p>
+        </div>
 
-  /* ── ROTATING NOW STATUS ── */
-  const statuses = [
-    'Editing Sun Over Africa · Scene 03',
-    'Running ACRA26 archive',
-    'Drafting WATP shop launch',
-    'Building Africa 63 brand',
-    'Reviewing Ssubi posters · April',
-    'Strategising Akright Summit'
-  ];
-  const nowEl = document.getElementById('now-status');
-  if (nowEl) {
-    let i = 0;
-    setInterval(() => {
-      i = (i + 1) % statuses.length;
-      nowEl.style.opacity = '0';
-      setTimeout(() => { nowEl.textContent = statuses[i]; nowEl.style.opacity = '1'; }, 280);
-    }, 5000);
-    nowEl.style.transition = 'opacity 0.3s ease';
-  }
+        <div class="work__grid">
+          <a class="card c-mwt reveal" href="#contact" aria-label="My Weekly Track">
+            <span class="card__num">02 / My Weekly Track</span>
+            <div class="c-mwt__inner">
+              <div>
+                <h3 class="c-mwt__title">Weekly,<br><em>tracked.</em></h3>
+                <p class="c-mwt__lede">A performance tracking SaaS for East African organisations.</p>
+              </div>
+              <img class="c-mwt__logo" src="assets/my-weekly-track.png" alt="Logo" loading="lazy" />
+            </div>
+            <div class="card__meta"><span class="card__tag">Active · 2026</span><span class="card__link">Case study →</span></div>
+          </a>
 
-  /* ── NAV: DARK/LIME BACKGROUND SWITCH ── */
-  const nav = document.getElementById('nav');
-  const darkSections = document.querySelectorAll('.work, .about, .footer, .ticker, .featured-soa');
-  const limeSections = document.querySelectorAll('.cta');
-  function checkNav() {
-    const navMid = nav.offsetTop + nav.offsetHeight / 2 + 40;
-    let onDark = false, onLime = false;
-    darkSections.forEach(sec => {
-      const top = sec.offsetTop;
-      const bot = top + sec.offsetHeight;
-      const y = window.scrollY + navMid;
-      if (y > top && y < bot) onDark = true;
-    });
-    limeSections.forEach(sec => {
-      const top = sec.offsetTop;
-      const bot = top + sec.offsetHeight;
-      const y = window.scrollY + navMid;
-      if (y > top && y < bot) onLime = true;
-    });
-    nav.classList.toggle('on-dark', onDark);
-    nav.classList.toggle('on-lime', onLime);
-  }
-  window.addEventListener('scroll', checkNav, { passive: true });
-  window.addEventListener('resize', checkNav);
-  checkNav();
+          <a class="card c-watp reveal" href="#contact" aria-label="WATP Uganda">
+            <span class="card__num">03 / WATP Uganda</span>
+            <div class="c-watp__inner">
+              <h3 class="c-watp__title">Women,<br>against teenage<br><i>pregnancy.</i></h3>
+              <p class="c-watp__sub">Nonprofit website and brand system.</p>
+            </div>
+            <div class="c-watp__heart">Mission</div>
+            <div class="card__meta"><span class="card__tag">Live · 2026</span><span class="card__link">Visit site →</span></div>
+          </a>
 
-  /* ── REVEAL ON SCROLL ── */
-  if ('IntersectionObserver' in window && !reduced) {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('is-visible');
-          io.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -6% 0px' });
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-  } else {
-    document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-visible'));
-  }
+          <a class="card c-a63 reveal" href="#contact">
+            <span class="card__num" style="opacity:.7;">04 / Africa 63</span>
+            <span class="c-a63__neon"></span>
+            <div class="c-a63__monogram">A<span>63</span></div>
+            <p class="c-a63__sub">Pan-African vision. Premium build.</p>
+            <div class="card__meta"><span class="card__tag">In progress</span><span class="card__link">Case study →</span></div>
+          </a>
 
-})();
-</script>
+          <a class="card c-ssuubi reveal" href="#contact">
+            <span class="card__num">05 / Ssubi Fellowship</span>
+            <div class="c-ssuubi__inner">
+              <h3 class="c-ssuubi__title">Faith.<br>Hope.<br><span>Growth.</span></h3>
+              <img class="c-ssuubi__logo" src="assets/ssuubi-fellowship.png" alt="Logo" loading="lazy" />
+            </div>
+            <div class="card__meta"><span class="card__tag">Ongoing</span><span class="card__link">Archive →</span></div>
+          </a>
 
+          <a class="card c-retro reveal" href="#contact">
+            <span class="card__num">06 / Retro Wave</span>
+            <h3 class="c-retro__type">RetroWave</h3>
+            <p class="c-retro__wave">Edition · Three</p>
+            <div class="c-retro__edition">03</div>
+            <div class="card__meta" style="position:relative; z-index:2;"><span class="card__tag">Campaign</span><span class="card__link">Posters →</span></div>
+          </a>
+
+          <a class="card c-acra reveal" href="#contact">
+            <span class="card__num">07 / ACRA26 · Akright City Run 2026</span>
+            <div class="c-acra__grid">
+              <div class="c-acra__left">
+                <h3 class="c-acra__title">One<br>thread.</h3>
+                <p class="c-acra__sub">Unganisha — unity in motion. The full identity and campaign system.</p>
+              </div>
+              <div class="c-acra__img-wrap">
+                <img src="assets/akright1.png" alt="Akright City Run" class="c-acra__img" loading="lazy" />
+              </div>
+              <div class="c-acra__right">
+                <span>09 May 2026</span>
+                <span>Da 2 Gardens</span>
+                <strong>View campaign →</strong>
+              </div>
+            </div>
+          </a>
+
+          <a class="card c-honda reveal" href="#contact">
+            <span class="card__num">08 / Honda by Markh</span>
+            <h3 class="c-honda__title">Honda.</h3>
+            <p class="c-honda__by"><em>by Markh.</em></p>
+            <div class="c-honda__img-wrap">
+              <img src="assets/honda1.png" alt="Honda by Markh" class="c-honda__img" loading="lazy" />
+            </div>
+            <div class="card__meta"><span class="card__tag">Social</span><span class="card__link">Reel →</span></div>
+          </a>
+
+          <a class="card c-aksum reveal" href="#contact">
+            <span class="card__num">09 / Akright Summit</span>
+            <span class="c-aksum__label">Strategic Goal</span>
+            <h3 class="c-aksum__big">5,000<br>books.</h3>
+            <p class="c-aksum__title">A national entrepreneurship summit, system-built from scratch.</p>
+            <div class="card__meta"><span class="card__tag">Strategy</span><span class="card__link">The plan →</span></div>
+          </a>
+
+          <a class="card c-spot reveal" href="#contact">
+            <span class="card__num">10 / Social Spot</span>
+            <h3 class="c-spot__title">Social<br><em>Spot.</em></h3>
+            <p class="c-spot__sub">Retro Rhymes · Grand Opening</p>
+            <div class="card__meta"><span class="card__tag">April 2026</span><span class="card__link">Poster series →</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="tools" aria-label="Studio toolkit">
+      <div class="wrap-wide">
+        <div class="tools__inner">
+          <span class="tools__label">Studio toolkit · 05.0</span>
+          <div class="tools__list">
+            <span class="tools__item">Notion</span>
+            <span class="tools__item">Figma</span>
+            <span class="tools__item">Gemini</span>
+            <span class="tools__item">Claude</span>
+            <span class="tools__item">Canva</span>
+            <span class="tools__item">CapCut</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="wrap-wide">
+        <div class="services__head">
+          <h2 class="services__title">Six <i>disciplines.</i><br>One studio.</h2>
+          <p class="services__intro">Each service stands alone. Together they let NS Creative run a brand end-to-end — from logo and naming to website, social, campaigns, and AI film.</p>
+        </div>
+        <div class="services__list">
+          <a class="svc" href="#contact"><span class="svc__num">01</span><h3 class="svc__name">Brand <i>Identity</i></h3><p class="svc__desc">Naming, logo direction, colour systems, and visual rules.</p><span class="svc__arrow">↗</span></a>
+          <a class="svc" href="#contact"><span class="svc__num">02</span><h3 class="svc__name">Web <i>Design + Build</i></h3><p class="svc__desc">Mobile-first, premium websites designed to convert.</p><span class="svc__arrow">↗</span></a>
+          <a class="svc" href="#contact"><span class="svc__num">03</span><h3 class="svc__name">Social <i>Media</i></h3><p class="svc__desc">Instagram and TikTok end-to-end content direction.</p><span class="svc__arrow">↗</span></a>
+          <a class="svc" href="#contact"><span class="svc__num">04</span><h3 class="svc__name">Event <i>Campaigns</i></h3><p class="svc__desc">Posters, countdowns, and ticketing assets that drive hype.</p><span class="svc__arrow">↗</span></a>
+          <a class="svc" href="#contact"><span class="svc__num">05</span><h3 class="svc__name">AI <i>Film Production</i></h3><p class="svc__desc">Cinema-grade visual generation without a physical film crew.</p><span class="svc__arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap-wide">
+        <div class="about__head">
+          <span class="section-label">Studio · 07.0</span>
+          <h2 class="about__title">Built in <i>Uganda.</i><br>Aimed at the <i>world.</i></h2>
+        </div>
+        <div class="about__grid">
+          <div>
+            <p class="about__lede">
+              NS Creative is a Kampala-based studio led by <em>Neeza Shyaka.</em> The standard is <em>international.</em> The context is <em>African.</em> The output is built to compete with anything you've seen out of London, Lagos, or Lisbon.
+            </p>
+          </div>
+          <div class="about__stats">
+            <div class="stat"><div class="stat__num">10+</div><div class="stat__label">Active engagements</div></div>
+            <div class="stat"><div class="stat__num">06</div><div class="stat__label">Disciplines</div></div>
+            <div class="stat"><div class="stat__num">∞</div><div class="stat__label">Standard · World-class</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="wrap-wide">
+        <span class="cta__label">Start a project · 09.0</span>
+        <h2 class="cta__title">Have a brand to <i>build,</i><br>a campaign to <i>run?</i></h2>
+        <a href="mailto:shyakaneeza@gmail.com" class="cta__big-button">
+          <span>Start the conversation</span><span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__mega">
+      <div class="wrap-wide">
+        <h2>Built in <span>Kampala.</span><br>Aimed at the <span>world.</span></h2>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <div class="footer__inner">
+        <span class="footer__copy">© 2026 NS Creative</span>
+        <div class="footer__links">
+          <a href="#work">Work</a>
+          <a href="mailto:shyakaneeza@gmail.com">Contact</a>
+        </div>
+        <span class="footer__copy">Designed by <span style="color: var(--lime);">Neeza Shyaka</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
