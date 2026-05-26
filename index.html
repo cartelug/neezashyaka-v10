@@ -26,9 +26,11 @@
 </head>
 
 <body>
+  <div class="noise-overlay"></div>
   <a class="skip-link" href="#work">Skip to work</a>
 
-  <div class="loader" id="loader" role="status" aria-label="Loading">
+  <!-- LOADER -->
+  <div class="loader" id="loader">
     <div class="loader__top">
       <span>NS · Creative Studio</span>
       <span>Index · 10.0</span>
@@ -44,8 +46,10 @@
     </div>
   </div>
 
+  <!-- CUSTOM CURSOR -->
   <div class="cursor" id="cursor" aria-hidden="true"></div>
 
+  <!-- STATUS BAR -->
   <div class="statusbar" role="complementary">
     <div class="statusbar__inner">
       <div class="statusbar__group">
@@ -62,19 +66,20 @@
     </div>
   </div>
 
-  <nav class="nav" id="nav" aria-label="Primary">
+  <!-- NAV -->
+  <nav class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="#top" aria-label="NS Creative">
+      <a class="nav__brand magnetic" href="#top" aria-label="NS Creative">
         <span class="nav__brand-mark" aria-hidden="true"></span>
         NS<i>Creative</i>
       </a>
       <div class="nav__menu">
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#about">Studio</a>
-        <a href="#faq">FAQ</a>
+        <a class="magnetic" href="#work">Work</a>
+        <a class="magnetic" href="#services">Services</a>
+        <a class="magnetic" href="#about">Studio</a>
+        <a class="magnetic" href="#faq">FAQ</a>
       </div>
-      <a class="nav__cta" href="#contact">
+      <a class="nav__cta magnetic" href="#contact">
         <span class="nav__cta-dot" aria-hidden="true"></span>
         Start a project
       </a>
@@ -82,9 +87,10 @@
   </nav>
 
   <main id="top">
+    <!-- HERO -->
     <section class="hero">
       <div class="hero__bg"></div>
-      <div class="wrap-wide" style="position: relative; z-index: 2;">
+      <div class="wrap-wide hero__content">
         <div class="hero__meta">
           <div class="hero__meta-block">
             <span class="hero__index"><strong>Index</strong> 10.0</span>
@@ -94,7 +100,7 @@
             <strong>v10.0 · Production</strong>
           </div>
         </div>
-        <h1>
+        <h1 class="reveal-text">
           We make brands<br>
           look like they <i>belong</i><br>
           on the <span class="lime-mark">world stage</span> —<br>
@@ -102,10 +108,10 @@
           <i>on WhatsApp.</i>
         </h1>
         <div class="hero__row">
-          <p class="hero__lede">
+          <p class="hero__lede reveal">
             NS Creative is the studio of <em>Neeza Shyaka</em> — building brand worlds, websites, campaigns, and AI productions for clients across Uganda and East Africa. International standard. African context. No discount aesthetics.
           </p>
-          <div class="hero__side">
+          <div class="hero__side reveal">
             <div class="hero__stat"><strong>10+</strong>Active engagements</div>
             <div class="hero__stat"><strong>06</strong>Disciplines in-house</div>
             <div class="hero__stat"><strong>2018</strong>First brand shipped</div>
@@ -114,7 +120,8 @@
       </div>
     </section>
 
-    <section class="ticker" aria-label="Now in production">
+    <!-- TICKER -->
+    <section class="ticker">
       <span class="ticker__label">Now in production</span>
       <div class="ticker__track">
         <span class="ticker__item">Sun Over Africa — Scene 03 <small>AI Film</small></span>
@@ -122,6 +129,7 @@
         <span class="ticker__item">ACRA26 — Campaign archive <small>Event</small></span>
         <span class="ticker__item">WATP Uganda — Shop launch <small>Nonprofit</small></span>
         <span class="ticker__item">Akright Summit — Strategy <small>Corporate</small></span>
+        <!-- Duplicated for seamless loop -->
         <span class="ticker__item">Sun Over Africa — Scene 03 <small>AI Film</small></span>
         <span class="ticker__item">My Weekly Track — Q2 rollout <small>SaaS</small></span>
         <span class="ticker__item">ACRA26 — Campaign archive <small>Event</small></span>
@@ -130,6 +138,7 @@
       </div>
     </section>
 
+    <!-- MANIFESTO -->
     <section class="manifesto">
       <div class="wrap-wide">
         <div class="manifesto__head">
@@ -148,14 +157,15 @@
       </div>
     </section>
 
+    <!-- FEATURED: SUN OVER AFRICA -->
     <section class="featured-soa">
       <div class="wrap-wide featured-soa__inner">
         <div class="featured-soa__header">
           <span class="section-label">Featured Case · 03.0</span>
           <span class="featured-soa__crumbs">01 of 10 · AI Film Production</span>
         </div>
-        <div class="featured-soa__grid">
-          <div class="featured-soa__logo-wrap reveal">
+        <div class="featured-soa__grid tilt-card-wrap">
+          <div class="featured-soa__logo-wrap tilt-card reveal">
             <img class="featured-soa__logo" src="assets/sun-over-africa.png" alt="Sun Over Africa Film" loading="lazy" />
           </div>
           <div class="featured-soa__copy reveal">
@@ -167,7 +177,7 @@
               <div class="featured-soa__spec"><strong>3 months</strong>Window</div>
               <div class="featured-soa__spec"><strong>2026</strong>Target release</div>
             </div>
-            <a href="#contact" class="featured-soa__cta">
+            <a href="#contact" class="featured-soa__cta magnetic">
               <span>Read the case study</span><span aria-hidden="true">→</span>
             </a>
           </div>
@@ -176,57 +186,73 @@
       <div class="featured-soa__bottom-bar"></div>
     </section>
 
+    <!-- WORK GRID -->
     <section class="work" id="work">
       <div class="wrap-wide">
         <div class="work__header">
           <div>
             <span class="section-label">Selected Work · 04.0</span>
-            <h2 class="work__title">Nine more projects<br><i>currently in motion.</i></h2>
+            <h2 class="work__title reveal">Nine more projects<br><i>currently in motion.</i></h2>
           </div>
-          <p class="work__intro">From SaaS to nonprofit, nightlife to ministry — every project is a <em>different problem,</em> shipped to a world-class standard.</p>
+          <p class="work__intro reveal">From SaaS to nonprofit, nightlife to ministry — every project is a <em>different problem,</em> shipped to a world-class standard.</p>
         </div>
 
         <div class="work__grid">
-          <a class="card c-mwt reveal" href="#contact" aria-label="My Weekly Track">
+          <!-- MY WEEKLY TRACK -->
+          <a class="card tilt-card c-mwt reveal" href="#contact">
             <span class="card__num">02 / My Weekly Track</span>
             <div class="c-mwt__inner">
               <div>
                 <h3 class="c-mwt__title">Weekly,<br><em>tracked.</em></h3>
                 <p class="c-mwt__lede">A performance tracking SaaS for East African organisations.</p>
               </div>
-              <img class="c-mwt__logo" src="assets/my-weekly-track.png" alt="Logo" loading="lazy" />
+              <img class="c-mwt__logo" src="assets/my-weekly-track.png" alt="My Weekly Track" loading="lazy" />
             </div>
             <div class="card__meta"><span class="card__tag">Active · 2026</span><span class="card__link">Case study →</span></div>
           </a>
 
-          <a class="card c-watp reveal" href="#contact" aria-label="WATP Uganda">
+          <!-- WATP UGANDA (WITH ABSTRACT PLACEHOLDER) -->
+          <a class="card tilt-card c-watp reveal" href="#contact">
             <span class="card__num">03 / WATP Uganda</span>
             <div class="c-watp__inner">
               <h3 class="c-watp__title">Women,<br>against teenage<br><i>pregnancy.</i></h3>
               <p class="c-watp__sub">Nonprofit website and brand system.</p>
+              <!-- Abstract CSS Placeholder -->
+              <div class="placeholder-art p-watp">
+                <div class="p-orb"></div>
+                <div class="p-glass"></div>
+              </div>
             </div>
-            <div class="c-watp__heart">Mission</div>
             <div class="card__meta"><span class="card__tag">Live · 2026</span><span class="card__link">Visit site →</span></div>
           </a>
 
-          <a class="card c-a63 reveal" href="#contact">
+          <!-- AFRICA 63 (WITH ARCHITECTURAL PLACEHOLDER) -->
+          <a class="card tilt-card c-a63 reveal" href="#contact">
             <span class="card__num" style="opacity:.7;">04 / Africa 63</span>
             <span class="c-a63__neon"></span>
             <div class="c-a63__monogram">A<span>63</span></div>
             <p class="c-a63__sub">Pan-African vision. Premium build.</p>
+            <!-- Abstract CSS Placeholder -->
+            <div class="placeholder-art p-a63">
+              <div class="p-line-x"></div>
+              <div class="p-line-y"></div>
+              <div class="p-circle"></div>
+            </div>
             <div class="card__meta"><span class="card__tag">In progress</span><span class="card__link">Case study →</span></div>
           </a>
 
-          <a class="card c-ssuubi reveal" href="#contact">
+          <!-- SSUUBI -->
+          <a class="card tilt-card c-ssuubi reveal" href="#contact">
             <span class="card__num">05 / Ssubi Fellowship</span>
             <div class="c-ssuubi__inner">
               <h3 class="c-ssuubi__title">Faith.<br>Hope.<br><span>Growth.</span></h3>
-              <img class="c-ssuubi__logo" src="assets/ssuubi-fellowship.png" alt="Logo" loading="lazy" />
+              <img class="c-ssuubi__logo" src="assets/ssuubi-fellowship.png" alt="Ssuubi Fellowship" loading="lazy" />
             </div>
             <div class="card__meta"><span class="card__tag">Ongoing</span><span class="card__link">Archive →</span></div>
           </a>
 
-          <a class="card c-retro reveal" href="#contact">
+          <!-- RETRO WAVE -->
+          <a class="card tilt-card c-retro reveal" href="#contact">
             <span class="card__num">06 / Retro Wave</span>
             <h3 class="c-retro__type">RetroWave</h3>
             <p class="c-retro__wave">Edition · Three</p>
@@ -234,15 +260,18 @@
             <div class="card__meta" style="position:relative; z-index:2;"><span class="card__tag">Campaign</span><span class="card__link">Posters →</span></div>
           </a>
 
-          <a class="card c-acra reveal" href="#contact">
+          <!-- ACRA 26 (HOVER GALLERY UPGRADE + NEW COPY) -->
+          <a class="card tilt-card c-acra reveal hover-gallery-trigger" href="#contact">
             <span class="card__num">07 / ACRA26 · Akright City Run 2026</span>
             <div class="c-acra__grid">
               <div class="c-acra__left">
                 <h3 class="c-acra__title">One<br>thread.</h3>
-                <p class="c-acra__sub">Unganisha — unity in motion. The full identity and campaign system.</p>
+                <p class="c-acra__sub">Unganisha — unity in motion. <strong>I designed the kits and over 60+ visuals</strong> for the full identity and campaign system.</p>
               </div>
-              <div class="c-acra__img-wrap">
-                <img src="assets/akright1.png" alt="Akright City Run" class="c-acra__img" loading="lazy" />
+              <div class="image-cycler">
+                <img src="assets/akright1.png" alt="Akright Run Kit Design" class="is-active" loading="lazy" />
+                <img src="assets/akright2.png" alt="Akright Run Visual 1" loading="lazy" />
+                <img src="assets/akright3.png" alt="Akright Run Visual 2" loading="lazy" />
               </div>
               <div class="c-acra__right">
                 <span>09 May 2026</span>
@@ -252,57 +281,70 @@
             </div>
           </a>
 
-          <a class="card c-honda reveal" href="#contact">
+          <!-- HONDA BY MARKH (AUTO-SLIDING CAROUSEL) -->
+          <a class="card tilt-card c-honda reveal" href="#contact">
             <span class="card__num">08 / Honda by Markh</span>
             <h3 class="c-honda__title">Honda.</h3>
             <p class="c-honda__by"><em>by Markh.</em></p>
-            <div class="c-honda__img-wrap">
-              <img src="assets/honda1.png" alt="Honda by Markh" class="c-honda__img" loading="lazy" />
+            <div class="auto-cycler">
+              <img src="assets/honda1.png" alt="Honda 1" class="is-active" loading="lazy" />
+              <img src="assets/honda2.png" alt="Honda 2" loading="lazy" />
+              <img src="assets/honda3.png" alt="Honda 3" loading="lazy" />
             </div>
             <div class="card__meta"><span class="card__tag">Social</span><span class="card__link">Reel →</span></div>
           </a>
 
-          <a class="card c-aksum reveal" href="#contact">
+          <!-- AKRIGHT SUMMIT (CORPORATE GRID PLACEHOLDER) -->
+          <a class="card tilt-card c-aksum reveal" href="#contact">
             <span class="card__num">09 / Akright Summit</span>
             <span class="c-aksum__label">Strategic Goal</span>
             <h3 class="c-aksum__big">5,000<br>books.</h3>
             <p class="c-aksum__title">A national entrepreneurship summit, system-built from scratch.</p>
+            <!-- Abstract CSS Placeholder -->
+            <div class="placeholder-art p-aksum"></div>
             <div class="card__meta"><span class="card__tag">Strategy</span><span class="card__link">The plan →</span></div>
           </a>
 
-          <a class="card c-spot reveal" href="#contact">
+          <!-- SOCIAL SPOT (GLOWING VINYL PLACEHOLDER) -->
+          <a class="card tilt-card c-spot reveal" href="#contact">
             <span class="card__num">10 / Social Spot</span>
             <h3 class="c-spot__title">Social<br><em>Spot.</em></h3>
             <p class="c-spot__sub">Retro Rhymes · Grand Opening</p>
+            <!-- Abstract CSS Placeholder -->
+            <div class="placeholder-art p-spot">
+              <div class="p-vinyl"></div>
+            </div>
             <div class="card__meta"><span class="card__tag">April 2026</span><span class="card__link">Poster series →</span></div>
           </a>
         </div>
       </div>
     </section>
 
-    <section class="tools" aria-label="Studio toolkit">
+    <!-- TOOLS STRIP -->
+    <section class="tools">
       <div class="wrap-wide">
-        <div class="tools__inner">
+        <div class="tools__inner reveal">
           <span class="tools__label">Studio toolkit · 05.0</span>
           <div class="tools__list">
-            <span class="tools__item">Notion</span>
-            <span class="tools__item">Figma</span>
-            <span class="tools__item">Gemini</span>
-            <span class="tools__item">Claude</span>
-            <span class="tools__item">Canva</span>
-            <span class="tools__item">CapCut</span>
+            <span class="tools__item magnetic">Notion</span>
+            <span class="tools__item magnetic">Figma</span>
+            <span class="tools__item magnetic">Gemini</span>
+            <span class="tools__item magnetic">Claude</span>
+            <span class="tools__item magnetic">Canva</span>
+            <span class="tools__item magnetic">CapCut</span>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- SERVICES -->
     <section class="services" id="services">
       <div class="wrap-wide">
-        <div class="services__head">
+        <div class="services__head reveal">
           <h2 class="services__title">Six <i>disciplines.</i><br>One studio.</h2>
           <p class="services__intro">Each service stands alone. Together they let NS Creative run a brand end-to-end — from logo and naming to website, social, campaigns, and AI film.</p>
         </div>
-        <div class="services__list">
+        <div class="services__list reveal">
           <a class="svc" href="#contact"><span class="svc__num">01</span><h3 class="svc__name">Brand <i>Identity</i></h3><p class="svc__desc">Naming, logo direction, colour systems, and visual rules.</p><span class="svc__arrow">↗</span></a>
           <a class="svc" href="#contact"><span class="svc__num">02</span><h3 class="svc__name">Web <i>Design + Build</i></h3><p class="svc__desc">Mobile-first, premium websites designed to convert.</p><span class="svc__arrow">↗</span></a>
           <a class="svc" href="#contact"><span class="svc__num">03</span><h3 class="svc__name">Social <i>Media</i></h3><p class="svc__desc">Instagram and TikTok end-to-end content direction.</p><span class="svc__arrow">↗</span></a>
@@ -312,19 +354,20 @@
       </div>
     </section>
 
+    <!-- STUDIO / ABOUT -->
     <section class="about" id="about">
       <div class="wrap-wide">
         <div class="about__head">
           <span class="section-label">Studio · 07.0</span>
-          <h2 class="about__title">Built in <i>Uganda.</i><br>Aimed at the <i>world.</i></h2>
+          <h2 class="about__title reveal">Built in <i>Uganda.</i><br>Aimed at the <i>world.</i></h2>
         </div>
         <div class="about__grid">
-          <div>
+          <div class="reveal">
             <p class="about__lede">
               NS Creative is a Kampala-based studio led by <em>Neeza Shyaka.</em> The standard is <em>international.</em> The context is <em>African.</em> The output is built to compete with anything you've seen out of London, Lagos, or Lisbon.
             </p>
           </div>
-          <div class="about__stats">
+          <div class="about__stats reveal">
             <div class="stat"><div class="stat__num">10+</div><div class="stat__label">Active engagements</div></div>
             <div class="stat"><div class="stat__num">06</div><div class="stat__label">Disciplines</div></div>
             <div class="stat"><div class="stat__num">∞</div><div class="stat__label">Standard · World-class</div></div>
@@ -333,29 +376,31 @@
       </div>
     </section>
 
+    <!-- CONTACT CTA -->
     <section class="cta" id="contact">
       <div class="wrap-wide">
         <span class="cta__label">Start a project · 09.0</span>
-        <h2 class="cta__title">Have a brand to <i>build,</i><br>a campaign to <i>run?</i></h2>
-        <a href="mailto:shyakaneeza@gmail.com" class="cta__big-button">
+        <h2 class="cta__title reveal">Have a brand to <i>build,</i><br>a campaign to <i>run?</i></h2>
+        <a href="mailto:shyakaneeza@gmail.com" class="cta__big-button magnetic reveal">
           <span>Start the conversation</span><span aria-hidden="true">→</span>
         </a>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer__mega">
       <div class="wrap-wide">
-        <h2>Built in <span>Kampala.</span><br>Aimed at the <span>world.</span></h2>
+        <h2 class="reveal">Built in <span>Kampala.</span><br>Aimed at the <span>world.</span></h2>
       </div>
     </div>
     <div class="footer__bar">
       <div class="footer__inner">
         <span class="footer__copy">© 2026 NS Creative</span>
         <div class="footer__links">
-          <a href="#work">Work</a>
-          <a href="mailto:shyakaneeza@gmail.com">Contact</a>
+          <a class="magnetic" href="#work">Work</a>
+          <a class="magnetic" href="mailto:shyakaneeza@gmail.com">Contact</a>
         </div>
         <span class="footer__copy">Designed by <span style="color: var(--lime);">Neeza Shyaka</span></span>
       </div>
