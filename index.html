@@ -6,34 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
   <title>Neeza Shyaka — NS Creative · Brand, Web & AI Production</title>
-  <meta name="description" content="NS Creative is the studio of Neeza Shyaka. We build brand worlds, websites, campaigns and AI films for clients across East Africa — to a world-class standard." />
+  <meta name="description" content="NS Creative is the studio of Neeza Shyaka. We build brand worlds, websites, campaigns and AI films for clients across East Africa." />
   <meta name="author" content="Neeza Shyaka" />
-  <meta name="theme-color" content="#0C0A08" />
+  <meta name="theme-color" content="#050403" />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Neeza Shyaka — NS Creative" />
-  <meta property="og:description" content="A studio in Kampala building brand worlds for clients across East Africa." />
-  <meta property="og:url" content="https://neezashyaka.com" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%230C0A08'/><circle cx='16' cy='16' r='6' fill='%23C6FF00'/></svg>" />
+  <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23050403'/><circle cx='16' cy='16' r='6' fill='%23C6FF00'/></svg>" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Hanken+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <div class="noise-overlay"></div>
-  <a class="skip-link" href="#work">Skip to work</a>
 
   <!-- LOADER -->
   <div class="loader" id="loader">
     <div class="loader__top">
       <span>NS · Creative Studio</span>
-      <span>Index · 10.0</span>
+      <span>Index · 11.0</span>
     </div>
     <div class="loader__center">
       <div class="loader__brand" aria-hidden="true">
@@ -46,41 +39,25 @@
     </div>
   </div>
 
-  <!-- CUSTOM CURSOR -->
-  <div class="cursor" id="cursor" aria-hidden="true"></div>
-
-  <!-- STATUS BAR -->
-  <div class="statusbar" role="complementary">
-    <div class="statusbar__inner">
-      <div class="statusbar__group">
-        <span><span class="statusbar__dot"></span> <span class="statusbar__live">Live</span> · Kampala <span id="clock">— —:—</span></span>
-      </div>
-      <div class="statusbar__group statusbar__group--mid">
-        <span>Now in studio · <span id="now-status">Editing — Sun Over Africa</span></span>
-      </div>
-      <div class="statusbar__group statusbar__group--right">
-        <span>Available Q3 2026</span>
-        <span class="statusbar__sep">·</span>
-        <span>EN · UG · KE</span>
-      </div>
-    </div>
+  <!-- CUSTOM CURSOR WITH TEXT INJECTION -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <span class="cursor-text" id="cursor-text"></span>
   </div>
 
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand magnetic" href="#top" aria-label="NS Creative">
-        <span class="nav__brand-mark" aria-hidden="true"></span>
+      <a class="nav__brand magnetic" href="#top">
+        <span class="nav__brand-mark"></span>
         NS<i>Creative</i>
       </a>
       <div class="nav__menu">
         <a class="magnetic" href="#work">Work</a>
         <a class="magnetic" href="#services">Services</a>
         <a class="magnetic" href="#about">Studio</a>
-        <a class="magnetic" href="#faq">FAQ</a>
       </div>
       <a class="nav__cta magnetic" href="#contact">
-        <span class="nav__cta-dot" aria-hidden="true"></span>
+        <span class="nav__cta-dot"></span>
         Start a project
       </a>
     </div>
@@ -88,290 +65,134 @@
 
   <main id="top">
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="hero-wrap">
       <div class="hero__bg"></div>
       <div class="wrap-wide hero__content">
         <div class="hero__meta">
-          <div class="hero__meta-block">
-            <span class="hero__index"><strong>Index</strong> 10.0</span>
+          <div class="hero__meta-block reveal">
+            <span class="hero__index"><strong>Index</strong> 11.0</span>
           </div>
-          <div class="hero__meta-block hero__meta-block--right">
+          <div class="hero__meta-block hero__meta-block--right reveal">
             <span>Updated · May 2026</span>
-            <strong>v10.0 · Production</strong>
+            <strong>v11.0 · Elite</strong>
           </div>
         </div>
-        <h1 class="reveal-text">
-          We make brands<br>
-          look like they <i>belong</i><br>
-          on the <span class="lime-mark">world stage</span> —<br>
-          <em>even if</em> they started<br>
-          <i>on WhatsApp.</i>
+        
+        <h1 class="stagger-wrap">
+          <span class="stagger-line"><span>We make brands</span></span>
+          <span class="stagger-line"><span>look like they <i>belong</i></span></span>
+          <span class="stagger-line"><span>on the <span class="lime-mark">world stage</span> —</span></span>
+          <span class="stagger-line"><span><em>even if</em> they started</span></span>
+          <span class="stagger-line"><span><i>on WhatsApp.</i></span></span>
         </h1>
+
         <div class="hero__row">
           <p class="hero__lede reveal">
-            NS Creative is the studio of <em>Neeza Shyaka</em> — building brand worlds, websites, campaigns, and AI productions for clients across Uganda and East Africa. International standard. African context. No discount aesthetics.
+            NS Creative is the studio of <em>Neeza Shyaka</em> — building brand worlds, websites, campaigns, and AI productions for clients across Uganda and East Africa. International standard. No discount aesthetics.
           </p>
           <div class="hero__side reveal">
             <div class="hero__stat"><strong>10+</strong>Active engagements</div>
             <div class="hero__stat"><strong>06</strong>Disciplines in-house</div>
-            <div class="hero__stat"><strong>2018</strong>First brand shipped</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TICKER -->
-    <section class="ticker">
-      <span class="ticker__label">Now in production</span>
-      <div class="ticker__track">
-        <span class="ticker__item">Sun Over Africa — Scene 03 <small>AI Film</small></span>
-        <span class="ticker__item">My Weekly Track — Q2 rollout <small>SaaS</small></span>
-        <span class="ticker__item">ACRA26 — Campaign archive <small>Event</small></span>
-        <span class="ticker__item">WATP Uganda — Shop launch <small>Nonprofit</small></span>
-        <span class="ticker__item">Akright Summit — Strategy <small>Corporate</small></span>
-        <!-- Duplicated for seamless loop -->
-        <span class="ticker__item">Sun Over Africa — Scene 03 <small>AI Film</small></span>
-        <span class="ticker__item">My Weekly Track — Q2 rollout <small>SaaS</small></span>
-        <span class="ticker__item">ACRA26 — Campaign archive <small>Event</small></span>
-        <span class="ticker__item">WATP Uganda — Shop launch <small>Nonprofit</small></span>
-        <span class="ticker__item">Akright Summit — Strategy <small>Corporate</small></span>
-      </div>
-    </section>
-
-    <!-- MANIFESTO -->
-    <section class="manifesto">
-      <div class="wrap-wide">
-        <div class="manifesto__head">
-          <span class="section-label">Manifesto · 02.0</span>
-          <h2 class="reveal">A studio built<br>for the <i>standard</i><br>we deserve.</h2>
-        </div>
-        <div class="manifesto__body">
-          <div></div>
-          <p class="manifesto__statement reveal">
-            The world has stopped giving Africa <em>second-tier design.</em>
-            So have we. Every brand we touch is built to compete internationally. 
-            Whether the client is a SaaS founder, a nonprofit director, or a film producer, the standard is the same.
-            <strong>Premium. Global. African. No discount aesthetics.</strong>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURED: SUN OVER AFRICA -->
-    <section class="featured-soa">
-      <div class="wrap-wide featured-soa__inner">
-        <div class="featured-soa__header">
-          <span class="section-label">Featured Case · 03.0</span>
-          <span class="featured-soa__crumbs">01 of 10 · AI Film Production</span>
-        </div>
-        <div class="featured-soa__grid tilt-card-wrap">
-          <div class="featured-soa__logo-wrap tilt-card reveal">
-            <img class="featured-soa__logo" src="assets/sun-over-africa.png" alt="Sun Over Africa Film" loading="lazy" />
-          </div>
-          <div class="featured-soa__copy reveal">
-            <h2>A film made <i>in Uganda,</i><br>for the world.</h2>
-            <p>A twelve-scene, AI-produced feature directed by Apolo Senkeeto and produced through NS Creative — proof that cinema-grade storytelling can be built in Kampala without a Hollywood crew.</p>
-            <div class="featured-soa__specs">
-              <div class="featured-soa__spec"><strong>12 / 5</strong>Scenes · Mins each</div>
-              <div class="featured-soa__spec"><strong>6M UGX</strong>Production budget</div>
-              <div class="featured-soa__spec"><strong>3 months</strong>Window</div>
-              <div class="featured-soa__spec"><strong>2026</strong>Target release</div>
-            </div>
-            <a href="#contact" class="featured-soa__cta magnetic">
-              <span>Read the case study</span><span aria-hidden="true">→</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="featured-soa__bottom-bar"></div>
-    </section>
-
-    <!-- WORK GRID -->
+    <!-- WORK GRID (3D MOBILE STACK & CURSOR DATA) -->
     <section class="work" id="work">
       <div class="wrap-wide">
         <div class="work__header">
           <div>
             <span class="section-label">Selected Work · 04.0</span>
-            <h2 class="work__title reveal">Nine more projects<br><i>currently in motion.</i></h2>
+            <h2 class="work__title reveal">Projects currently<br><i>in motion.</i></h2>
           </div>
-          <p class="work__intro reveal">From SaaS to nonprofit, nightlife to ministry — every project is a <em>different problem,</em> shipped to a world-class standard.</p>
         </div>
 
-        <div class="work__grid">
-          <!-- MY WEEKLY TRACK -->
-          <a class="card tilt-card c-mwt reveal" href="#contact">
+        <div class="work__grid" id="mobile-stack-container">
+          
+          <!-- MWT: SAAS WITH LASER SCAN -->
+          <a class="card glow-card tilt-card c-mwt reveal" href="#contact" data-cursor="VIEW" style="--idx: 1;">
+            <div class="card__glow"></div>
+            <div class="c-mwt__ui-grid"><div class="c-mwt__laser"></div></div>
             <span class="card__num">02 / My Weekly Track</span>
             <div class="c-mwt__inner">
-              <div>
+              <div class="c-mwt__content">
+                <div class="c-mwt__saas-node">System Nominal</div>
                 <h3 class="c-mwt__title">Weekly,<br><em>tracked.</em></h3>
-                <p class="c-mwt__lede">A performance tracking SaaS for East African organisations.</p>
+                <p class="c-mwt__lede">A performance tracking SaaS for East African organisations. End-to-end UI & Brand.</p>
               </div>
-              <img class="c-mwt__logo" src="assets/my-weekly-track.png" alt="My Weekly Track" loading="lazy" />
+              <img class="c-mwt__logo" src="assets/my-weekly-track.png" alt="My Weekly Track[cite: 1]" loading="lazy" />
             </div>
             <div class="card__meta"><span class="card__tag">Active · 2026</span><span class="card__link">Case study →</span></div>
           </a>
 
-          <!-- WATP UGANDA (WITH ABSTRACT PLACEHOLDER) -->
-          <a class="card tilt-card c-watp reveal" href="#contact">
-            <span class="card__num">03 / WATP Uganda</span>
-            <div class="c-watp__inner">
-              <h3 class="c-watp__title">Women,<br>against teenage<br><i>pregnancy.</i></h3>
-              <p class="c-watp__sub">Nonprofit website and brand system.</p>
-              <!-- Abstract CSS Placeholder -->
-              <div class="placeholder-art p-watp">
-                <div class="p-orb"></div>
-                <div class="p-glass"></div>
-              </div>
-            </div>
-            <div class="card__meta"><span class="card__tag">Live · 2026</span><span class="card__link">Visit site →</span></div>
-          </a>
-
-          <!-- AFRICA 63 (WITH ARCHITECTURAL PLACEHOLDER) -->
-          <a class="card tilt-card c-a63 reveal" href="#contact">
-            <span class="card__num" style="opacity:.7;">04 / Africa 63</span>
-            <span class="c-a63__neon"></span>
-            <div class="c-a63__monogram">A<span>63</span></div>
-            <p class="c-a63__sub">Pan-African vision. Premium build.</p>
-            <!-- Abstract CSS Placeholder -->
-            <div class="placeholder-art p-a63">
-              <div class="p-line-x"></div>
-              <div class="p-line-y"></div>
-              <div class="p-circle"></div>
-            </div>
-            <div class="card__meta"><span class="card__tag">In progress</span><span class="card__link">Case study →</span></div>
-          </a>
-
-          <!-- SSUUBI -->
-          <a class="card tilt-card c-ssuubi reveal" href="#contact">
+          <!-- SSUUBI: TRACKING DIVINE GLOW -->
+          <a class="card glow-card tilt-card c-ssuubi reveal" href="#contact" data-cursor="VIEW" style="--idx: 2;">
+            <div class="card__glow"></div>
+            <div class="c-ssuubi__divine-light"></div>
             <span class="card__num">05 / Ssubi Fellowship</span>
             <div class="c-ssuubi__inner">
               <h3 class="c-ssuubi__title">Faith.<br>Hope.<br><span>Growth.</span></h3>
-              <img class="c-ssuubi__logo" src="assets/ssuubi-fellowship.png" alt="Ssuubi Fellowship" loading="lazy" />
+              <p class="c-ssuubi__verse">"You will keep in perfect peace those whose minds are steadfast."</p>
+              <img class="c-ssuubi__logo" src="assets/ssuubi-fellowship.png" alt="Ssuubi Fellowship[cite: 1]" loading="lazy" />
             </div>
-            <div class="card__meta"><span class="card__tag">Ongoing</span><span class="card__link">Archive →</span></div>
+            <div class="card__meta"><span class="card__tag">Ministry · Ongoing</span><span class="card__link">Archive →</span></div>
           </a>
 
-          <!-- RETRO WAVE -->
-          <a class="card tilt-card c-retro reveal" href="#contact">
-            <span class="card__num">06 / Retro Wave</span>
-            <h3 class="c-retro__type">RetroWave</h3>
-            <p class="c-retro__wave">Edition · Three</p>
+          <!-- RETRO WAVE: CRT & GLITCH -->
+          <a class="card glow-card tilt-card c-retro reveal" href="#contact" data-cursor="VIEW" style="--idx: 3;">
+            <div class="card__glow"></div>
+            <div class="c-retro__bg"></div>
+            <div class="c-retro__grid-floor"></div>
+            <div class="c-retro__sun"></div>
+            <div class="c-retro__crt"></div>
+            <span class="card__num" style="color:#fff;">06 / Retro Wave</span>
+            <div class="c-retro__content">
+              <h3 class="c-retro__type glitch-text" data-text="RetroWave">RetroWave</h3>
+              <p class="c-retro__wave">EDITION /// THREE</p>
+            </div>
             <div class="c-retro__edition">03</div>
-            <div class="card__meta" style="position:relative; z-index:2;"><span class="card__tag">Campaign</span><span class="card__link">Posters →</span></div>
+            <div class="card__meta"><span class="card__tag">Campaign</span><span class="card__link" style="color:#00ffff;">Posters →</span></div>
           </a>
 
-          <!-- ACRA 26 (HOVER GALLERY UPGRADE + NEW COPY) -->
-          <a class="card tilt-card c-acra reveal hover-gallery-trigger" href="#contact">
+          <!-- HONDA: ANIMATED TACHOMETER -->
+          <a class="card glow-card tilt-card c-honda reveal" href="#contact" data-cursor="VIEW" style="--idx: 4;">
+            <div class="card__glow"></div>
+            <div class="c-honda__stripes"></div>
+            <div class="c-honda__tacho">
+              <div class="c-honda__needle"></div>
+            </div>
+            <span class="card__num">08 / Honda by Markh</span>
+            <div class="c-honda__header">
+              <h3 class="c-honda__title">HONDA</h3>
+              <p class="c-honda__by"><em>BY MARKH //</em></p>
+            </div>
+            <div class="auto-cycler c-honda__cycler">
+              <img src="assets/honda1.png" alt="Honda 1[cite: 1]" class="is-active" loading="lazy" />
+              <img src="assets/honda2.png" alt="Honda 2[cite: 1]" loading="lazy" />
+              <img src="assets/honda3.png" alt="Honda 3[cite: 1]" loading="lazy" />
+            </div>
+            <div class="card__meta"><span class="card__tag">Social / Speed</span><span class="card__link">Reel →</span></div>
+          </a>
+
+          <!-- ACRA 26: LIQUID CYCLER -->
+          <a class="card glow-card tilt-card c-acra reveal hover-gallery-trigger" href="#contact" data-cursor="VIEW" style="--idx: 5;">
+            <div class="card__glow"></div>
             <span class="card__num">07 / ACRA26 · Akright City Run 2026</span>
             <div class="c-acra__grid">
               <div class="c-acra__left">
                 <h3 class="c-acra__title">One<br>thread.</h3>
-                <p class="c-acra__sub">Unganisha — unity in motion. <strong>I designed the kits and over 60+ visuals</strong> for the full identity and campaign system.</p>
+                <p class="c-acra__sub">Unganisha — unity in motion. <strong>I designed the kits and over 60+ visuals</strong> for the full identity system.</p>
               </div>
               <div class="image-cycler">
-                <img src="assets/akright1.png" alt="Akright Run Kit Design" class="is-active" loading="lazy" />
-                <img src="assets/akright2.png" alt="Akright Run Visual 1" loading="lazy" />
-                <img src="assets/akright3.png" alt="Akright Run Visual 2" loading="lazy" />
-              </div>
-              <div class="c-acra__right">
-                <span>09 May 2026</span>
-                <span>Da 2 Gardens</span>
-                <strong>View campaign →</strong>
+                <img src="assets/akright1.png" alt="Akright Run Kit[cite: 1]" class="is-active" loading="lazy" />
+                <img src="assets/akright2.png" alt="Akright Run Visual 1[cite: 1]" loading="lazy" />
+                <img src="assets/akright3.png" alt="Akright Run Visual 2[cite: 1]" loading="lazy" />
               </div>
             </div>
+            <div class="card__meta"><span class="card__tag">Campaign</span><span class="card__link">View →</span></div>
           </a>
 
-          <!-- HONDA BY MARKH (AUTO-SLIDING CAROUSEL) -->
-          <a class="card tilt-card c-honda reveal" href="#contact">
-            <span class="card__num">08 / Honda by Markh</span>
-            <h3 class="c-honda__title">Honda.</h3>
-            <p class="c-honda__by"><em>by Markh.</em></p>
-            <div class="auto-cycler">
-              <img src="assets/honda1.png" alt="Honda 1" class="is-active" loading="lazy" />
-              <img src="assets/honda2.png" alt="Honda 2" loading="lazy" />
-              <img src="assets/honda3.png" alt="Honda 3" loading="lazy" />
-            </div>
-            <div class="card__meta"><span class="card__tag">Social</span><span class="card__link">Reel →</span></div>
-          </a>
-
-          <!-- AKRIGHT SUMMIT (CORPORATE GRID PLACEHOLDER) -->
-          <a class="card tilt-card c-aksum reveal" href="#contact">
-            <span class="card__num">09 / Akright Summit</span>
-            <span class="c-aksum__label">Strategic Goal</span>
-            <h3 class="c-aksum__big">5,000<br>books.</h3>
-            <p class="c-aksum__title">A national entrepreneurship summit, system-built from scratch.</p>
-            <!-- Abstract CSS Placeholder -->
-            <div class="placeholder-art p-aksum"></div>
-            <div class="card__meta"><span class="card__tag">Strategy</span><span class="card__link">The plan →</span></div>
-          </a>
-
-          <!-- SOCIAL SPOT (GLOWING VINYL PLACEHOLDER) -->
-          <a class="card tilt-card c-spot reveal" href="#contact">
-            <span class="card__num">10 / Social Spot</span>
-            <h3 class="c-spot__title">Social<br><em>Spot.</em></h3>
-            <p class="c-spot__sub">Retro Rhymes · Grand Opening</p>
-            <!-- Abstract CSS Placeholder -->
-            <div class="placeholder-art p-spot">
-              <div class="p-vinyl"></div>
-            </div>
-            <div class="card__meta"><span class="card__tag">April 2026</span><span class="card__link">Poster series →</span></div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- TOOLS STRIP -->
-    <section class="tools">
-      <div class="wrap-wide">
-        <div class="tools__inner reveal">
-          <span class="tools__label">Studio toolkit · 05.0</span>
-          <div class="tools__list">
-            <span class="tools__item magnetic">Notion</span>
-            <span class="tools__item magnetic">Figma</span>
-            <span class="tools__item magnetic">Gemini</span>
-            <span class="tools__item magnetic">Claude</span>
-            <span class="tools__item magnetic">Canva</span>
-            <span class="tools__item magnetic">CapCut</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="services" id="services">
-      <div class="wrap-wide">
-        <div class="services__head reveal">
-          <h2 class="services__title">Six <i>disciplines.</i><br>One studio.</h2>
-          <p class="services__intro">Each service stands alone. Together they let NS Creative run a brand end-to-end — from logo and naming to website, social, campaigns, and AI film.</p>
-        </div>
-        <div class="services__list reveal">
-          <a class="svc" href="#contact"><span class="svc__num">01</span><h3 class="svc__name">Brand <i>Identity</i></h3><p class="svc__desc">Naming, logo direction, colour systems, and visual rules.</p><span class="svc__arrow">↗</span></a>
-          <a class="svc" href="#contact"><span class="svc__num">02</span><h3 class="svc__name">Web <i>Design + Build</i></h3><p class="svc__desc">Mobile-first, premium websites designed to convert.</p><span class="svc__arrow">↗</span></a>
-          <a class="svc" href="#contact"><span class="svc__num">03</span><h3 class="svc__name">Social <i>Media</i></h3><p class="svc__desc">Instagram and TikTok end-to-end content direction.</p><span class="svc__arrow">↗</span></a>
-          <a class="svc" href="#contact"><span class="svc__num">04</span><h3 class="svc__name">Event <i>Campaigns</i></h3><p class="svc__desc">Posters, countdowns, and ticketing assets that drive hype.</p><span class="svc__arrow">↗</span></a>
-          <a class="svc" href="#contact"><span class="svc__num">05</span><h3 class="svc__name">AI <i>Film Production</i></h3><p class="svc__desc">Cinema-grade visual generation without a physical film crew.</p><span class="svc__arrow">↗</span></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- STUDIO / ABOUT -->
-    <section class="about" id="about">
-      <div class="wrap-wide">
-        <div class="about__head">
-          <span class="section-label">Studio · 07.0</span>
-          <h2 class="about__title reveal">Built in <i>Uganda.</i><br>Aimed at the <i>world.</i></h2>
-        </div>
-        <div class="about__grid">
-          <div class="reveal">
-            <p class="about__lede">
-              NS Creative is a Kampala-based studio led by <em>Neeza Shyaka.</em> The standard is <em>international.</em> The context is <em>African.</em> The output is built to compete with anything you've seen out of London, Lagos, or Lisbon.
-            </p>
-          </div>
-          <div class="about__stats reveal">
-            <div class="stat"><div class="stat__num">10+</div><div class="stat__label">Active engagements</div></div>
-            <div class="stat"><div class="stat__num">06</div><div class="stat__label">Disciplines</div></div>
-            <div class="stat"><div class="stat__num">∞</div><div class="stat__label">Standard · World-class</div></div>
-          </div>
         </div>
       </div>
     </section>
@@ -381,31 +202,12 @@
       <div class="wrap-wide">
         <span class="cta__label">Start a project · 09.0</span>
         <h2 class="cta__title reveal">Have a brand to <i>build,</i><br>a campaign to <i>run?</i></h2>
-        <a href="mailto:shyakaneeza@gmail.com" class="cta__big-button magnetic reveal">
+        <a href="mailto:shyakaneeza@gmail.com" class="cta__big-button magnetic reveal" data-cursor="SAY HI">
           <span>Start the conversation</span><span aria-hidden="true">→</span>
         </a>
       </div>
     </section>
   </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer__mega">
-      <div class="wrap-wide">
-        <h2 class="reveal">Built in <span>Kampala.</span><br>Aimed at the <span>world.</span></h2>
-      </div>
-    </div>
-    <div class="footer__bar">
-      <div class="footer__inner">
-        <span class="footer__copy">© 2026 NS Creative</span>
-        <div class="footer__links">
-          <a class="magnetic" href="#work">Work</a>
-          <a class="magnetic" href="mailto:shyakaneeza@gmail.com">Contact</a>
-        </div>
-        <span class="footer__copy">Designed by <span style="color: var(--lime);">Neeza Shyaka</span></span>
-      </div>
-    </div>
-  </footer>
 
   <script src="script.js" defer></script>
 </body>
