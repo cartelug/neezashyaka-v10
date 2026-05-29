@@ -1,83 +1,161 @@
-# NS Creative · neezashyaka.com · V10
+# NS Creative — neezashyaka.com
 
-The production build of Neeza Shyaka's studio portfolio.
+The creative studio website of **Neeza Shyaka**, Kampala, Uganda.
+Concept: **“Enter the Brand World.”** Cinematic, premium, built to close serious clients.
 
-## How to view
+---
 
-Unzip this folder. Open `index.html` in any browser. That's it.
+## Open it locally
+
+No build step. No dependencies (except Google Fonts, which load from the web).
+
+1. Unzip the folder.
+2. Double-click `index.html` — it opens in any browser.
+
+For the cleanest experience (fonts, fetch, etc.), you can also run a tiny local server:
+
+```bash
+# Python 3
+python3 -m http.server 8000
+# then open http://localhost:8000
+
+# or Node
+npx serve
+```
+
+---
+
+## File structure
 
 ```
-neezashyaka-v10/
-├── index.html
-├── assets/
-│   ├── my-weekly-track.png
-│   ├── sun-over-africa.png
-│   └── ssuubi-fellowship.png
-└── README.md
+ns-creative/
+├── index.html        ← markup, all 16 sections
+├── style.css         ← full cinematic design system
+├── script.js         ← all interactions + case-study overlay
+├── README.md         ← this file
+└── assets/
+    ├── my-weekly-track.png    ✓ included
+    ├── ssuubi-fellowship.png  ✓ included
+    ├── sun-over-africa.png    ✓ included
+    ├── honda1.png             ← add when ready (graceful fallback until then)
+    ├── honda2.png             ← add when ready
+    ├── honda3.png             ← add when ready
+    ├── akright1.png           ← add when ready
+    ├── akright2.png           ← add when ready
+    └── akright3.png           ← add when ready
 ```
 
-No build step. No dependencies. One HTML file with embedded CSS and vanilla JS. Works offline (except web fonts, which fall back gracefully).
+### Image paths (exact — do not rename or move)
 
-## How to deploy
+| Project | Path(s) |
+|---|---|
+| My Weekly Track | `assets/my-weekly-track.png` |
+| Ssuubi Fellowship | `assets/ssuubi-fellowship.png` |
+| Sun Over Africa | `assets/sun-over-africa.png` |
+| Honda by Markh | `assets/honda1.png`, `assets/honda2.png`, `assets/honda3.png` |
+| ACRA26 / Akright City Run | `assets/akright1.png`, `assets/akright2.png`, `assets/akright3.png` |
 
-Drop the contents into any static host:
+**Graceful fallback:** any missing image is detected automatically and replaced with a premium
+CSS-built fallback (gradients, texture, typographic mark) — so no card ever looks broken.
+The Honda and Akright cards are showing these fallbacks right now; drop the real PNGs into
+`/assets/` with the exact names above and they appear instantly, including the carousels.
 
-- **Netlify**: drag the folder into netlify.com/drop → live in 30 seconds
-- **Vercel**: `vercel --prod` from inside the folder
-- **GitHub Pages**: push to a repo, enable Pages
-- **GoDaddy / cPanel hosting**: upload via FTP to `public_html/`
+---
 
-## How to edit
+## Replace / add project images
 
-The whole site is one file — `index.html`. Everything you'd reasonably want to change has a labelled comment block:
+1. Export your image as a PNG.
+2. Name it **exactly** as listed above.
+3. Drop it into the `assets/` folder, replacing any existing file.
+4. Refresh the page. Done — the card swaps from fallback art to your image automatically.
 
-- `01 · DESIGN TOKENS` — change brand colors here
-- `02 · RESET & BASE` — global type and body settings
-- `07 · HERO` — change the headline copy
-- `09 · MANIFESTO` — change the studio statement
-- `10 · FEATURED · SUN OVER AFRICA` — the cinematic full-bleed feature
-- `11 · WORK GRID` — add / edit / remove project cards
-- `13 · SERVICES` — six disciplines
-- `16 · FAQ` — change questions and answers
-- `17 · CTA` — the lime contact section
-- `18 · FOOTER` — the big closing type
+Honda and ACRA26 cards each cycle through their three images as a carousel once all are present.
 
-To swap a logo, drop a new PNG into `/assets/` with the same filename, or update the `src=` path.
+---
 
-## What was upgraded from V2 → V10
+## Edit the copy
 
-1. **Hero** — now uses the studio's positioning line ("started on WhatsApp") front and center.
-2. **Loader sequence** — branded 1s intro with animated count.
-3. **Status bar** — always-on, with live Kampala time and rotating "now in studio" status.
-4. **Now in Production ticker** — replaced generic marquee with live project status feed.
-5. **Manifesto section** — added the studio's philosophy statement.
-6. **Featured case (Sun Over Africa)** — full-bleed cinematic section with letterbox bars, gold haze, project specs.
-7. **Work grid** — restructured into asymmetric rhythm with ACRA26 as a second featured full-bleed moment.
-8. **Tools strip** — added the studio toolkit (Notion, Gemini, Claude, CapCut, etc.).
-9. **FAQ section** — added "Working with NS" objection handling with expandable rows.
-10. **Footer** — massive editorial typography reading "Built in Kampala. Aimed at the world."
-11. **Custom cursor** — subtle dot on desktop, scales on interactive elements.
-12. **Accessibility** — skip link, focus styles, `prefers-reduced-motion` respect, semantic HTML, JSON-LD schema.
-13. **SEO** — full Open Graph, Twitter cards, JSON-LD Person schema.
+Everything lives in `index.html`, in clearly-commented section blocks
+(e.g. `<!-- ═══ HERO ═══ -->`). To change wording, edit the text between the tags.
 
-## Pending assets (drop into /assets/ when ready)
+Common edits:
 
-- `akright1.png`, `akright2.png`, `akright3.png` — currently using a custom SVG of running figures inside the ACRA26 card. The SVG holds up but real photos would push harder. To swap: edit the `<svg class="c-acra__svg">` block inside the ACRA card and replace with `<img src="assets/akright1.png" alt="…" />`.
-- `honda1.png`, `honda2.png`, `honda3.png` — currently a typographic treatment with diagonal motion lines. To swap: edit the `.c-honda` card and add an `<img>` element.
+- **Headline** → `.hero__title` (the lines inside `<span class="line">`)
+- **Studio statement** → the `.manifesto__text` section
+- **Featured case study** → the `.featured` section
+- **Project cards** → the `.bento` section; each `<button class="tile ...">` is one project
+- **Case-study overlay content** → the `PROJECTS` object at the top of `script.js`
+- **Services / Process / FAQ** → their named sections
+- **Contact email** → search for `info@neezashyaka.com` (used in nav, hero, CTA, footer)
 
-## Tech notes
+The email CTA everywhere points to:
+`mailto:info@neezashyaka.com?subject=Project%20Meeting%20with%20NS%20Creative`
 
-- Fonts: Google Fonts (Fraunces, Hanken Grotesk, JetBrains Mono). Cached after first visit.
-- All animations use CSS transforms / opacity (GPU-accelerated).
-- Intersection Observer powers reveal-on-scroll.
-- The cursor and parallax features auto-disable on touch devices and when `prefers-reduced-motion` is set.
-- JSON-LD includes Person schema for SEO.
+---
 
-## Studio
+## Deploy
 
-Neeza Shyaka  
-NS Creative · Kampala, Uganda  
-shyakaneeza@gmail.com  
-+256 762 193 386
+Any static host works. Easiest options:
 
-© 2026 NS Creative · A division of NS Group
+- **Netlify** — drag the unzipped folder onto [app.netlify.com/drop](https://app.netlify.com/drop). Live in ~30 seconds.
+- **Vercel** — run `vercel` (or `vercel --prod`) inside the folder.
+- **GitHub Pages** — push the folder to a repo, enable Pages on the main branch.
+- **GoDaddy / cPanel** — upload the folder contents to `public_html/` via FTP.
+
+Then point `neezashyaka.com` at the host. After deploying, update the `og:url` meta tag
+in `index.html` if the final domain differs.
+
+---
+
+## Animation & interaction system
+
+- Cinematic loader with 000→100 counter (under 1.2s) and progress bar
+- Hero masked line-by-line text reveal + mouse-following aura + grain
+- Smooth IntersectionObserver scroll reveals throughout
+- Magnetic buttons (desktop)
+- Custom cursor that scales on interactive elements (desktop)
+- 3D card tilt + cursor-follow glow on work tiles (desktop)
+- Honda & Akright image carousels (auto-cycle when images present)
+- Featured case study image stack with clickable dots
+- Infinite capability marquee (slows on hover)
+- FAQ accordion (one open at a time, animated height)
+- Full-screen case-study overlay (slide-in panel) driven by the `PROJECTS` data
+- Mobile menu with clip-path reveal + staggered links
+- Nav background adapts over dark vs. paper sections
+- Rotating "now in studio" status + live Kampala clock
+
+---
+
+## Accessibility
+
+- Skip link to main work
+- Semantic HTML and ordered headings
+- Real `<button>`s for accordions, tiles, and the overlay
+- Visible focus states (lime ring)
+- `aria-expanded`, `aria-controls`, `aria-modal`, `aria-hidden` where relevant
+- **Escape** closes the mobile menu and the case-study overlay
+- Focus returns to the triggering card after the overlay closes; basic focus containment inside the overlay
+- Body scroll locks while menu/overlay is open
+- Full `prefers-reduced-motion` support: disables the cursor, tilt, carousels, marquee, and reveal animations, and shows all content immediately
+- Heavy pointer effects (cursor, tilt, magnetic, aura) auto-disable on touch devices
+
+---
+
+## Reduced motion
+
+If a visitor has "reduce motion" enabled in their OS, the site automatically:
+serves content with no entrance animations, freezes the marquee, hides the custom cursor,
+disables 3D tilt and carousels, and keeps everything fully readable and usable.
+
+---
+
+## SEO
+
+- Descriptive `<title>` and meta description
+- Open Graph + Twitter card tags
+- JSON-LD `Organization` schema (with founder `Person`)
+- Clean semantic structure and heading order
+
+---
+
+© 2026 NS Creative · A division of NS Group · Built in Kampala. Aimed at the world.
