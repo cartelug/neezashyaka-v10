@@ -2,717 +2,381 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
-<!-- PRIMARY -->
-<title>NS Creative — Brand, Web & AI Production Studio in Kampala</title>
-<meta name="description" content="NS Creative is the studio of Neeza Shyaka, building brand worlds, websites, campaigns, and AI-powered production systems for ambitious teams across Uganda and East Africa." />
+<title>NS Creative — Brand, Web & AI Production Studio · Kampala</title>
+<meta name="description" content="NS Creative architects global brand worlds from Kampala — identity, web, AI film, and campaign systems for ambitious East African teams." />
 <meta name="author" content="Neeza Shyaka" />
 <meta name="theme-color" content="#050403" />
 <meta name="color-scheme" content="dark" />
 
-<!-- OPEN GRAPH -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="NS Creative — Brand, Web & AI Production Studio in Kampala" />
-<meta property="og:description" content="We make brands look like they belong on the world stage — even if they started on WhatsApp." />
+<meta property="og:title" content="NS Creative — Turning brands into cultural artifacts" />
+<meta property="og:description" content="We architect global brand worlds from Kampala — identity, web, AI film, and campaign systems." />
 <meta property="og:locale" content="en_UG" />
 <meta property="og:site_name" content="NS Creative" />
 <meta property="og:url" content="https://neezashyaka.com" />
-
-<!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="NS Creative — Brand, Web & AI Production Studio" />
-<meta name="twitter:description" content="We make brands look like they belong on the world stage — even if they started on WhatsApp." />
+<meta name="twitter:title" content="NS Creative — Turning brands into cultural artifacts" />
+<meta name="twitter:description" content="We architect global brand worlds from Kampala." />
 
-<!-- FAVICON -->
 <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23050403'/><text x='16' y='22' font-family='Georgia,serif' font-size='15' font-style='italic' fill='%23D4FF1E' text-anchor='middle'>NS</text></svg>" />
 
-<!-- FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" />
 
-<!-- STYLES -->
 <link rel="stylesheet" href="style.css" />
 
-<!-- JSON-LD -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "NS Creative",
-  "url": "https://neezashyaka.com",
-  "email": "info@neezashyaka.com",
-  "description": "Creative studio building brand worlds, websites, campaigns, and AI-powered production systems for ambitious teams across Uganda and East Africa.",
-  "founder": {
-    "@type": "Person",
-    "name": "Neeza Shyaka",
-    "jobTitle": "Creative Director"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Kampala",
-    "addressCountry": "Uganda"
-  },
-  "areaServed": "East Africa",
-  "knowsAbout": ["Brand Identity", "Web Design", "Campaign Creative Direction", "AI Film Production", "Social Content Systems", "Launch Strategy"]
+  "@context":"https://schema.org","@type":"Organization","name":"NS Creative",
+  "url":"https://neezashyaka.com","email":"info@neezashyaka.com",
+  "description":"Creative studio architecting global brand worlds from Kampala — identity, web, AI film, and campaign systems.",
+  "founder":{"@type":"Person","name":"Neeza Shyaka","jobTitle":"Creative Director"},
+  "address":{"@type":"PostalAddress","addressLocality":"Kampala","addressCountry":"Uganda"},
+  "areaServed":"East Africa"
 }
 </script>
 </head>
 
 <body>
-
 <a class="skip-link" href="#work">Skip to work</a>
 
-<!-- ═══════════════════════════ LOADER ═══════════════════════════ -->
-<div class="loader" id="loader" role="status" aria-label="Entering NS Creative">
-  <div class="loader__top">
-    <span>NS Creative</span>
-    <span>Brand World · 2026</span>
-  </div>
+<!-- ════ FIXED LAYERS (outside smooth wrapper) ════ -->
+
+<!-- LOADER -->
+<div class="loader" id="loader" role="status" aria-label="Loading">
+  <div class="loader__row"><span>NS Creative</span><span>Est. Kampala</span></div>
   <div class="loader__center">
-    <div class="loader__brand" aria-hidden="true">NS<span class="loader__dot">.</span></div>
-    <div class="loader__meta">Creative Studio / Kampala</div>
+    <div class="loader__count"><span id="loader-num">000</span><span class="loader__pct">%</span></div>
+    <div class="loader__word" aria-hidden="true">
+      <span data-lw>ENTER</span><span data-lw>THE</span><span data-lw>BRAND</span><span data-lw>WORLD</span>
+    </div>
   </div>
-  <div class="loader__bottom">
-    <span class="loader__count" id="loader-count">000</span>
-    <span>Entering the brand world</span>
-  </div>
-  <div class="loader__bar" aria-hidden="true"><span id="loader-fill"></span></div>
+  <div class="loader__bar" aria-hidden="true"><i id="loader-fill"></i></div>
 </div>
 
-<!-- ═══════════════════════════ CURSOR ═══════════════════════════ -->
-<div class="cursor" id="cursor" aria-hidden="true"></div>
+<!-- CUSTOM CURSOR -->
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label" id="cursor-label"></span></div>
 
-<!-- ═══════════════════════════ STATUS BAR ═══════════════════════════ -->
-<div class="statusbar" role="complementary" aria-label="Studio status">
-  <div class="statusbar__inner">
-    <div class="statusbar__seg">
-      <span class="statusbar__dot" aria-hidden="true"></span>
-      <span class="statusbar__live">Open for projects</span>
-    </div>
-    <div class="statusbar__seg statusbar__seg--center">
-      <span>Now in studio:</span>
-      <span class="statusbar__rot" id="now-rot">Brand Worlds</span>
-    </div>
-    <div class="statusbar__seg statusbar__seg--right">
-      <span>Kampala · Uganda</span>
-      <span class="statusbar__sep">/</span>
-      <span id="clock">—:—</span>
-    </div>
-  </div>
+<!-- STATUS BAR -->
+<div class="statusbar">
+  <div class="statusbar__seg"><span class="statusbar__dot"></span><span class="ok">Open for projects</span></div>
+  <div class="statusbar__seg statusbar__seg--mid"><span>In studio —</span><span class="rot" id="rot">Brand Worlds</span></div>
+  <div class="statusbar__seg statusbar__seg--end"><span>Kampala</span><span class="sep">·</span><span id="clock">—:—</span></div>
 </div>
 
-<!-- ═══════════════════════════ NAV ═══════════════════════════ -->
-<nav class="nav" id="nav" aria-label="Primary navigation">
-  <div class="nav__inner">
-    <a class="nav__brand" href="#top" aria-label="NS Creative home">
-      <span class="nav__mark" aria-hidden="true">NS<i>.</i></span>
-    </a>
-
-    <ul class="nav__menu" id="nav-menu">
-      <li><a href="#work">Work</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#process">Process</a></li>
-      <li><a href="#studio">Studio</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <a class="nav__cta magnetic" href="mailto:info@neezashyaka.com?subject=Project%20Meeting%20with%20NS%20Creative">
-      <span>Book a meeting</span>
-    </a>
-
-    <button class="nav__burger" id="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-      <span></span><span></span>
-    </button>
-  </div>
-</nav>
-
-<!-- ═══════════════════════════ MOBILE MENU ═══════════════════════════ -->
-<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-  <div class="mobile-menu__inner">
-    <nav aria-label="Mobile navigation">
-      <a href="#work" class="mobile-menu__link"><span class="mobile-menu__idx">01</span> Work</a>
-      <a href="#services" class="mobile-menu__link"><span class="mobile-menu__idx">02</span> Services</a>
-      <a href="#process" class="mobile-menu__link"><span class="mobile-menu__idx">03</span> Process</a>
-      <a href="#studio" class="mobile-menu__link"><span class="mobile-menu__idx">04</span> Studio</a>
-      <a href="#faq" class="mobile-menu__link"><span class="mobile-menu__idx">05</span> FAQ</a>
-      <a href="#contact" class="mobile-menu__link"><span class="mobile-menu__idx">06</span> Contact</a>
-    </nav>
-    <a class="mobile-menu__cta" href="mailto:info@neezashyaka.com?subject=Project%20Meeting%20with%20NS%20Creative">Book a meeting →</a>
-    <div class="mobile-menu__foot">
-      <span>info@neezashyaka.com</span>
-      <span>Kampala · Uganda</span>
-    </div>
-  </div>
-</div>
-
-<main id="top">
-
-<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
-<header class="hero" id="hero">
-  <div class="hero__aura" id="hero-aura" aria-hidden="true"></div>
-  <div class="hero__grain" aria-hidden="true"></div>
-
-  <div class="wrap hero__inner">
-    <div class="hero__eyebrow reveal" data-reveal>
-      <span class="hero__eyebrow-line"></span>
-      <span>Enter the brand world</span>
-    </div>
-
-    <h1 class="hero__title">
-      <span class="line" data-line>We make brands look like</span>
-      <span class="line" data-line>they <em>belong</em> on the</span>
-      <span class="line" data-line><em>world stage</em> — even if</span>
-      <span class="line" data-line>they started on WhatsApp.</span>
-    </h1>
-
-    <p class="hero__sub reveal" data-reveal>
-      NS Creative builds brand worlds, websites, campaigns, and AI-powered production
-      systems for ambitious teams across Uganda and East Africa.
-    </p>
-
-    <div class="hero__actions reveal" data-reveal>
-      <a class="btn btn--lime magnetic" href="mailto:info@neezashyaka.com?subject=Project%20Meeting%20with%20NS%20Creative">
-        <span>Book a meeting</span>
-        <span class="btn__arrow" aria-hidden="true">→</span>
-      </a>
-      <a class="btn btn--ghost magnetic" href="#work">
-        <span>View selected work</span>
-      </a>
-    </div>
-
-    <div class="hero__stats reveal" data-reveal>
-      <div class="hero__stat">
-        <span class="hero__stat-num">10+</span>
-        <span class="hero__stat-label">Active engagements</span>
-      </div>
-      <div class="hero__stat">
-        <span class="hero__stat-num">06</span>
-        <span class="hero__stat-label">Creative disciplines</span>
-      </div>
-      <div class="hero__stat">
-        <span class="hero__stat-num">KLA</span>
-        <span class="hero__stat-label">Built in Kampala</span>
-      </div>
-      <div class="hero__stat">
-        <span class="hero__stat-num">∞</span>
-        <span class="hero__stat-label">Aimed at the world</span>
-      </div>
-    </div>
-  </div>
-
-  <a href="#manifesto" class="hero__scroll" aria-label="Scroll down">
-    <span class="hero__scroll-text">Scroll</span>
-    <span class="hero__scroll-line" aria-hidden="true"></span>
-  </a>
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#hero" data-cursor="home"><span class="nav__mark">NS<i>.</i></span></a>
+  <nav class="nav__menu" aria-label="Primary">
+    <a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a>
+    <a href="#studio">Studio</a><a href="#faq">FAQ</a>
+  </nav>
+  <a class="nav__cta" data-magnetic href="mailto:info@neezashyaka.com?subject=Project%20Meeting%20with%20NS%20Creative"><span data-magnetic-inner>Book a meeting</span></a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+    <span></span><span></span>
+  </button>
 </header>
 
-<!-- ═══════════════════════════ MARQUEE ═══════════════════════════ -->
-<section class="marquee" aria-label="Studio capabilities">
-  <div class="marquee__track" id="marquee-track">
-    <div class="marquee__group">
-      <span>Brand Identity</span><span class="marquee__sep">✦</span>
-      <span>Websites</span><span class="marquee__sep">✦</span>
-      <span>Campaigns</span><span class="marquee__sep">✦</span>
-      <span>AI Films</span><span class="marquee__sep">✦</span>
-      <span>Social Launches</span><span class="marquee__sep">✦</span>
-      <span>Pitch Decks</span><span class="marquee__sep">✦</span>
-      <span>Content Engines</span><span class="marquee__sep">✦</span>
-      <span>Creative Direction</span><span class="marquee__sep">✦</span>
-      <span>Launch Systems</span><span class="marquee__sep">✦</span>
-    </div>
-    <div class="marquee__group" aria-hidden="true">
-      <span>Brand Identity</span><span class="marquee__sep">✦</span>
-      <span>Websites</span><span class="marquee__sep">✦</span>
-      <span>Campaigns</span><span class="marquee__sep">✦</span>
-      <span>AI Films</span><span class="marquee__sep">✦</span>
-      <span>Social Launches</span><span class="marquee__sep">✦</span>
-      <span>Pitch Decks</span><span class="marquee__sep">✦</span>
-      <span>Content Engines</span><span class="marquee__sep">✦</span>
-      <span>Creative Direction</span><span class="marquee__sep">✦</span>
-      <span>Launch Systems</span><span class="marquee__sep">✦</span>
-    </div>
+<!-- MOBILE DRAWER -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__bg"></div>
+  <nav class="drawer__nav" aria-label="Mobile">
+    <a class="drawer__link" href="#work"><i>01</i><span>Work</span></a>
+    <a class="drawer__link" href="#services"><i>02</i><span>Services</span></a>
+    <a class="drawer__link" href="#process"><i>03</i><span>Process</span></a>
+    <a class="drawer__link" href="#studio"><i>04</i><span>Studio</span></a>
+    <a class="drawer__link" href="#faq"><i>05</i><span>FAQ</span></a>
+    <a class="drawer__link drawer__link--cta" href="mailto:info@neezashyaka.com?subject=Project%20Meeting%20with%20NS%20Creative"><i>→</i><span>Book a meeting</span></a>
+  </nav>
+  <div class="drawer__foot">
+    <span>info@neezashyaka.com</span><span>Kampala · Uganda · 2026</span>
   </div>
-</section>
+</div>
 
-<!-- ═══════════════════════════ MANIFESTO ═══════════════════════════ -->
-<section class="manifesto" id="manifesto">
-  <div class="wrap">
-    <span class="label reveal" data-reveal>Manifesto</span>
-    <p class="manifesto__text">
-      <span class="reveal" data-reveal data-delay="0">Too many serious African brands</span>
-      <span class="reveal" data-reveal data-delay="1">look <em>smaller</em> than they are.</span>
-      <span class="reveal" data-reveal data-delay="2">NS Creative exists to <mark>close that gap</mark> —</span>
-      <span class="reveal" data-reveal data-delay="3">with identities, websites, campaigns,</span>
-      <span class="reveal" data-reveal data-delay="4">and AI-powered production systems that</span>
-      <span class="reveal" data-reveal data-delay="5">make local ambition <em>look global.</em></span>
-    </p>
-  </div>
-</section>
+<!-- ════ SMOOTH-SCROLL CONTENT ════ -->
+<div id="smooth">
+<main id="hero-top">
 
-<!-- ═══════════════════════════ FEATURED CASE ═══════════════════════════ -->
-<section class="featured" aria-labelledby="featured-title">
-  <div class="wrap">
-    <div class="featured__head reveal" data-reveal>
-      <span class="label label--green">Featured Case Study</span>
-      <span class="featured__crumb">01 — Campaign Identity</span>
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero__aura" id="aura" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <div class="hero__kicker reveal" data-reveal>
+      <span class="hero__kicker-dot"></span>
+      Architecting global brand worlds from Kampala
     </div>
 
-    <div class="featured__body">
-      <div class="featured__media reveal" data-reveal>
-        <div class="featured__stack" id="featured-stack" data-carousel="akright">
-          <div class="featured__slide is-active" data-fallback="akright">
-            <img src="assets/akright1.png" alt="ACRA26 Akright City Run kit design" loading="lazy" onerror="this.closest('.featured__slide').classList.add('no-img')" />
-            <div class="featured__fallback">
-              <span class="featured__fallback-run">RUN</span>
-            </div>
-          </div>
-          <div class="featured__slide" data-fallback="akright">
-            <img src="assets/akright2.png" alt="ACRA26 Akright City Run campaign visual one" loading="lazy" onerror="this.closest('.featured__slide').classList.add('no-img')" />
-            <div class="featured__fallback"><span class="featured__fallback-run">ONE THREAD</span></div>
-          </div>
-          <div class="featured__slide" data-fallback="akright">
-            <img src="assets/akright3.png" alt="ACRA26 Akright City Run campaign visual two" loading="lazy" onerror="this.closest('.featured__slide').classList.add('no-img')" />
-            <div class="featured__fallback"><span class="featured__fallback-run">UNGANISHA</span></div>
-          </div>
-        </div>
-        <div class="featured__dots" id="featured-dots" role="tablist" aria-label="Case study images"></div>
-      </div>
+    <h1 class="hero__title" aria-label="Turning brands into cultural artifacts.">
+      <span class="m"><span class="w" data-w>Turning</span></span>
+      <span class="m"><span class="w" data-w>brands</span></span>
+      <span class="m"><span class="w" data-w>into</span></span>
+      <span class="m"><span class="w w--serif" data-w>cultural</span></span>
+      <span class="m"><span class="w w--serif" data-w>artifacts.</span></span>
+    </h1>
 
-      <div class="featured__copy reveal" data-reveal>
-        <h2 class="featured__title" id="featured-title">ACRA26 <span class="featured__sub-title">· Akright City Run 2026</span></h2>
-        <p class="featured__theme"><em>Unganisha</em> — one thread, one city, one run.</p>
-        <p class="featured__desc">
-          Campaign identity, kit design, and a visual system built for motion, unity,
-          and public energy — a single continuous thread tracing every runner into one moving city.
-        </p>
-
-        <dl class="featured__meta">
-          <div><dt>Role</dt><dd>Campaign Identity / Kit Design / Visual System</dd></div>
-          <div><dt>Output</dt><dd>60+ campaign visuals</dd></div>
-          <div><dt>Location</dt><dd>Akright City</dd></div>
-          <div><dt>Year</dt><dd>2026</dd></div>
-        </dl>
-
-        <button class="btn btn--gold magnetic" data-open-case="acra26">
-          <span>Open case study</span>
-          <span class="btn__arrow" aria-hidden="true">→</span>
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════ SELECTED WORK ═══════════════════════════ -->
-<section class="work" id="work">
-  <div class="wrap">
-    <div class="work__head">
-      <div>
-        <span class="label label--lime reveal" data-reveal>Selected Work</span>
-        <h2 class="work__title reveal" data-reveal>A catalogue of <em>brand worlds.</em></h2>
-      </div>
-      <p class="work__intro reveal" data-reveal>
-        Each project is its own universe — built from strategy, designed to a global
-        standard, and made to move. Tap any card to enter.
+    <div class="hero__base">
+      <p class="hero__sub reveal" data-reveal data-delay="3">
+        Identity, web, AI film, and campaign systems — built to a global standard
+        for the most ambitious teams in East Africa.
       </p>
+      <div class="hero__cta reveal" data-reveal data-delay="4">
+        <a class="btn btn--solid" data-magnetic href="mailto:info@neezashyaka.com?subject=Project%20Meeting%20with%20NS%20Creative">
+          <span data-magnetic-inner>Book a meeting <i>→</i></span>
+        </a>
+        <a class="btn btn--line" data-magnetic href="#work"><span data-magnetic-inner>View projects</span></a>
+      </div>
     </div>
+  </div>
 
-    <div class="bento">
+  <div class="hero__meta">
+    <div class="hero__meta-item reveal" data-reveal data-delay="5"><b>10+</b><span>Active engagements</span></div>
+    <div class="hero__meta-item reveal" data-reveal data-delay="5"><b>06</b><span>Disciplines</span></div>
+    <div class="hero__meta-item reveal" data-reveal data-delay="5"><b>∞</b><span>Aimed at the world</span></div>
+  </div>
 
-      <!-- MY WEEKLY TRACK -->
-      <button class="tile tile--mwt tilt" data-open-case="mwt" aria-label="My Weekly Track case study">
-        <div class="tile__glow" aria-hidden="true"></div>
-        <div class="tile__media" data-fallback="mwt">
-          <img src="assets/my-weekly-track.png" alt="My Weekly Track product interface visual" loading="lazy" onerror="this.closest('.tile__media').classList.add('no-img')" />
-          <div class="tile__fallback tile__fallback--mwt" aria-hidden="true">
-            <div class="tile__grid-lines"></div>
-            <span class="tile__fallback-mark">MWT</span>
-          </div>
-        </div>
-        <div class="tile__body">
-          <div class="tile__top">
-            <span class="tile__idx">A</span>
-            <span class="tile__cat">SaaS · Brand & UI</span>
-          </div>
-          <h3 class="tile__name">My Weekly Track</h3>
-          <p class="tile__desc">A performance tracking SaaS for East African organisations. End-to-end brand and UI direction.</p>
-          <span class="tile__enter">Enter world <i aria-hidden="true">→</i></span>
-        </div>
-      </button>
+  <a class="hero__scroll" href="#manifesto" aria-label="Scroll"><span>Scroll</span><i></i></a>
+</section>
 
-      <!-- SSUUBI FELLOWSHIP -->
-      <button class="tile tile--ssuubi tilt" data-open-case="ssuubi" aria-label="Ssuubi Fellowship case study">
-        <div class="tile__glow" aria-hidden="true"></div>
-        <div class="tile__media" data-fallback="ssuubi">
-          <img src="assets/ssuubi-fellowship.png" alt="Ssuubi Fellowship identity visual" loading="lazy" onerror="this.closest('.tile__media').classList.add('no-img')" />
-          <div class="tile__fallback tile__fallback--ssuubi" aria-hidden="true">
-            <span class="tile__fallback-mark">Ssubi</span>
-          </div>
-        </div>
-        <div class="tile__body">
-          <div class="tile__top">
-            <span class="tile__idx">B</span>
-            <span class="tile__cat">Faith · Identity</span>
-          </div>
-          <h3 class="tile__name">Ssuubi Fellowship</h3>
-          <p class="tile__desc">A faith community identity system built around hope, peace, and growth.</p>
-          <span class="tile__enter">Enter world <i aria-hidden="true">→</i></span>
-        </div>
-      </button>
-
-      <!-- SUN OVER AFRICA -->
-      <button class="tile tile--soa tilt" data-open-case="soa" aria-label="Sun Over Africa case study">
-        <div class="tile__glow" aria-hidden="true"></div>
-        <div class="tile__media tile__media--contain" data-fallback="soa">
-          <img src="assets/sun-over-africa.png" alt="Sun Over Africa brand world visual" loading="lazy" onerror="this.closest('.tile__media').classList.add('no-img')" />
-          <div class="tile__fallback tile__fallback--soa" aria-hidden="true">
-            <span class="tile__fallback-mark">SUN</span>
-          </div>
-        </div>
-        <div class="tile__body">
-          <div class="tile__top">
-            <span class="tile__idx">C</span>
-            <span class="tile__cat">AI Film · Brand World</span>
-          </div>
-          <h3 class="tile__name">Sun Over Africa</h3>
-          <p class="tile__desc">A cinematic brand world for a Ugandan-made AI film — built scene by scene.</p>
-          <span class="tile__enter">Enter world <i aria-hidden="true">→</i></span>
-        </div>
-      </button>
-
-      <!-- RETRO WAVE -->
-      <button class="tile tile--retro tilt" data-open-case="retro" aria-label="Retro Wave case study">
-        <div class="tile__glow" aria-hidden="true"></div>
-        <div class="tile__media tile__media--art">
-          <div class="tile__fallback tile__fallback--retro" aria-hidden="true">
-            <div class="tile__scan"></div>
-            <span class="tile__retro-type">RETRO<br>WAVE</span>
-          </div>
-        </div>
-        <div class="tile__body">
-          <div class="tile__top">
-            <span class="tile__idx">D</span>
-            <span class="tile__cat">Event · Campaign</span>
-          </div>
-          <h3 class="tile__name">Retro Wave</h3>
-          <p class="tile__desc">A visual campaign system inspired by CRT texture, posters, rhythm, and motion.</p>
-          <span class="tile__enter">Enter world <i aria-hidden="true">→</i></span>
-        </div>
-      </button>
-
-      <!-- HONDA BY MARKH -->
-      <button class="tile tile--honda tilt" data-open-case="honda" aria-label="Honda by Markh case study">
-        <div class="tile__glow" aria-hidden="true"></div>
-        <div class="tile__media" data-carousel="honda" data-fallback="honda">
-          <img src="assets/honda1.png" class="tile__carousel-img is-active" alt="Honda by Markh campaign visual one" loading="lazy" onerror="this.closest('.tile__media').classList.add('no-img')" />
-          <img src="assets/honda2.png" class="tile__carousel-img" alt="Honda by Markh campaign visual two" loading="lazy" onerror="this.remove()" />
-          <img src="assets/honda3.png" class="tile__carousel-img" alt="Honda by Markh campaign visual three" loading="lazy" onerror="this.remove()" />
-          <div class="tile__fallback tile__fallback--honda" aria-hidden="true">
-            <div class="tile__speed"></div>
-            <span class="tile__fallback-mark">HONDA</span>
-          </div>
-        </div>
-        <div class="tile__body">
-          <div class="tile__top">
-            <span class="tile__idx">E</span>
-            <span class="tile__cat">Automotive · Campaign</span>
-          </div>
-          <h3 class="tile__name">Honda by Markh</h3>
-          <p class="tile__desc">Automotive campaign direction with speed, rhythm, and high-contrast motion.</p>
-          <span class="tile__enter">Enter world <i aria-hidden="true">→</i></span>
-        </div>
-      </button>
-
-      <!-- ACRA26 -->
-      <button class="tile tile--acra tilt" data-open-case="acra26" aria-label="ACRA26 Akright City Run case study">
-        <div class="tile__glow" aria-hidden="true"></div>
-        <div class="tile__media" data-carousel="akright2" data-fallback="akright">
-          <img src="assets/akright1.png" class="tile__carousel-img is-active" alt="ACRA26 Akright City Run kit design" loading="lazy" onerror="this.closest('.tile__media').classList.add('no-img')" />
-          <img src="assets/akright2.png" class="tile__carousel-img" alt="ACRA26 Akright City Run campaign visual one" loading="lazy" onerror="this.remove()" />
-          <img src="assets/akright3.png" class="tile__carousel-img" alt="ACRA26 Akright City Run campaign visual two" loading="lazy" onerror="this.remove()" />
-          <div class="tile__fallback tile__fallback--acra" aria-hidden="true">
-            <span class="tile__fallback-mark">ACRA<br>26</span>
-          </div>
-        </div>
-        <div class="tile__body">
-          <div class="tile__top">
-            <span class="tile__idx">F</span>
-            <span class="tile__cat">Featured · Event Identity</span>
-          </div>
-          <h3 class="tile__name">Akright City Run</h3>
-          <p class="tile__desc">Campaign identity, kit design, and event visuals built around unity in motion.</p>
-          <span class="tile__enter">Enter world <i aria-hidden="true">→</i></span>
-        </div>
-      </button>
-
+<!-- MARQUEE (bleed) -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track" id="marq">
+    <div class="marquee__g">
+      <span>Brand Identity</span><b>✦</b><span>Websites</span><b>✦</b><span>AI Films</span><b>✦</b>
+      <span>Campaign Systems</span><b>✦</b><span>Launch Strategy</span><b>✦</b><span>Creative Direction</span><b>✦</b>
     </div>
+    <div class="marquee__g">
+      <span>Brand Identity</span><b>✦</b><span>Websites</span><b>✦</b><span>AI Films</span><b>✦</b>
+      <span>Campaign Systems</span><b>✦</b><span>Launch Strategy</span><b>✦</b><span>Creative Direction</span><b>✦</b>
+    </div>
+  </div>
+</div>
+
+<!-- MANIFESTO -->
+<section class="manifesto" id="manifesto">
+  <span class="eyebrow reveal" data-reveal>[ Manifesto ]</span>
+  <p class="manifesto__text">
+    <span class="reveal" data-reveal>Too many serious African brands</span>
+    <span class="reveal" data-reveal data-delay="1">look <em>smaller</em> than they are.</span>
+    <span class="reveal" data-reveal data-delay="2">We exist to <mark>close that gap</mark> —</span>
+    <span class="reveal" data-reveal data-delay="3">turning local ambition</span>
+    <span class="reveal" data-reveal data-delay="4">into something <em>the world reads</em> as global.</span>
+  </p>
+</section>
+
+<!-- WORK -->
+<section class="work" id="work">
+  <div class="work__head">
+    <span class="eyebrow reveal" data-reveal>[ Selected Work — 2026 ]</span>
+    <h2 class="work__title reveal" data-reveal>Recent <em>worlds</em></h2>
+    <p class="work__note reveal" data-reveal>Each engagement is an end-to-end ecosystem. Move your cursor across the work.</p>
+  </div>
+
+  <div class="grid">
+
+    <!-- 01 My Weekly Track -->
+    <button class="proj proj--a" data-open="mwt" data-cursor="view" aria-label="Open My Weekly Track">
+      <div class="proj__media" data-fallback="mwt" data-parallax>
+        <img src="assets/my-weekly-track.png" alt="My Weekly Track product interface visual" loading="lazy" onerror="this.closest('.proj__media').classList.add('no-img')" />
+        <div class="proj__fallback fb--mwt"><span>MWT</span></div>
+      </div>
+      <div class="proj__row">
+        <div class="proj__id">01</div>
+        <div class="proj__txt">
+          <h3>My Weekly Track</h3>
+          <p>NS Creative engineered the complete brand identity and product UI for a performance-tracking SaaS built for East African organisations.</p>
+        </div>
+        <div class="proj__tags"><span>Brand</span><span>UI/UX</span><span>SaaS</span></div>
+      </div>
+    </button>
+
+    <!-- 02 Sun Over Africa -->
+    <button class="proj proj--b" data-open="soa" data-cursor="view" aria-label="Open Sun Over Africa">
+      <div class="proj__media proj__media--contain" data-fallback="soa" data-parallax>
+        <img src="assets/sun-over-africa.png" alt="Sun Over Africa brand world visual" loading="lazy" onerror="this.closest('.proj__media').classList.add('no-img')" />
+        <div class="proj__fallback fb--soa"><span>SUN</span></div>
+      </div>
+      <div class="proj__row">
+        <div class="proj__id">02</div>
+        <div class="proj__txt">
+          <h3>Sun Over Africa</h3>
+          <p>NS Creative built the entire cinematic brand world for a Ugandan-made AI film — title system, identity, and scene direction.</p>
+        </div>
+        <div class="proj__tags"><span>AI Film</span><span>Brand World</span></div>
+      </div>
+    </button>
+
+    <!-- 03 ACRA26 -->
+    <button class="proj proj--c" data-open="acra26" data-cursor="view" aria-label="Open Akright City Run">
+      <div class="proj__media" data-carousel="akright" data-fallback="akright" data-parallax>
+        <img src="assets/akright1.png" class="cimg is-on" alt="ACRA26 Akright City Run kit design" loading="lazy" onerror="this.closest('.proj__media').classList.add('no-img')" />
+        <img src="assets/akright2.png" class="cimg" alt="ACRA26 Akright City Run campaign visual one" loading="lazy" onerror="this.remove()" />
+        <img src="assets/akright3.png" class="cimg" alt="ACRA26 Akright City Run campaign visual two" loading="lazy" onerror="this.remove()" />
+        <div class="proj__fallback fb--acra"><span>RUN</span></div>
+      </div>
+      <div class="proj__row">
+        <div class="proj__id">03</div>
+        <div class="proj__txt">
+          <h3>Akright City Run</h3>
+          <p>NS Creative designed the full campaign identity, kit, and visual system — one continuous thread tracing every runner into one moving city.</p>
+        </div>
+        <div class="proj__tags"><span>Campaign</span><span>Identity</span><span>Kit</span></div>
+      </div>
+    </button>
+
+    <!-- 04 Honda by Markh -->
+    <button class="proj proj--d" data-open="honda" data-cursor="view" aria-label="Open Honda by Markh">
+      <div class="proj__media" data-carousel="honda" data-fallback="honda" data-parallax>
+        <img src="assets/honda1.png" class="cimg is-on" alt="Honda by Markh campaign visual one" loading="lazy" onerror="this.closest('.proj__media').classList.add('no-img')" />
+        <img src="assets/honda2.png" class="cimg" alt="Honda by Markh campaign visual two" loading="lazy" onerror="this.remove()" />
+        <img src="assets/honda3.png" class="cimg" alt="Honda by Markh campaign visual three" loading="lazy" onerror="this.remove()" />
+        <div class="proj__fallback fb--honda"><span>HONDA</span></div>
+      </div>
+      <div class="proj__row">
+        <div class="proj__id">04</div>
+        <div class="proj__txt">
+          <h3>Honda by Markh</h3>
+          <p>NS Creative directed a high-contrast automotive campaign system — speed, rhythm, and cinematic motion across every frame.</p>
+        </div>
+        <div class="proj__tags"><span>Automotive</span><span>Campaign</span></div>
+      </div>
+    </button>
+
+    <!-- 05 Ssuubi Fellowship -->
+    <button class="proj proj--e" data-open="ssuubi" data-cursor="view" aria-label="Open Ssuubi Fellowship">
+      <div class="proj__media" data-fallback="ssuubi" data-parallax>
+        <img src="assets/ssuubi-fellowship.png" alt="Ssuubi Fellowship identity visual" loading="lazy" onerror="this.closest('.proj__media').classList.add('no-img')" />
+        <div class="proj__fallback fb--ssuubi"><span>Ssubi</span></div>
+      </div>
+      <div class="proj__row">
+        <div class="proj__id">05</div>
+        <div class="proj__txt">
+          <h3>Ssuubi Fellowship</h3>
+          <p>NS Creative shaped a calm, premium identity system for a faith community — built around hope, peace, and growth.</p>
+        </div>
+        <div class="proj__tags"><span>Identity</span><span>Social</span></div>
+      </div>
+    </button>
+
+    <!-- 06 Retro Wave -->
+    <button class="proj proj--f" data-open="retro" data-cursor="view" aria-label="Open Retro Wave">
+      <div class="proj__media proj__media--art" data-parallax>
+        <div class="proj__fallback fb--retro"><span>RETRO<br>WAVE</span></div>
+      </div>
+      <div class="proj__row">
+        <div class="proj__id">06</div>
+        <div class="proj__txt">
+          <h3>Retro Wave</h3>
+          <p>NS Creative built a campaign system charged with CRT texture, poster rhythm, and motion — controlled nostalgia, premium execution.</p>
+        </div>
+        <div class="proj__tags"><span>Event</span><span>Campaign</span></div>
+      </div>
+    </button>
+
   </div>
 </section>
 
-<!-- ═══════════════════════════ SERVICES ═══════════════════════════ -->
+<!-- SERVICES -->
 <section class="services" id="services">
-  <div class="wrap">
-    <div class="services__head">
-      <span class="label reveal" data-reveal>Services</span>
-      <h2 class="services__title reveal" data-reveal>Everything a brand needs to<br>look <em>serious about itself.</em></h2>
-    </div>
-
-    <div class="services__grid">
-      <article class="svc reveal" data-reveal>
-        <span class="svc__num">01</span>
-        <h3 class="svc__name">Brand Identity Systems</h3>
-        <p class="svc__desc">Naming, logos, visual worlds, guidelines, and launch assets — the complete language a brand speaks.</p>
-      </article>
-      <article class="svc reveal" data-reveal data-delay="1">
-        <span class="svc__num">02</span>
-        <h3 class="svc__name">Website Design &amp; Development</h3>
-        <p class="svc__desc">Premium landing pages, portfolios, product sites, and static websites built to feel international.</p>
-      </article>
-      <article class="svc reveal" data-reveal data-delay="2">
-        <span class="svc__num">03</span>
-        <h3 class="svc__name">Campaign Creative Direction</h3>
-        <p class="svc__desc">Concepts, posters, social systems, launch rollouts, and event visuals that turn a date into a moment.</p>
-      </article>
-      <article class="svc reveal" data-reveal>
-        <span class="svc__num">04</span>
-        <h3 class="svc__name">AI Film &amp; AI Production</h3>
-        <p class="svc__desc">AI-assisted films, storyboards, scene systems, and production workflows. Cinema without the crew.</p>
-      </article>
-      <article class="svc reveal" data-reveal data-delay="1">
-        <span class="svc__num">05</span>
-        <h3 class="svc__name">Social Content Systems</h3>
-        <p class="svc__desc">Templates, motion pieces, campaign packs, and creator-ready assets — a content engine, not one-offs.</p>
-      </article>
-      <article class="svc reveal" data-reveal data-delay="2">
-        <span class="svc__num">06</span>
-        <h3 class="svc__name">Launch Strategy</h3>
-        <p class="svc__desc">Positioning, offer structure, launch pages, pitch decks, and rollout planning for the moment it matters.</p>
-      </article>
-    </div>
+  <div class="services__head">
+    <span class="eyebrow reveal" data-reveal>[ Capabilities ]</span>
+    <h2 class="services__title reveal" data-reveal>Everything a brand needs to<br>look <em>serious about itself.</em></h2>
+  </div>
+  <div class="services__grid">
+    <article class="svc reveal" data-reveal><span class="svc__n">01</span><h3>Brand Identity Systems</h3><p>Naming, logos, visual worlds, guidelines, and launch assets — the full language a brand speaks.</p></article>
+    <article class="svc reveal" data-reveal data-delay="1"><span class="svc__n">02</span><h3>Web Design &amp; Development</h3><p>Premium landing pages, portfolios, and product sites — international feel, engineered to load fast.</p></article>
+    <article class="svc reveal" data-reveal data-delay="2"><span class="svc__n">03</span><h3>Campaign Creative Direction</h3><p>Concepts, posters, social systems, and rollouts that turn a date into a cultural moment.</p></article>
+    <article class="svc reveal" data-reveal><span class="svc__n">04</span><h3>AI Film &amp; Production</h3><p>AI-assisted films, storyboards, and scene systems — cinema-grade output without the crew.</p></article>
+    <article class="svc reveal" data-reveal data-delay="1"><span class="svc__n">05</span><h3>Social Content Systems</h3><p>Templates, motion pieces, and creator-ready packs — a content engine, never one-offs.</p></article>
+    <article class="svc reveal" data-reveal data-delay="2"><span class="svc__n">06</span><h3>Launch Strategy</h3><p>Positioning, offer structure, pitch decks, and rollout planning for the moment it matters.</p></article>
   </div>
 </section>
 
-<!-- ═══════════════════════════ PROCESS ═══════════════════════════ -->
+<!-- PROCESS -->
 <section class="process" id="process">
-  <div class="wrap">
-    <div class="process__head">
-      <span class="label label--lime reveal" data-reveal>Process</span>
-      <h2 class="process__title reveal" data-reveal>Six moves<br>from <em>ambition</em> to launch.</h2>
-    </div>
-
-    <ol class="process__list">
-      <li class="process__step reveal" data-reveal>
-        <span class="process__num">01</span>
-        <h3 class="process__name">Read the ambition</h3>
-        <p class="process__desc">We start with what you're actually trying to win — not a mood board, the real goal.</p>
-      </li>
-      <li class="process__step reveal" data-reveal>
-        <span class="process__num">02</span>
-        <h3 class="process__name">Build the world</h3>
-        <p class="process__desc">Strategy, references, and the creative territory the brand will live inside.</p>
-      </li>
-      <li class="process__step reveal" data-reveal>
-        <span class="process__num">03</span>
-        <h3 class="process__name">Design the system</h3>
-        <p class="process__desc">Identity, type, colour, layout, and the rules that keep everything consistent.</p>
-      </li>
-      <li class="process__step reveal" data-reveal>
-        <span class="process__num">04</span>
-        <h3 class="process__name">Produce the assets</h3>
-        <p class="process__desc">Websites, campaigns, films, content — built to the standard, shipped on time.</p>
-      </li>
-      <li class="process__step reveal" data-reveal>
-        <span class="process__num">05</span>
-        <h3 class="process__name">Launch with pressure</h3>
-        <p class="process__desc">A rollout designed to land — coordinated, intentional, and impossible to ignore.</p>
-      </li>
-      <li class="process__step reveal" data-reveal>
-        <span class="process__num">06</span>
-        <h3 class="process__name">Refine after the market responds</h3>
-        <p class="process__desc">We read the response and sharpen. The brand gets better after it meets the world.</p>
-      </li>
-    </ol>
+  <div class="process__head">
+    <span class="eyebrow reveal" data-reveal>[ The Method ]</span>
+    <h2 class="process__title reveal" data-reveal>Six moves from<br><em>ambition</em> to launch.</h2>
   </div>
+  <ol class="process__list">
+    <li class="pstep reveal" data-reveal><span>01</span><h3>Read the ambition</h3><p>We start with what you're actually trying to win — the real goal, not a mood board.</p></li>
+    <li class="pstep reveal" data-reveal><span>02</span><h3>Build the world</h3><p>Strategy, references, and the creative territory the brand will live inside.</p></li>
+    <li class="pstep reveal" data-reveal><span>03</span><h3>Design the system</h3><p>Identity, type, colour, and the rules that keep every touchpoint consistent.</p></li>
+    <li class="pstep reveal" data-reveal><span>04</span><h3>Produce the assets</h3><p>Websites, campaigns, films, content — built to standard, shipped on time.</p></li>
+    <li class="pstep reveal" data-reveal><span>05</span><h3>Launch with pressure</h3><p>A rollout designed to land — coordinated, intentional, impossible to ignore.</p></li>
+    <li class="pstep reveal" data-reveal><span>06</span><h3>Refine after the market responds</h3><p>We read the response and sharpen. The brand gets better after it meets the world.</p></li>
+  </ol>
 </section>
 
-<!-- ═══════════════════════════ STUDIO ═══════════════════════════ -->
+<!-- STUDIO -->
 <section class="studio" id="studio">
-  <div class="wrap">
-    <div class="studio__grid">
-      <div class="studio__left">
-        <span class="label reveal" data-reveal>Studio</span>
-        <h2 class="studio__title reveal" data-reveal>Built in <em>Kampala.</em><br>Aimed at the <em>world.</em></h2>
-      </div>
-      <div class="studio__right">
-        <p class="studio__lede reveal" data-reveal>
-          NS Creative is built from Kampala for founders, organisations, ministries,
-          campaigns, and products that need to look as serious as their ambition.
-        </p>
-        <p class="studio__body reveal" data-reveal>
-          We work across <strong>Uganda</strong> and <strong>East Africa</strong>, building
-          brand worlds, websites, AI production, and campaign systems — the full stack of
-          things a brand needs to compete internationally.
-        </p>
-        <div class="studio__tags reveal" data-reveal>
-          <span>Kampala</span><span>Uganda</span><span>East Africa</span>
-          <span>Brand Worlds</span><span>Websites</span><span>AI Production</span>
-          <span>Campaign Systems</span>
-        </div>
-      </div>
-    </div>
+  <div class="studio__l">
+    <span class="eyebrow reveal" data-reveal>[ The Studio ]</span>
+    <h2 class="studio__title reveal" data-reveal>Built in <em>Kampala.</em><br>Aimed at the <em>world.</em></h2>
+  </div>
+  <div class="studio__r">
+    <p class="studio__lede reveal" data-reveal>NS Creative is built for founders, organisations, ministries, campaigns, and products that need to look as serious as their ambition.</p>
+    <p class="studio__body reveal" data-reveal>We work across <strong>Uganda</strong> and <strong>East Africa</strong> — brand worlds, websites, AI production, and campaign systems. The full stack a brand needs to compete internationally.</p>
+    <div class="studio__tags reveal" data-reveal><span>Kampala</span><span>Uganda</span><span>East Africa</span><span>Brand Worlds</span><span>AI Production</span><span>Campaigns</span></div>
   </div>
 </section>
 
-<!-- ═══════════════════════════ TOOLS ═══════════════════════════ -->
-<section class="tools" aria-label="Production stack">
-  <div class="wrap">
-    <div class="tools__head reveal" data-reveal>
-      <span class="label">Production Stack</span>
-      <span class="tools__sub">The studio dashboard</span>
-    </div>
-    <div class="tools__grid">
-      <span class="tools__item reveal" data-reveal>Figma</span>
-      <span class="tools__item reveal" data-reveal>Adobe</span>
-      <span class="tools__item reveal" data-reveal>Notion</span>
-      <span class="tools__item reveal" data-reveal>ChatGPT</span>
-      <span class="tools__item reveal" data-reveal>Claude</span>
-      <span class="tools__item reveal" data-reveal>Gemini</span>
-      <span class="tools__item reveal" data-reveal>Runway</span>
-      <span class="tools__item reveal" data-reveal>CapCut</span>
-      <span class="tools__item reveal" data-reveal>HTML</span>
-      <span class="tools__item reveal" data-reveal>CSS</span>
-      <span class="tools__item reveal" data-reveal>JavaScript</span>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════ FAQ ═══════════════════════════ -->
+<!-- FAQ -->
 <section class="faq" id="faq">
-  <div class="wrap">
-    <div class="faq__head">
-      <span class="label reveal" data-reveal>FAQ</span>
-      <h2 class="faq__title reveal" data-reveal>Before you<br><em>write the email.</em></h2>
-    </div>
-
-    <div class="faq__list">
-      <div class="faq__item">
-        <button class="faq__q" aria-expanded="false">
-          <span>What kind of clients do you work with?</span>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </button>
-        <div class="faq__a"><p>Founders, organisations, ministries, event teams, and product companies — anyone with serious ambition who wants to look the part. We work best with people building something they care about.</p></div>
-      </div>
-      <div class="faq__item">
-        <button class="faq__q" aria-expanded="false">
-          <span>Can you help if my brand is still early?</span>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </button>
-        <div class="faq__a"><p>Yes. Early is often the best time. We can build your identity, positioning, and first launch system from scratch — so you start looking established from day one.</p></div>
-      </div>
-      <div class="faq__item">
-        <button class="faq__q" aria-expanded="false">
-          <span>Do you design and build websites?</span>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </button>
-        <div class="faq__a"><p>Both. We design and build premium landing pages, portfolios, product sites, and static websites — designed to feel international and coded to load fast.</p></div>
-      </div>
-      <div class="faq__item">
-        <button class="faq__q" aria-expanded="false">
-          <span>Can you create campaign visuals and social content?</span>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </button>
-        <div class="faq__a"><p>Yes — full campaign systems: posters, countdown series, social templates, motion pieces, and launch rollouts. We build content engines, not one-off graphics.</p></div>
-      </div>
-      <div class="faq__item">
-        <button class="faq__q" aria-expanded="false">
-          <span>Can you work with existing logos and assets?</span>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </button>
-        <div class="faq__a"><p>Absolutely. If you already have a logo or brand assets, we build around them — extending the system, sharpening the execution, and keeping what already works.</p></div>
-      </div>
-      <div class="faq__item">
-        <button class="faq__q" aria-expanded="false">
-          <span>How do we start?</span>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </button>
-        <div class="faq__a"><p>Email <a href="mailto:info@neezashyaka.com?subject=Project%20Meeting%20with%20NS%20Creative">info@neezashyaka.com</a> with a sentence about what you're building. We'll set up a meeting, scope the brief, and send a proposal.</p></div>
-      </div>
-    </div>
+  <div class="faq__head">
+    <span class="eyebrow reveal" data-reveal>[ FAQ ]</span>
+    <h2 class="faq__title reveal" data-reveal>Before you<br><em>write the email.</em></h2>
+  </div>
+  <div class="faq__list">
+    <div class="qa"><button class="qa__q" aria-expanded="false"><span>What kind of clients do you work with?</span><i class="qa__icon"></i></button><div class="qa__a"><p>Founders, organisations, ministries, event teams, and product companies — anyone with serious ambition who wants to look the part.</p></div></div>
+    <div class="qa"><button class="qa__q" aria-expanded="false"><span>Can you help if my brand is still early?</span><i class="qa__icon"></i></button><div class="qa__a"><p>Yes — early is often the best time. We build your identity, positioning, and first launch system so you look established from day one.</p></div></div>
+    <div class="qa"><button class="qa__q" aria-expanded="false"><span>Do you design and build websites?</span><i class="qa__icon"></i></button><div class="qa__a"><p>Both. We design and engineer premium landing pages, portfolios, product sites, and static sites — built to feel international and load fast.</p></div></div>
+    <div class="qa"><button class="qa__q" aria-expanded="false"><span>Can you create campaign visuals and social content?</span><i class="qa__icon"></i></button><div class="qa__a"><p>Yes — full campaign systems: posters, countdown series, social templates, motion pieces, and launch rollouts. Content engines, not one-offs.</p></div></div>
+    <div class="qa"><button class="qa__q" aria-expanded="false"><span>Can you work with existing logos and assets?</span><i class="qa__icon"></i></button><div class="qa__a"><p>Absolutely. We build around what you have — extending the system and sharpening the execution while keeping what already works.</p></div></div>
+    <div class="qa"><button class="qa__q" aria-expanded="false"><span>How do we start?</span><i class="qa__icon"></i></button><div class="qa__a"><p>Email <a href="mailto:info@neezashyaka.com?subject=Project%20Meeting%20with%20NS%20Creative">info@neezashyaka.com</a> with a sentence about what you're building. We'll set up a meeting, scope it, and send a proposal.</p></div></div>
   </div>
 </section>
 
-<!-- ═══════════════════════════ FINAL CTA ═══════════════════════════ -->
+<!-- CTA -->
 <section class="cta" id="contact">
   <div class="cta__aura" aria-hidden="true"></div>
-  <div class="wrap cta__inner">
-    <span class="label label--lime reveal" data-reveal>Start a project</span>
-    <h2 class="cta__title reveal" data-reveal>Bring the ambition.<br>We'll build the <em>world</em> around it.</h2>
-    <a class="btn btn--lime btn--lg magnetic" href="mailto:info@neezashyaka.com?subject=Project%20Meeting%20with%20NS%20Creative">
-      <span>Book a meeting</span>
-      <span class="btn__arrow" aria-hidden="true">→</span>
-    </a>
-    <a class="cta__email" href="mailto:info@neezashyaka.com?subject=Project%20Meeting%20with%20NS%20Creative">info@neezashyaka.com</a>
-  </div>
+  <span class="eyebrow reveal" data-reveal>[ Start a project ]</span>
+  <h2 class="cta__title reveal" data-reveal>Bring the ambition.<br>We'll build the <em>world</em> around it.</h2>
+  <a class="btn btn--solid btn--lg" data-magnetic href="mailto:info@neezashyaka.com?subject=Project%20Meeting%20with%20NS%20Creative"><span data-magnetic-inner>Book a meeting <i>→</i></span></a>
+  <a class="cta__mail" href="mailto:info@neezashyaka.com?subject=Project%20Meeting%20with%20NS%20Creative">info@neezashyaka.com</a>
 </section>
 
-</main>
-
-<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<!-- FOOTER -->
 <footer class="footer">
-  <div class="footer__mega">
-    <div class="wrap">
-      <h2 class="footer__line">Built in <span>Kampala.</span><br>Aimed at the <span>world.</span></h2>
-    </div>
+  <h2 class="footer__big" aria-hidden="true"><span>Built in Kampala.</span><span>Aimed at the world.</span></h2>
+  <div class="footer__grid">
+    <div class="footer__col"><span class="footer__brand">NS<i>.</i></span><p>A creative studio for ambitious East African brands.</p></div>
+    <div class="footer__col"><span class="footer__lab">Studio</span><span>Neeza Shyaka</span><span>Kampala · Uganda</span></div>
+    <div class="footer__col"><span class="footer__lab">Contact</span><a href="mailto:info@neezashyaka.com?subject=Project%20Meeting%20with%20NS%20Creative">info@neezashyaka.com</a><a href="mailto:info@neezashyaka.com?subject=Project%20Meeting%20with%20NS%20Creative">Book a meeting →</a></div>
+    <div class="footer__col"><span class="footer__lab">Social</span><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="TikTok">TikTok</a><a href="#" aria-label="LinkedIn">LinkedIn</a></div>
   </div>
-  <div class="wrap footer__grid">
-    <div class="footer__col">
-      <span class="footer__brand">NS<i>.</i> Creative</span>
-      <p class="footer__note">A creative studio for ambitious East African brands.</p>
-    </div>
-    <div class="footer__col">
-      <span class="footer__label">Studio</span>
-      <span>Neeza Shyaka</span>
-      <span>Kampala · Uganda</span>
-    </div>
-    <div class="footer__col">
-      <span class="footer__label">Contact</span>
-      <a href="mailto:info@neezashyaka.com?subject=Project%20Meeting%20with%20NS%20Creative">info@neezashyaka.com</a>
-      <a href="mailto:info@neezashyaka.com?subject=Project%20Meeting%20with%20NS%20Creative">Book a meeting →</a>
-    </div>
-    <div class="footer__col">
-      <span class="footer__label">Social</span>
-      <a href="#" aria-label="Instagram (coming soon)">Instagram</a>
-      <a href="#" aria-label="TikTok (coming soon)">TikTok</a>
-      <a href="#" aria-label="LinkedIn (coming soon)">LinkedIn</a>
-    </div>
-  </div>
-  <div class="wrap footer__bar">
-    <span>© 2026 NS Creative</span>
-    <span>A division of NS Group</span>
-    <span>Built in Kampala · Aimed at the world</span>
-  </div>
+  <div class="footer__bar"><span>© 2026 NS Creative</span><span>A division of NS Group</span><span>Built in Kampala · Aimed at the world</span></div>
 </footer>
 
-<!-- ═══════════════════════════ CASE STUDY OVERLAY ═══════════════════════════ -->
-<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay-title" aria-hidden="true">
-  <div class="overlay__backdrop" id="overlay-backdrop"></div>
-  <div class="overlay__panel" role="document">
-    <button class="overlay__close" id="overlay-close" aria-label="Close case study">
-      <span></span><span></span>
-    </button>
-    <div class="overlay__scroll" id="overlay-scroll">
-      <div class="overlay__inner">
-        <span class="overlay__cat" id="overlay-cat"></span>
-        <h2 class="overlay__title" id="overlay-title"></h2>
-        <p class="overlay__theme" id="overlay-theme"></p>
-        <p class="overlay__desc" id="overlay-desc"></p>
-        <dl class="overlay__meta" id="overlay-meta"></dl>
-        <div class="overlay__media" id="overlay-media"></div>
-        <div class="overlay__cta-row" id="overlay-cta"></div>
-      </div>
+</main>
+</div><!-- /#smooth -->
+
+<!-- CASE STUDY OVERLAY -->
+<div class="ov" id="ov" role="dialog" aria-modal="true" aria-labelledby="ov-title" aria-hidden="true">
+  <div class="ov__bg" id="ov-bg"></div>
+  <div class="ov__panel">
+    <button class="ov__close" id="ov-close" aria-label="Close"><span></span><span></span></button>
+    <div class="ov__scroll" id="ov-scroll">
+      <span class="ov__cat" id="ov-cat"></span>
+      <h2 class="ov__title" id="ov-title"></h2>
+      <p class="ov__theme" id="ov-theme"></p>
+      <p class="ov__desc" id="ov-desc"></p>
+      <dl class="ov__meta" id="ov-meta"></dl>
+      <div class="ov__media" id="ov-media"></div>
+      <div class="ov__cta" id="ov-ctarow"></div>
     </div>
   </div>
 </div>
