@@ -1,7 +1,21 @@
 # NS Creative — neezashyaka.com
 
 The creative studio website of **Neeza Shyaka**, Kampala, Uganda.
-Concept: **“Enter the Brand World.”** Cinematic, premium, built to close serious clients.
+Concept: **“Enter the Brand World.”** Premium, editorial, built to close serious clients —
+a clean white canvas carried by a single Omnitrix-green signal.
+
+---
+
+## Design system (v10 · "White Studio")
+
+- **Surfaces** — pure white `#FFFFFF` with soft green-grey panels (`#F5F7F3`); a deep-ink
+  footer (`#0A0E0B`) bookends the page, and the closing CTA is a full Omnitrix-green block.
+- **Signal colour** — Ben 10 / Omnitrix green `#1ECE43` (punchier on wide-gamut displays via
+  `oklch`). A deeper `#0A7D2B` is used for any green **text/links** so it stays AA-legible on white.
+- **Type** — Space Grotesk (display), Inter (body/UI), Fraunces italic (serif emphasis).
+- **Motion** — loader, masked hero reveal, scroll reveals, magnetic buttons, image parallax,
+  case-study slide-over, FAQ accordion, live Kampala clock. All disabled under
+  `prefers-reduced-motion` and on touch devices.
 
 ---
 
@@ -37,13 +51,18 @@ ns-creative/
     ├── my-weekly-track.png    ✓ included
     ├── ssuubi-fellowship.png  ✓ included
     ├── sun-over-africa.png    ✓ included
-    ├── honda1.png             ← add when ready (graceful fallback until then)
-    ├── honda2.png             ← add when ready
-    ├── honda3.png             ← add when ready
-    ├── akright1.png           ← add when ready
-    ├── akright2.png           ← add when ready
-    └── akright3.png           ← add when ready
+    ├── honda1.png             ✓ included
+    ├── honda2.png             ✓ included
+    ├── honda3.png             ✓ included
+    ├── akright1.png           ✓ included
+    ├── akright2.png           ✓ included
+    └── akright3.png           ✓ included
 ```
+
+> **Note:** `honda1.png` / `honda2.png` were originally HEIC (iPhone) files with a `.png`
+> extension, which browsers can't decode — they've been converted to real web-decodable
+> JPEGs (keeping the `.png` filename, since browsers sniff image content). When exporting
+> new photos, always export to JPEG/PNG/WebP — never just rename a `.heic`/`.HEIC` file.
 
 ### Image paths (exact — do not rename or move)
 
@@ -55,10 +74,11 @@ ns-creative/
 | Honda by Markh | `assets/honda1.png`, `assets/honda2.png`, `assets/honda3.png` |
 | ACRA26 / Akright City Run | `assets/akright1.png`, `assets/akright2.png`, `assets/akright3.png` |
 
-**Graceful fallback:** any missing image is detected automatically and replaced with a premium
-CSS-built fallback (gradients, texture, typographic mark) — so no card ever looks broken.
-The Honda and Akright cards are showing these fallbacks right now; drop the real PNGs into
-`/assets/` with the exact names above and they appear instantly, including the carousels.
+**Graceful fallback:** all project images ship in this repo, so every card shows real artwork.
+The fallback is now a safety net — if any image ever fails to load (or you remove one), it's
+detected automatically and replaced with a premium CSS-built mark (light gradient + green
+typographic logo) so no card looks broken. Carousels drop any failed frame and keep cycling
+whatever loads; a card only falls back when *none* of its images load.
 
 ---
 
@@ -80,12 +100,11 @@ Everything lives in `index.html`, in clearly-commented section blocks
 
 Common edits:
 
-- **Headline** → `.hero__title` (the lines inside `<span class="line">`)
+- **Headline** → `.hero__title` (the masked lines inside `<span class="m"><span class="w">…`)
 - **Studio statement** → the `.manifesto__text` section
-- **Featured case study** → the `.featured` section
-- **Project cards** → the `.bento` section; each `<button class="tile ...">` is one project
+- **Project cards** → the `.work` section's `.grid`; each `<button class="proj …">` is one project
 - **Case-study overlay content** → the `PROJECTS` object at the top of `script.js`
-- **Services / Process / FAQ** → their named sections
+- **Services / Process / Studio / FAQ** → their named sections
 - **Contact email** → search for `info@neezashyaka.com` (used in nav, hero, CTA, footer)
 
 The email CTA everywhere points to:

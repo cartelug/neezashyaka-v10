@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════
-   NS CREATIVE — script.js
+   NS CREATIVE — script.js  ·  v10 "White Studio"
    Vanilla ES6+. No libraries. Hand-written animation math.
    ═══════════════════════════════════════════════════════════════ */
 (() => {
@@ -15,6 +15,8 @@
   const DESKTOP = matchMedia('(min-width: 1025px)').matches;
 
   /* ─────────── PROJECT DATA ─────────── */
+  /* Light-theme artwork tokens: green-wash #E9FBED · mute #ECEFE8 · soft #F0FBF1
+     green-ink #0A7D2B · green-deep #075E20 · ink #0A0E0B */
   const PROJECTS = {
     acra26: {
       cat: 'Campaign · Event Identity', title: 'Akright City Run · ACRA26',
@@ -22,7 +24,7 @@
       desc: 'NS Creative designed the complete campaign identity — a single continuous thread tracing every runner into one moving city. Kit design, countdown series, sponsor materials, and a visual system engineered for motion and public energy.',
       meta: { Role: 'Campaign Identity / Kit / System', Output: '60+ visuals', Location: 'Akright City', Year: '2026' },
       images: ['assets/akright1.png', 'assets/akright2.png', 'assets/akright3.png'],
-      art: { t: 'ACRA26', bg: 'linear-gradient(150deg,#0E1F14,#050403)', c: '#63D471' }
+      art: { t: 'ACRA26', bg: 'linear-gradient(150deg,#E9FBED,#ECEFE8)', c: '#0A7D2B' }
     },
     mwt: {
       cat: 'SaaS · Brand & UI', title: 'My Weekly Track',
@@ -31,7 +33,7 @@
       meta: { Role: 'Brand Identity / UI Direction', Output: 'Brand + product system', Sector: 'SaaS', Year: '2026' },
       images: ['assets/my-weekly-track.png'],
       link: { label: 'Visit myweeklytrack.com', href: 'https://myweeklytrack.com' },
-      art: { t: 'MWT', bg: 'linear-gradient(150deg,#2D2B6B,#14132E)', c: '#FFB000' }
+      art: { t: 'MWT', bg: 'linear-gradient(150deg,#E9FBED,#ECEFE8)', c: '#0A7D2B' }
     },
     soa: {
       cat: 'AI Film · Brand World', title: 'Sun Over Africa',
@@ -39,7 +41,7 @@
       desc: 'NS Creative built the cinematic brand world for an AI-produced Ugandan film — title treatment, identity, and the visual atmosphere of the production. Gold light over deep black, made entirely in Kampala.',
       meta: { Role: 'Brand World / AI Production', Output: 'Identity + scene system', Sector: 'Film', Year: '2026' },
       images: ['assets/sun-over-africa.png'],
-      art: { t: 'SUN', bg: 'radial-gradient(circle at 50% 45%,rgba(212,169,67,.32),transparent 60%),#050403', c: '#D4A943' }
+      art: { t: 'SUN', bg: 'radial-gradient(circle at 50% 45%,#E9FBED,#ECEFE8 72%)', c: '#075E20' }
     },
     ssuubi: {
       cat: 'Faith · Identity', title: 'Ssuubi Fellowship',
@@ -47,7 +49,7 @@
       desc: 'NS Creative shaped a calm, premium identity system for a faith community — warm tones, gold light, and a steady typographic voice built around hope, peace, and growth.',
       meta: { Role: 'Identity System / Social', Output: '16 visuals / month', Sector: 'Faith', Year: '2026' },
       images: ['assets/ssuubi-fellowship.png'],
-      art: { t: 'Ssubi', bg: 'radial-gradient(circle at 60% 30%,rgba(212,169,67,.3),transparent 60%),#120C08', c: '#D4A943' }
+      art: { t: 'Ssubi', bg: 'radial-gradient(circle at 60% 30%,#E9FBED,#ECEFE8 72%)', c: '#0A7D2B' }
     },
     retro: {
       cat: 'Event · Campaign', title: 'Retro Wave',
@@ -55,7 +57,7 @@
       desc: 'NS Creative built a campaign system charged with CRT texture, vintage poster rhythm, and motion — controlled nostalgia with premium execution, alive without tipping into cliché.',
       meta: { Role: 'Campaign Creative Direction', Output: 'Poster + social system', Sector: 'Events', Year: '2026' },
       images: [],
-      art: { t: 'RETRO WAVE', bg: 'linear-gradient(150deg,#1A1605,#050403)', c: '#FFB000' }
+      art: { t: 'RETRO WAVE', bg: 'linear-gradient(150deg,#ECEFE8,#F0FBF1)', c: '#0A7D2B' }
     },
     honda: {
       cat: 'Automotive · Campaign', title: 'Honda by Markh',
@@ -63,7 +65,7 @@
       desc: 'NS Creative directed a high-contrast automotive campaign system — a black-and-red visual language built around dashboard energy and cinematic intensity, designed to make the cars feel fast even when still.',
       meta: { Role: 'Campaign Direction / Social', Output: 'Ongoing content system', Sector: 'Automotive', Year: '2026' },
       images: ['assets/honda1.png', 'assets/honda2.png', 'assets/honda3.png'],
-      art: { t: 'HONDA', bg: 'linear-gradient(135deg,#D71920,#5E0C10)', c: '#FFFFFF' }
+      art: { t: 'HONDA', bg: 'linear-gradient(135deg,#ECEFE8,#E9FBED)', c: '#0A0E0B' }
     }
   };
 
@@ -71,7 +73,6 @@
   let locked = false;
   let smoothCurrent = null;          // lerped scroll position when smooth active
   const nav = $('#nav');
-  const lightSections = $$('.services, .faq');
 
   /* ─────────── SCROLL-DRIVEN UI (nav state) ─────────── */
   let lastY = 0;
@@ -86,15 +87,6 @@
       else nav.classList.remove('hide');
     }
     lastY = y;
-
-    // flip nav theme over light sections (uses visual rect — works with transform)
-    const band = 60;
-    let light = false;
-    for (const s of lightSections) {
-      const r = s.getBoundingClientRect();
-      if (r.top <= band && r.bottom >= band) { light = true; break; }
-    }
-    nav.classList.toggle('on-light', light);
   }
 
   /* ─────────── SMOOTH SCROLL (Lerp engine) ─────────── */
@@ -199,12 +191,15 @@
       const t = e.target.closest(overSel);
       if (!t) return;
       const tag = t.getAttribute('data-cursor');
+      // ink cursor over the green CTA block and the dark footer (keeps it visible)
+      const onDark = !!t.closest('.cta, .footer');
       if (tag) {
         cur.classList.add('lg'); cur.classList.remove('hover');
         if (label) label.textContent = tag === 'view' ? 'View' : tag === 'home' ? 'Home' : tag;
-        cur.classList.toggle('dark', nav && nav.classList.contains('on-light'));
+        cur.classList.toggle('dark', onDark);
       } else {
         cur.classList.add('hover');
+        cur.classList.toggle('dark', onDark);
       }
     });
     document.addEventListener('mouseout', e => {
@@ -278,16 +273,28 @@
   }
 
   /* ─────────── CAROUSELS ─────────── */
+  // Robust: drop images that fail to decode; show whatever loads; only fall
+  // back to CSS art when none survive; auto-cycle when 2+ remain (motion on).
   function initCarousels() {
-    if (REDUCED) return;
-    const start = (host) => {
-      const imgs = $$('.cimg', host).filter(im => im.naturalWidth > 0 || !im.complete);
-      if (imgs.length < 2) return;
-      imgs.forEach((im, i) => im.classList.toggle('is-on', i === 0));
+    const vet = (host) => {
+      const media = host.matches('.proj__media') ? host : host.closest('.proj__media');
+      const prune = () => {
+        $$('.cimg', host).forEach(im => { if (im.complete && im.naturalWidth === 0) im.remove(); });
+        const live = $$('.cimg', host);
+        if (!live.length) { media && media.classList.add('no-img'); return live; }
+        live.forEach((im, i) => im.classList.toggle('is-on', i === 0));
+        return live;
+      };
+      // catch late failures too
+      $$('.cimg', host).forEach(im => im.addEventListener('error', () => {
+        im.remove(); if (!$$('.cimg', host).length) media && media.classList.add('no-img');
+      }));
+      const live = prune();
+      if (REDUCED || live.length < 2) return;
       let i = 0;
-      setInterval(() => { imgs[i].classList.remove('is-on'); i = (i + 1) % imgs.length; imgs[i].classList.add('is-on'); }, 2600);
+      setInterval(() => { live[i].classList.remove('is-on'); i = (i + 1) % live.length; live[i].classList.add('is-on'); }, 2600);
     };
-    const run = () => $$('[data-carousel]').forEach(start);
+    const run = () => $$('[data-carousel]').forEach(vet);
     document.readyState === 'complete' ? run() : addEventListener('load', run);
   }
 
